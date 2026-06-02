@@ -19,9 +19,10 @@
   }
 
   const T = {
-    'meta.description': 'Creative developer building web experiences, tools, scripts, apps, and small games with a focus on detail and interaction.',
+    'meta.description': 'Eclipxse is a creative developer and toolmaker building full-stack web apps, scripts, reverse-engineering tools, Python/C projects, and small Godot games.',
 
-    'index.title': 'Eclipxse, Creative Developer',
+    'index.title': 'Eclipxse | Creative Developer, Toolmaker & Game Scripter',
+    'index.description': 'Eclipxse is a creative developer and toolmaker building full-stack web apps, scripts, reverse-engineering tools, Python/C projects, and small Godot games.',
     'index.h1': 'Eclipxse, Creative Developer, toolmaker, game scripter, reverse engineering learner, full-stack web developer, and Godot game creator.',
     'index.hero.tagline': 'Quiet builder, <span class="other-accent">bringing ideas to life</span>,<br>through motion, systems and detail.',
     'index.about.text': 'As a<span class="other-accent"> creative developer</span>, I build tailored web experiences, tools, apps and small games, blending clean engineering with <span class="other-accent">emotion</span>.',
@@ -42,7 +43,8 @@
     'index.proj.label': 'Preview',
     'index.detail.back': 'BACK',
 
-    'info.title': 'Info, Eclipxse',
+    'info.title': 'About Eclipxse | Creative Developer & Full-Stack Builder',
+    'info.description': 'About Eclipxse: creative developer, full-stack builder, game scripter, reverse-engineering learner, Python/C developer, and app maker.',
     'info.eyebrow': 'About',
     'info.role': 'Creative developer, toolmaker, game scripter, and full-stack builder.',
     'info.desc': 'I build web experiences, scripts, apps and small games with the same care: clean systems, useful interactions and a strong sense of <span class="other-accent">detail</span>.',
@@ -55,7 +57,8 @@
     'info.skills.backend': 'Backend',
     'info.skills.security': 'Systems & Tools',
 
-    'contact.title': 'Contact, Eclipxse',
+    'contact.title': 'Contact Eclipxse | Web, Tools & App Builds',
+    'contact.description': 'Contact Eclipxse for freelance web builds, scripts, tools, apps, game systems, reverse-engineering work, and collaboration requests.',
     'contact.panel.title': 'Let us talk about your project.',
     'contact.panel.copy': 'I respond to freelance builds, collaboration ideas, tooling requests and interactive web projects.',
     'contact.meta.base': 'Base',
@@ -75,7 +78,8 @@
     'contact.brief.stack': 'Tech stack',
     'contact.brief.deliverables': 'Expected deliverables',
 
-    'works.title': 'Work, Eclipxse',
+    'works.title': 'Work | Eclipxse Projects',
+    'works.description': 'Selected Eclipxse projects across full-stack websites, Python tools, reverse-engineering notes, game scripting, C experiments, and Godot prototypes.',
     'works.h1': 'Projects, Eclipxse, Creative Developer. Explore selected builds across web development, tools, scripts, apps and games.',
 
     'common.aria.back': 'Back to home',
@@ -108,7 +112,8 @@
   if (titleKey && T[titleKey]) document.title = T[titleKey];
 
   const descMeta = document.querySelector('meta[name="description"]');
-  if (descMeta && T['meta.description']) descMeta.setAttribute('content', T['meta.description']);
+  const descKey = document.documentElement.getAttribute('data-i18n-description') || 'meta.description';
+  if (descMeta && T[descKey]) descMeta.setAttribute('content', T[descKey]);
 
   window.__t = function (key) { return T[key]; };
 })();
