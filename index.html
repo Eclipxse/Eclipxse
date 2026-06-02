@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="index.title">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eclipxse, Creative Developer</title>
+  <meta name="description" content="Creative developer building web experiences, tools, scripts, apps, and small games with a focus on detail and interaction.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eclipxse.dev/">
+  <meta property="og:title" content="Eclipxse, Creative Developer">
+  <meta property="og:description" content="Creative developer building web experiences, tools, scripts, apps, and small games with a focus on detail and interaction.">
+  <meta property="og:image" content="https://eclipxse.dev/assets/images/brand/logo-social.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://eclipxse.dev/assets/images/brand/logo-social.jpg">
+  <meta name="author" content="Eclipxse">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="canonical" href="https://eclipxse.dev/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="preload" href="assets/fonts/Breton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Machine.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/images/hero&#32;sequence/0001.jpg?v=20260416-r2" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/images/profile/Mario.jpeg" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/images/projects/EclipxseCovers/gamertheorys.png" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/images/projects/EclipxseCovers/eclipxse-in.png" as="image" fetchpriority="low">
+  <link rel="stylesheet" href="styles/index.css@v=20260423-r12.css">
+</head>
+<body>
+  
+  <div class="intro-bg" id="intro-bg"></div>
+
+  
+  <div class="name-layer" id="name-layer">
+    <div class="preloader-content" id="preloader-content">
+      <div id="preloader-logo">E</div>
+      <span id="preloader-luke">clip</span>
+      <span id="preloader-baffait">xse</span>
+      <span id="preloader-dot">.</span>
+    </div>
+  </div>
+
+  
+  <div class="transition-panel" id="transition-panel">
+    <div class="t-panel-dark" id="t-panel-dark"></div>
+    <div class="t-panel-red" id="t-panel-red"></div>
+  </div>
+
+  
+  <div class="scroll-wrap" id="scroll-wrap">
+
+    
+    <section class="hero" id="hero">
+      <h1 class="sr-only" data-i18n="index.h1">Eclipxse -- Creative Developer, toolmaker, game scripter, reverse engineering learner, full-stack web developer, and Godot game creator.</h1>
+      <div class="hero-canvas" id="hero-canvas"></div>
+
+      <div class="hero-content">
+        <div class="hero-tagline" id="hero-tagline" data-i18n="index.hero.tagline">
+          Quiet builder, <span class="other-accent">bringing ideas to life</span>,<br>
+          through motion, systems and detail.
+        </div>
+
+        <div class="hero-line" id="hero-line"></div>
+        <div class="hero-bar" id="hero-bar">
+          <div class="hero-bar-left signature-cluster">
+            <span class="eclipse-mark" aria-hidden="true"><span></span></span>
+            <span class="chr-hover" data-chr="🡺V3.0"></span>
+          </div>
+          <nav class="hero-bar-center" aria-label="Social links">
+            <a class="chr-hover" data-chr="GitHub" href="https://github.com/Eclipxse" target="_blank" rel="noopener noreferrer" aria-label="GitHub"></a>
+            <span class="sep" aria-hidden="true">/</span>
+            <a class="chr-hover" data-chr="LinkedIn" href="https://www.linkedin.com/in/eclipxse/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"></a>
+            <span class="sep" aria-hidden="true">/</span>
+            <a class="chr-hover" data-chr="Mail" href="mailto:hello@eclipxse.dev" aria-label="Mail"></a>
+          </nav>
+          <nav class="hero-bar-right" aria-label="Main navigation">
+            <a class="chr-hover" data-chr="Work" href="works/index.html" data-page-link="work" aria-label="Work"></a>
+            <a class="chr-hover" data-chr="Info" href="info/index.html" data-page-link="info" aria-label="Info"></a>
+            <a class="chr-hover" data-chr="Contact" href="contact/index.html" data-page-link="contact" aria-label="Contact"></a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+  <div class="reveal-image-wrap" id="reveal-image-wrap">
+    <canvas class="reveal-image reveal-seq" id="reveal-canvas"></canvas>
+    <div class="reveal-frame reveal-seq">
+      <span class="reveal-corner tl"></span>
+      <span class="reveal-corner tr"></span>
+      <span class="reveal-corner bl"></span>
+      <span class="reveal-corner br"></span>
+    </div>
+    <div class="reveal-overlay" id="reveal-overlay"></div>
+    <p class="reveal-phrase" id="reveal-phrase">Basically, I build things.</p>
+  </div>
+
+  
+  <section class="section-after" id="section-after">
+    <div class="about" id="about">
+      <div class="about-text" id="about-text" data-i18n="index.about.text">
+        As a<span class="other-accent"> creative developer</span>, I build tailored web experiences, tools, apps and small
+        games, blending clean engineering with <span class="other-accent">emotion</span>.
+      </div>
+      <div class="about-sub" id="about-sub" data-i18n="index.about.sub">
+        I'm Eclipxse. I make scripts, reverse-engineer systems, build full-stack apps, write Python and C, and experiment
+        with Godot games while keeping the experience quiet, precise and human.
+      </div>
+      <div class="about-btn">
+        <a class="chr-hover" data-chr="Info" href="info/index.html" data-page-link="info" aria-label="More about me"></a>
+      </div>
+      <div class="about-version"><svg style="width: 1.25em; height: 1.25em; vertical-align: -0.25em;" viewBox="0 0 84 85" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11 38H54L37 21H51L73 43L51 65H37L54 48H11Z"/>
+</svg>V3.0</div>
+      <div class="about-photo-wrap" id="about-photo-wrap">
+        <img class="about-photo" src="assets/images/profile/Mario.jpeg" alt="Eclipxse" decoding="async" width="1086"
+          height="1448">
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <svg class="fluid-line-svg" id="fluid-line-svg" viewBox="0 0 1400 1400" preserveAspectRatio="xMidYMid slice">
+        <path class="fluid-line" id="fluid-line" d="
+          M -80,0
+          C 300,-20  600,150  540,400
+          C 490,650   0,655    300,1050
+          C 600,1385 650,1250 850,1200
+          C 1050,1150 1350,1250 1540,1300
+        " />
+      </svg>
+      <div class="projects-inner">
+        <div class="projects-list" id="projects-list">
+          <div class="proj-item" data-id="cyberdiag" data-img="assets/images/projects/EclipxseCovers/gamertheorys.png"
+            data-date="2026">GamerTheorys</div>
+          <div class="proj-item" data-id="anima" data-img="assets/images/projects/EclipxseCovers/eclipxse-in.png"
+            data-date="2026">Eclipxse.in</div>
+          <div class="proj-item" data-id="cyberdiag-app" data-img="assets/images/projects/EclipxseCovers/lizziee.png"
+            data-date="2026">Lizziee</div>
+          <div class="proj-item" data-id="zenith" data-img="assets/images/projects/EclipxseCovers/godot-farming.png"
+            data-date="Lab">Godot Farming Prototype</div>
+          <div class="proj-item" data-id="skymcdb" data-img="assets/images/projects/EclipxseCovers/python-script-lab.png"
+            data-date="Lab">Python Script Lab</div>
+          <div class="proj-item" data-id="chromablock" data-img="assets/images/projects/EclipxseCovers/reverse-engineering-notes.png"
+            data-date="Lab">Reverse Engineering Notes</div>
+          <div class="proj-item" data-id="symphony" data-img="assets/images/projects/EclipxseCovers/c-system-experiments.png"
+            data-date="Lab">C/System Experiments</div>
+          <div class="proj-item" data-id="echo" data-img="assets/images/projects/EclipxseCovers/eclipxse-portfolio.png" data-date="2026">
+            Eclipxse Portfolio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="circle-gallery" id="circle-gallery">
+    <div class="circle-gallery-pin" id="circle-gallery-pin">
+      <img class="cg-img" src="assets/images/projects/EclipxseCovers/gamertheorys.png" alt="GamerTheorys project cover" width="1440" height="1080">
+      <img class="cg-img" src="assets/images/projects/EclipxseCovers/eclipxse-in.png" alt="Eclipxse.in project cover" width="1440" height="1080">
+      <img class="cg-img" src="assets/images/projects/EclipxseCovers/lizziee.png" alt="Lizziee project cover" width="1440" height="1080">
+      <img class="cg-img" src="assets/images/projects/EclipxseCovers/godot-farming.png" alt="Godot farming prototype project cover" width="1448" height="1086">
+      <img class="cg-img" src="assets/images/projects/EclipxseCovers/python-script-lab.png" alt="Python Script Lab project cover" width="1448" height="1086">
+      <img class="cg-img" src="assets/images/projects/EclipxseCovers/reverse-engineering-notes.png" alt="Reverse Engineering Notes project cover" width="1448" height="1086">
+      <img class="cg-img" src="assets/images/projects/EclipxseCovers/c-system-experiments.png" alt="C/System Experiments project cover" width="1448" height="1086">
+      <img class="cg-img" src="assets/images/projects/EclipxseCovers/eclipxse-portfolio.png" alt="Eclipxse Portfolio project cover" width="1440" height="1080">
+      <p class="cg-phrase" id="cg-phrase" data-i18n="index.cg.phrase">Every project is a chance to <span class="other-accent">learn</span>,
+        <span class="other-accent">experiment</span> and keep improving.</p>
+    </div>
+  </section>
+
+  
+  <section class="skills" id="skills">
+    <div class="skills-inner">
+      <div class="skills-left">
+        <div class="skills-subtitle" data-i18n="index.skills.subtitle">Skills</div>
+        <div class="skills-text" data-i18n="index.skills.text">
+          Full-stack developer and toolmaker, comfortable with game scripting, reverse engineering, Python, app development,
+          C, and modern web projects.
+        </div>
+        <div class="skills-separator"></div>
+        <div><a class="skills-contact chr-hover" data-chr="Contact me🞣" href="contact/index.html"
+            data-page-link="contact" aria-label="Contact me"></a></div>
+        <div class="skills-arrow" id="skills-arrow"><svg style="width: 1.25em; height: 1.25em; vertical-align: -0.25em;" viewBox="0 0 84 85" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11 38H54L37 21H51L73 43L51 65H37L54 48H11Z"/>
+</svg></div>
+      </div>
+      <div class="skills-right" id="skills-right">
+        <div class="skill-group open" data-group="frontend">
+          <div class="skill-header"><span class="skill-header-title" data-i18n="index.skills.frontend">Frontend</span><span
+              class="skill-header-icon"></span></div>
+          <div class="skill-body">
+            <ul class="skill-body-inner">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind</li>
+              <li>Bootstrap</li>
+              <li>Electron</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-group" data-group="animation">
+          <div class="skill-header"><span class="skill-header-title" data-i18n="index.skills.animation">Animation & 3D</span><span
+              class="skill-header-icon"></span></div>
+          <div class="skill-body">
+            <ul class="skill-body-inner">
+              <li>GSAP</li>
+              <li>Lenis</li>
+              <li>Barba.js</li>
+              <li>Three.js</li>
+              <li>WebGL</li>
+              <li>Blender</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-group" data-group="backend">
+          <div class="skill-header"><span class="skill-header-title" data-i18n="index.skills.backend">Backend</span><span
+              class="skill-header-icon"></span></div>
+          <div class="skill-body">
+            <ul class="skill-body-inner">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>PHP</li>
+              <li>Netlify</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-group" data-group="database">
+          <div class="skill-header"><span class="skill-header-title" data-i18n="index.skills.database">Databases</span><span
+              class="skill-header-icon"></span></div>
+          <div class="skill-body">
+            <ul class="skill-body-inner">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Supabase</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-group" data-group="devops">
+          <div class="skill-header"><span class="skill-header-title" data-i18n="index.skills.devops">DevOps & Tools</span><span
+              class="skill-header-icon"></span></div>
+          <div class="skill-body">
+            <ul class="skill-body-inner">
+              <li>Docker</li>
+              <li>Vercel</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>GitLab</li>
+              <li>Cloudflare</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-group" data-group="sysadmin">
+          <div class="skill-header"><span class="skill-header-title" data-i18n="index.skills.security">Systems & Security</span><span
+              class="skill-header-icon"></span></div>
+          <div class="skill-body">
+            <ul class="skill-body-inner">
+              <li>Linux</li>
+              <li>Bash</li>
+              <li>Shell</li>
+              <li>Owasp</li>
+              <li>Metasploit</li>
+              <li>Nmap</li>
+              <li>OpenVAS</li>
+              <li>Ossec</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-group" data-group="design">
+          <div class="skill-header"><span class="skill-header-title" data-i18n="index.skills.design">Design</span><span
+              class="skill-header-icon"></span></div>
+          <div class="skill-body">
+            <ul class="skill-body-inner">
+              <li>Photoshop</li>
+              <li>Canva</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights / Awards -->
+  <section class="awards" id="awards">
+    <div class="awards-inner">
+      <div class="skills-subtitle awards-title">Highlights</div>
+      <div class="awards-list" id="awards-list">
+        <div class="award-item" data-cursor-img="assets/images/projects/EclipxseCovers/gamertheorys.png">
+          <div class="award-org">Live Build</div>
+          <div class="award-site">GamerTheorys</div>
+          <div class="award-prize">Gaming platform</div>
+          <div class="award-date">2026</div>
+        </div>
+        <div class="award-item" data-cursor-img="assets/images/projects/EclipxseCovers/eclipxse-in.png">
+          <div class="award-org">Portfolio</div>
+          <div class="award-site">Eclipxse.in</div>
+          <div class="award-prize">Personal full-stack site</div>
+          <div class="award-date">2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="contact-bg" id="contact-bg"></div>
+  <div class="contact-blob-wrap" id="contact-blob-wrap">
+    <div class="contact-blob" id="contact-blob"></div>
+  </div>
+  <section class="contact" id="contact">
+    <div class="contact-pin" id="contact-pin">
+      <div class="contact-title" id="contact-title">Contact</div>
+
+      <div class="contact-dispo" id="contact-dispo">
+        <p data-i18n="index.contact.dispo1">Available for <span class="other-accent">freelance builds</span>, tools, web apps and experiments that need careful engineering.</p>
+      </div>
+
+      <div class="contact-frame" id="contact-frame">
+        <img class="contact-frame-img" id="contact-frame-img" src="assets/images/art/Untitled2.png" alt=""
+          loading="lazy" decoding="async">
+        <span class="frame-corner tl"></span>
+        <span class="frame-corner tr"></span>
+        <span class="frame-corner bl"></span>
+        <span class="frame-corner br"></span>
+      </div>
+
+      <div class="contact-dispo" id="contact-dispo-2">
+        <p data-i18n="index.contact.dispo2">Open to <span class="other-accent">collaborations worldwide</span>, from polished websites to scripts, apps and game systems.</p>
+      </div>
+
+      <div class="contact-frame" id="contact-frame-2">
+        <img class="contact-frame-img" id="contact-frame-img-2" src="assets/images/art/Untitled1.png" alt=""
+          loading="lazy" decoding="async">
+        <span class="frame-corner tl"></span>
+        <span class="frame-corner tr"></span>
+        <span class="frame-corner bl"></span>
+        <span class="frame-corner br"></span>
+      </div>
+
+      <div class="contact-bottom" id="contact-bottom">
+        <nav class="contact-socials" id="contact-socials" aria-label="Social links">
+          <a class="chr-hover" data-chr-contact="GitHub" href="https://github.com/Eclipxse" target="_blank" rel="noopener noreferrer" aria-label="GitHub"></a>
+          <a class="chr-hover" data-chr-contact="LinkedIn" href="https://www.linkedin.com/in/eclipxse/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"></a>
+          <a class="chr-hover" data-chr-contact="Mail" href="mailto:hello@eclipxse.dev" aria-label="Mail"></a>
+        </nav>
+        <a class="contact-mail" id="contact-mail" href="mailto:hello@eclipxse.dev">hello@eclipxse.dev</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="footer-transition" id="footer-transition"></div>
+  <footer class="footer" id="footer">
+    <div class="footer-content" id="footer-content">
+      <div class="footer-top">
+        <div class="footer-top-col">
+          <span class="footer-signature" aria-hidden="true"><span class="eclipse-mark"><span></span></span></span>
+          <a class="chr-hover footer-mail" data-chr-footer="hello@eclipxse.dev"
+            href="mailto:hello@eclipxse.dev" aria-label="Send an email"></a>
+          <span class="chr-hover footer-date" data-chr-footer="© 2026"></span>
+        </div>
+        <nav class="footer-top-col" aria-label="Social links">
+          <a class="chr-hover" data-chr-footer="GitHub" href="https://github.com/Eclipxse" target="_blank" rel="noopener noreferrer" aria-label="GitHub"></a>
+          <a class="chr-hover" data-chr-footer="LinkedIn" href="https://www.linkedin.com/in/eclipxse/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"></a>
+          <a class="chr-hover" data-chr-footer="Mail" href="mailto:hello@eclipxse.dev" aria-label="Mail"></a>
+        </nav>
+        <nav class="footer-top-col" aria-label="Footer navigation">
+          <a class="chr-hover" data-chr-footer="Work" href="works/index.html" data-page-link="work" aria-label="Work"></a>
+          <a class="chr-hover" data-chr-footer="Info" href="info/index.html" data-page-link="info" aria-label="Info"></a>
+          <a class="chr-hover" data-chr-footer="Contact" href="contact/index.html" data-page-link="contact" aria-label="Contact"></a>
+        </nav>
+      </div>
+      <div class="footer-ascii-wrap">
+        <div class="footer-ascii left">
+          <pre id="ascii-left"></pre>
+        </div>
+        <div class="footer-ascii right">
+          <pre id="ascii-right"></pre>
+        </div>
+      </div>
+      <div class="footer-name">
+        <span class="footer-name-luke"><span class="first-letter">E</span>clip</span><span
+          class="footer-name-baffait-wrap"><span class="footer-name-baffait">xse</span><span
+            class="footer-name-dot">.</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="proj-preview" id="proj-preview">
+    <div class="proj-card" id="proj-card">
+      <div class="proj-meta">
+        <span class="proj-date" id="proj-date">01 2025</span>
+        <span class="proj-label">Preview</span>
+      </div>
+      <img id="proj-cover" src="assets/images/projects/EclipxseCovers/gamertheorys.png" alt="" width="1440" height="1080">
+    </div>
+  </div>
+  <div class="proj-cursor" id="proj-cursor">See project</div>
+
+  <div class="page-fade" id="page-fade"></div>
+  <div class="flying-title" id="flying-title"></div>
+  <div class="work-transition-overlay" id="work-transition-overlay"></div>
+  <div class="work-flying-text" id="work-flying-text">Work</div>
+
+  <section class="project-detail" id="project-detail">
+    <div class="detail-back chr-hover" id="detail-back" data-chr="🡼RETOUR" data-i18n-attr="data-chr:index.detail.back"></div>
+    <div class="detail-info">
+      <div class="detail-title-wrap" id="detail-title-wrap">
+        <h1 class="detail-title" id="detail-title"></h1>
+        <span class="detail-year" id="detail-year"></span>
+      </div>
+      <p class="detail-desc" id="detail-desc"></p>
+      <div class="detail-tags" id="detail-tags"></div>
+    </div>
+    <div class="detail-gallery-wrap" id="detail-gallery-wrap">
+      <div class="detail-thumbs" id="detail-thumbs">
+        <div class="detail-thumbs-inner" id="detail-thumbs-inner"></div>
+      </div>
+      <div class="detail-selected" id="detail-selected"></div>
+    </div>
+  </section>
+
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/core-renderer.js"></script>
+  <script defer src="js/hero-project.js"></script>
+  <script defer src="js/vendor/gsap.min.js"></script>
+  <script defer src="js/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="js/vendor/lenis.min.js"></script>
+  <script defer src="js/index.js@v=20260423-r14"></script>
+
+  <div class="scroll-pct" id="scroll-pct">(0)</div>
+  <div class="scroll-timeline" id="scroll-timeline">
+    <span class="st-label" id="st-label"></span>
+    <div class="st-bar" id="st-bar"></div>
+  </div>
+</body>
+
+</html>
