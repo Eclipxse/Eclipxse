@@ -1,0 +1,57 @@
+<svg width="1180" height="390" viewBox="0 0 1180 390" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Now Cooking</title>
+  <desc id="desc">A baby pink neo-brutalist board showing what Eclipxse is currently building.</desc>
+  <rect width="1180" height="390" fill="#0D1117"/>
+  <rect x="18" y="18" width="1144" height="354" fill="#FFE4EC" stroke="#111111" stroke-width="6"/>
+  <rect x="42" y="42" width="1096" height="306" fill="#FFF7FA" stroke="#111111" stroke-width="5"/>
+  <path d="M42 42H1138V112H42V42Z" fill="#FFB6C1" stroke="#111111" stroke-width="5"/>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="70" y="62" width="52" height="34" fill="#111111"/>
+    <path d="M82 84h28l-8-16h-12l-8 16z" fill="#FF4FD8"/>
+    <path d="M92 70h8v-8h-8v8z" fill="#FACC15"/>
+    <path d="M100 84l12-11 8 11h-20z" fill="#7DD3FC"/>
+    <text x="146" y="86" fill="#111111" font-size="38" font-weight="950">Now Cooking</text>
+    <text x="404" y="86" fill="#7F1D1D" font-size="18" font-weight="850">projects with aura, caffeine, and questionable sleep</text>
+    <rect x="910" y="60" width="154" height="38" fill="#111111"/>
+    <text x="936" y="85" fill="#FFE4EC" font-size="15" font-weight="950">LIVE ROADMAP</text>
+    <path d="M1090 56l10 22 24 9-24 9-10 22-10-22-24-9 24-9 10-22z" fill="#FFF7FA" stroke="#111111" stroke-width="4"/>
+
+    <rect x="70" y="142" width="246" height="164" fill="#111111" stroke="#111111" stroke-width="5"/>
+    <text x="94" y="180" fill="#FFE4EC" font-size="20" font-weight="950">CURRENT MODE</text>
+    <text x="94" y="222" fill="#FFB6C1" font-size="42" font-weight="950">shipping</text>
+    <rect x="94" y="244" width="154" height="22" fill="#FF4FD8" stroke="#111111" stroke-width="3"/>
+    <rect x="248" y="244" width="40" height="22" fill="#FFE4EC" stroke="#111111" stroke-width="3"/>
+    <text x="94" y="289" fill="#FFE4EC" font-size="13" font-weight="850">small builds, real polish</text>
+
+    <rect x="344" y="142" width="356" height="72" fill="#FFB6C1" stroke="#111111" stroke-width="5"/>
+    <circle cx="382" cy="178" r="18" fill="#FFF7FA" stroke="#111111" stroke-width="4"/>
+    <path d="M382 158v40M362 178h40" stroke="#FF4FD8" stroke-width="6"/>
+    <text x="424" y="172" fill="#111111" font-size="20" font-weight="950">Aura Browser</text>
+    <text x="424" y="197" fill="#7F1D1D" font-size="13" font-weight="800">dark UI, SVG controls, smooth tabs</text>
+
+    <rect x="730" y="142" width="378" height="72" fill="#FFF7FA" stroke="#111111" stroke-width="5"/>
+    <rect x="768" y="160" width="36" height="36" fill="#111111"/>
+    <path d="M778 184l8-16 8 16h-16z" fill="#FACC15"/>
+    <text x="826" y="172" fill="#111111" font-size="20" font-weight="950">Discord Bot Lab</text>
+    <text x="826" y="197" fill="#7F1D1D" font-size="13" font-weight="800">music, commands, utility flows</text>
+
+    <rect x="344" y="234" width="356" height="72" fill="#FFF7FA" stroke="#111111" stroke-width="5"/>
+    <rect x="370" y="252" width="38" height="36" fill="#111111"/>
+    <rect x="378" y="260" width="22" height="4" fill="#FFB6C1"/>
+    <rect x="378" y="270" width="22" height="4" fill="#7DD3FC"/>
+    <rect x="378" y="280" width="14" height="4" fill="#FACC15"/>
+    <text x="424" y="264" fill="#111111" font-size="20" font-weight="950">Portfolio Rebuild</text>
+    <text x="424" y="289" fill="#7F1D1D" font-size="13" font-weight="800">pink identity, clean sections, wow factor</text>
+
+    <rect x="730" y="234" width="378" height="72" fill="#111111" stroke="#111111" stroke-width="5"/>
+    <path d="M774 270l14-20 14 20-14 20-14-20z" fill="#FF4FD8" stroke="#FFE4EC" stroke-width="4"/>
+    <text x="826" y="264" fill="#FFE4EC" font-size="20" font-weight="950">Micro Tools</text>
+    <text x="826" y="289" fill="#FFB6C1" font-size="13" font-weight="850">weird ideas turned real</text>
+
+    <rect x="70" y="326" width="1038" height="8" fill="#111111"/>
+    <rect x="70" y="326" width="470" height="8" fill="#FF4FD8"/>
+    <rect x="540" y="326" width="210" height="8" fill="#FACC15"/>
+    <rect x="750" y="326" width="358" height="8" fill="#7DD3FC"/>
+  </g>
+</svg>

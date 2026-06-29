@@ -8,6 +8,10 @@
 
 <br>
 
+<img src="./assets/readme/now-cooking.svg" alt="Baby pink neo-brutalist now cooking project board" width="100%" />
+
+<br>
+
 <img src="./assets/readme/tech-stack.svg" alt="Baby pink neo-brutalist tech stack board" width="100%" />
 
 <br>
