@@ -14,15 +14,6 @@
 
 <img src="./assets/readme/github-stats.svg" alt="Baby pink neo-brutalist GitHub stats header" width="100%" />
 
-<p align="center">
-  <img height="178" src="https://github-readme-stats.shion.dev/api?username=Eclipxse&show_icons=true&hide_border=false&border_color=111111&bg_color=FFE4EC&title_color=9F1239&text_color=7F1D1D&icon_color=FB7185&rank_icon=github&include_all_commits=true&count_private=true" alt="Eclipxse GitHub stats" />
-  <img height="178" src="https://github-readme-stats.shion.dev/api/top-langs/?username=Eclipxse&layout=compact&hide_border=false&border_color=111111&bg_color=FFE4EC&title_color=9F1239&text_color=7F1D1D" alt="Eclipxse top languages" />
-</p>
-
-<p align="center">
-  <img height="178" src="https://streak-stats.demolab.com?user=Eclipxse&hide_border=false&border=111111&background=FFE4EC&ring=FB7185&fire=FB7185&currStreakLabel=9F1239&sideLabels=9F1239&currStreakNum=9F1239&sideNums=9F1239&dates=7F1D1D" alt="Eclipxse GitHub streak" />
-</p>
-
 ---
 
 <p align="center">
