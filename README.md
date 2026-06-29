@@ -1,5 +1,10 @@
 # 💫 About Me:
-🔭 I’m currently working on<br>👯 I’m looking to collaborate on<br>🤝 I’m looking for help with<br>🌱 I’m currently learning<br>💬 Ask me about<br>⚡ Fun fact
+🧃 Building random-but-useful stuff: browsers, bots, tools, and clean web interfaces<br>
+🔭 Currently cooking **Aura Browser** and making my portfolio feel less NPC<br>
+🤝 Down to collab on Discord bots, web apps, dev tools, or any weird idea with aura<br>
+🌱 Learning TypeScript, Electron, backend systems, and how to make UI actually hit<br>
+💬 Ask me about bot ideas, browser experiments, portfolio sites, or shipping projects fast<br>
+⚡ Fun fact: most of my best repos start as “wait what if I made this real”
 
 
 # 💻 Tech Stack:
