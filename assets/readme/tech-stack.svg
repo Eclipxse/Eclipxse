@@ -1,43 +1,68 @@
-<svg width="1180" height="380" viewBox="0 0 1180 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Stack</title>
-  <desc id="desc">A sleek graphite tech stack board with muted purple and soft red accents.</desc>
-  <rect width="1180" height="380" fill="#090B10"/>
-  <rect x="52" y="42" width="1076" height="296" rx="18" fill="#151821" stroke="#2A2F3A"/>
+<svg width="1180" height="410" viewBox="0 0 1180 410" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Stack Keys</title>
+  <desc id="desc">A bold graphite neo-brutalist tech stack board with skeuomorphic keycap buttons.</desc>
+  <defs>
+    <linearGradient id="key" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F1F3F6"/>
+      <stop offset="0.54" stop-color="#AEB5C0"/>
+      <stop offset="1" stop-color="#737B88"/>
+    </linearGradient>
+    <linearGradient id="darkKey" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#242A35"/>
+      <stop offset="1" stop-color="#0F1219"/>
+    </linearGradient>
+    <filter id="keyShadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="7" dy="7" stdDeviation="0" flood-color="#050507"/>
+    </filter>
+  </defs>
+
+  <rect width="1180" height="410" fill="#090B10"/>
+  <rect x="58" y="44" width="1064" height="286" rx="8" fill="#050507"/>
+  <rect x="46" y="32" width="1064" height="286" rx="8" fill="#1A1E27" stroke="#050507" stroke-width="5"/>
+  <path d="M80 102H1076" stroke="#303642" stroke-width="2"/>
+
   <g font-family="Inter, Segoe UI, Arial, sans-serif">
-    <text x="88" y="92" fill="#F4F5F7" font-size="26" font-weight="850">Stack</text>
-    <text x="178" y="92" fill="#8D95A6" font-size="13" font-weight="650">small set, used on real builds</text>
-    <path d="M88 118H1092" stroke="#252A35"/>
+    <text x="80" y="82" fill="#F4F5F7" font-size="31" font-weight="950">Stack Keys</text>
+    <text x="260" y="82" fill="#AAB1BD" font-size="14" font-weight="800">tactile tools, clean build energy</text>
 
-    <text x="88" y="154" fill="#6B7280" font-size="12" font-weight="800" letter-spacing="2">LANGUAGES</text>
-    <rect x="88" y="174" width="126" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
-    <text x="116" y="197" fill="#F4F5F7" font-size="13" font-weight="750">Python</text>
-    <rect x="226" y="174" width="150" height="36" rx="8" fill="#191B26" stroke="#8B5CF6"/>
-    <text x="252" y="197" fill="#F4F5F7" font-size="13" font-weight="750">TypeScript</text>
-    <rect x="388" y="174" width="126" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
-    <text x="424" y="197" fill="#F4F5F7" font-size="13" font-weight="750">Kotlin</text>
-    <rect x="526" y="174" width="126" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
-    <text x="563" y="197" fill="#F4F5F7" font-size="13" font-weight="750">HTML</text>
-    <rect x="664" y="174" width="96" height="36" rx="8" fill="#191B26" stroke="#F87171"/>
-    <text x="695" y="197" fill="#F4F5F7" font-size="13" font-weight="750">CSS</text>
+    <text x="80" y="140" fill="#8A92A3" font-size="12" font-weight="950" letter-spacing="2">LANGUAGES</text>
+    <g filter="url(#keyShadow)" font-size="14" font-weight="950">
+      <rect x="80" y="158" width="130" height="42" rx="8" fill="url(#darkKey)" stroke="#050507" stroke-width="4"/>
+      <path d="M90 168H200" stroke="#FFFFFF" stroke-width="2" opacity="0.14"/>
+      <text x="114" y="184" fill="#F4F5F7">PYTHON</text>
+      <rect x="230" y="158" width="166" height="42" rx="8" fill="#8B5CF6" stroke="#050507" stroke-width="4"/>
+      <path d="M240 168H386" stroke="#FFFFFF" stroke-width="2" opacity="0.36"/>
+      <text x="260" y="184" fill="#F4F5F7">TYPESCRIPT</text>
+      <rect x="416" y="158" width="128" height="42" rx="8" fill="url(#key)" stroke="#050507" stroke-width="4"/>
+      <path d="M426 168H534" stroke="#FFFFFF" stroke-width="2" opacity="0.55"/>
+      <text x="456" y="184" fill="#0B0D12">KOTLIN</text>
+      <rect x="564" y="158" width="116" height="42" rx="8" fill="url(#darkKey)" stroke="#050507" stroke-width="4"/>
+      <text x="602" y="184" fill="#F4F5F7">HTML</text>
+      <rect x="700" y="158" width="104" height="42" rx="8" fill="#F87171" stroke="#050507" stroke-width="4"/>
+      <text x="736" y="184" fill="#0B0D12">CSS</text>
+    </g>
 
-    <text x="88" y="250" fill="#6B7280" font-size="12" font-weight="800" letter-spacing="2">APP + WEB</text>
-    <rect x="88" y="270" width="120" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
-    <text x="124" y="293" fill="#F4F5F7" font-size="13" font-weight="750">React</text>
-    <rect x="220" y="270" width="126" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
-    <text x="254" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Node.js</text>
-    <rect x="358" y="270" width="142" height="36" rx="8" fill="#191B26" stroke="#8B5CF6"/>
-    <text x="393" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Electron</text>
-    <rect x="512" y="270" width="112" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
-    <text x="545" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Vite</text>
-    <rect x="636" y="270" width="132" height="36" rx="8" fill="#191B26" stroke="#F87171"/>
-    <text x="674" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Bun</text>
-    <rect x="780" y="270" width="176" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
-    <text x="815" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Browser Shells</text>
+    <text x="80" y="248" fill="#8A92A3" font-size="12" font-weight="950" letter-spacing="2">APP + WEB</text>
+    <g filter="url(#keyShadow)" font-size="14" font-weight="950">
+      <rect x="80" y="266" width="118" height="42" rx="8" fill="url(#key)" stroke="#050507" stroke-width="4"/>
+      <text x="118" y="292" fill="#0B0D12">REACT</text>
+      <rect x="218" y="266" width="128" height="42" rx="8" fill="url(#darkKey)" stroke="#050507" stroke-width="4"/>
+      <text x="252" y="292" fill="#F4F5F7">NODE.JS</text>
+      <rect x="366" y="266" width="150" height="42" rx="8" fill="#8B5CF6" stroke="#050507" stroke-width="4"/>
+      <text x="406" y="292" fill="#F4F5F7">ELECTRON</text>
+      <rect x="536" y="266" width="106" height="42" rx="8" fill="url(#key)" stroke="#050507" stroke-width="4"/>
+      <text x="572" y="292" fill="#0B0D12">VITE</text>
+      <rect x="662" y="266" width="98" height="42" rx="8" fill="#F87171" stroke="#050507" stroke-width="4"/>
+      <text x="696" y="292" fill="#0B0D12">BUN</text>
+      <rect x="780" y="266" width="190" height="42" rx="8" fill="url(#darkKey)" stroke="#050507" stroke-width="4"/>
+      <text x="820" y="292" fill="#F4F5F7">BROWSER SHELLS</text>
+    </g>
 
-    <rect x="824" y="136" width="268" height="88" rx="12" fill="#10131A" stroke="#2C3140"/>
-    <text x="850" y="168" fill="#F4F5F7" font-size="16" font-weight="800">Workflow</text>
-    <text x="850" y="194" fill="#9CA3AF" font-size="13" font-weight="600">GitHub, Vercel, Cloudflare</text>
-    <path d="M850 210H1026" stroke="#374151" stroke-width="6" stroke-linecap="round"/>
-    <path d="M850 210H936" stroke="#8B5CF6" stroke-width="6" stroke-linecap="round"/>
+    <rect x="844" y="136" width="232" height="92" rx="8" fill="#10131A" stroke="#050507" stroke-width="4"/>
+    <path d="M856 148H1064" stroke="#FFFFFF" stroke-width="2" opacity="0.12"/>
+    <text x="870" y="170" fill="#F4F5F7" font-size="18" font-weight="950">Workflow</text>
+    <text x="870" y="196" fill="#AAB1BD" font-size="13" font-weight="800">GitHub / Vercel / Cloudflare</text>
+    <rect x="870" y="208" width="148" height="8" rx="4" fill="#343B49"/>
+    <rect x="870" y="208" width="78" height="8" rx="4" fill="#8B5CF6"/>
   </g>
 </svg>
