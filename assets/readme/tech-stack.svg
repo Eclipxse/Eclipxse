@@ -1,107 +1,77 @@
-<svg width="1180" height="430" viewBox="0 0 1180 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Tech Stack</title>
-  <desc id="desc">A crimson purple neo-brutalist tech stack board for Eclipxse.</desc>
-  <rect width="1180" height="430" fill="#05030A"/>
-  <rect x="18" y="18" width="1144" height="394" fill="#1A0B2E" stroke="#0A0A0A" stroke-width="6"/>
-  <rect x="42" y="42" width="1096" height="346" fill="#F8FAFC" stroke="#111111" stroke-width="5"/>
-  <path d="M42 42H1138V102H42V42Z" fill="#4C1D95" stroke="#111111" stroke-width="5"/>
-  <rect x="70" y="60" width="34" height="26" fill="#7DD3FC" stroke="#111111" stroke-width="4"/>
-  <path d="M66 86H108L116 96H58L66 86Z" fill="#111111"/>
-  <text x="128" y="82" fill="#F5F3FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="900">Tech Stack</text>
-  <text x="342" y="82" fill="#DDD6FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">curated, not the whole internet</text>
-  <path d="M1050 60l9 20 21 8-21 8-9 20-9-20-21-8 21-8 9-20z" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
+<svg width="1180" height="500" viewBox="0 0 1180 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Skill Constellation</title>
+  <desc id="desc">A dark purple and red constellation-style tech stack board for Eclipxse.</desc>
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#2B0D4C"/>
+      <stop offset="0.55" stop-color="#0B0412"/>
+      <stop offset="1" stop-color="#05020A"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#A855F7" opacity="0.35"/>
+    </pattern>
+  </defs>
 
-  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="0.5">
-    <g transform="translate(70 132)">
-      <rect width="128" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
-      <text x="22" y="27" fill="#E5E7EB">PYTHON</text>
-    </g>
-    <g transform="translate(216 132)">
-      <rect width="170" height="40" fill="#DC2626" stroke="#111111" stroke-width="4"/>
-      <text x="24" y="27" fill="#FFFFFF">TYPESCRIPT</text>
-    </g>
-    <g transform="translate(404 132)">
-      <rect width="132" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
-      <text x="22" y="27" fill="#E5E7EB">REACT</text>
-    </g>
-    <g transform="translate(554 132)">
-      <rect width="138" height="40" fill="#7C3AED" stroke="#111111" stroke-width="4"/>
-      <text x="21" y="27" fill="#F5F3FF">NODE.JS</text>
-    </g>
-    <g transform="translate(710 132)">
-      <rect width="142" height="40" fill="#7DD3FC" stroke="#111111" stroke-width="4"/>
-      <text x="18" y="27" fill="#111111">ELECTRON</text>
-    </g>
-    <g transform="translate(870 132)">
-      <rect width="120" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
-      <text x="20" y="27" fill="#EF4444">KOTLIN</text>
-    </g>
+  <rect width="1180" height="500" fill="url(#halo)"/>
+  <rect width="1180" height="500" fill="url(#dots)"/>
+  <rect x="50" y="42" width="1080" height="416" fill="#090413" stroke="#6D28D9" stroke-width="2"/>
+  <path d="M50 104H1130M100 458V424M1080 42V76" stroke="#EF4444" stroke-width="2"/>
 
-    <g transform="translate(70 194)">
-      <rect width="120" height="40" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
-      <text x="23" y="27" fill="#111111">HTML</text>
-    </g>
-    <g transform="translate(208 194)">
-      <rect width="108" height="40" fill="#8B5CF6" stroke="#111111" stroke-width="4"/>
-      <text x="27" y="27" fill="#F5F3FF">CSS</text>
-    </g>
-    <g transform="translate(334 194)">
-      <rect width="110" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
-      <text x="27" y="27" fill="#E5E7EB">GIT</text>
-    </g>
-    <g transform="translate(462 194)">
-      <rect width="142" height="40" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
-      <text x="21" y="27" fill="#111111">GITHUB</text>
-    </g>
-    <g transform="translate(622 194)">
-      <rect width="132" height="40" fill="#DC2626" stroke="#111111" stroke-width="4"/>
-      <text x="21" y="27" fill="#FFFFFF">VERCEL</text>
-    </g>
-    <g transform="translate(772 194)">
-      <rect width="178" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
-      <text x="18" y="27" fill="#E5E7EB">CLOUDFLARE</text>
-    </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="90" y="84" fill="#F5F3FF" font-size="34" font-weight="950">Skill Constellation</text>
+    <text x="428" y="84" fill="#C4B5FD" font-size="15" font-weight="800" letter-spacing="3">TOOLS I ACTUALLY TOUCH</text>
 
-    <g transform="translate(70 256)">
-      <rect width="150" height="40" fill="#7C3AED" stroke="#111111" stroke-width="4"/>
-      <text x="21" y="27" fill="#F5F3FF">FIREBASE</text>
-    </g>
-    <g transform="translate(238 256)">
-      <rect width="152" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
-      <text x="19" y="27" fill="#E5E7EB">SUPABASE</text>
-    </g>
-    <g transform="translate(408 256)">
-      <rect width="120" height="40" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
-      <text x="22" y="27" fill="#111111">MYSQL</text>
-    </g>
-    <g transform="translate(546 256)">
-      <rect width="116" height="40" fill="#7DD3FC" stroke="#111111" stroke-width="4"/>
-      <text x="19" y="27" fill="#111111">SQLITE</text>
-    </g>
-    <g transform="translate(680 256)">
-      <rect width="102" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
-      <text x="28" y="27" fill="#E5E7EB">BUN</text>
-    </g>
-    <g transform="translate(800 256)">
-      <rect width="112" height="40" fill="#7C3AED" stroke="#111111" stroke-width="4"/>
-      <text x="22" y="27" fill="#F5F3FF">VITE</text>
+    <path d="M205 192L360 150L520 206L664 158L838 224L984 166" stroke="#3B1A65" stroke-width="2"/>
+    <path d="M238 318L402 274L558 342L730 292L894 340" stroke="#3B1A65" stroke-width="2"/>
+    <path d="M520 206L558 342M664 158L730 292M360 150L402 274" stroke="#3B1A65" stroke-width="2"/>
+
+    <g filter="url(#glow)">
+      <circle cx="205" cy="192" r="42" fill="#140823" stroke="#A855F7" stroke-width="3"/>
+      <text x="164" y="198" fill="#F5F3FF" font-size="15" font-weight="900">PYTHON</text>
+
+      <circle cx="360" cy="150" r="54" fill="#16091F" stroke="#EF4444" stroke-width="3"/>
+      <text x="303" y="157" fill="#F5F3FF" font-size="16" font-weight="900">TYPESCRIPT</text>
+
+      <circle cx="520" cy="206" r="44" fill="#140823" stroke="#38BDF8" stroke-width="3"/>
+      <text x="492" y="212" fill="#F5F3FF" font-size="16" font-weight="900">REACT</text>
+
+      <circle cx="664" cy="158" r="44" fill="#140823" stroke="#A855F7" stroke-width="3"/>
+      <text x="628" y="164" fill="#F5F3FF" font-size="16" font-weight="900">NODE</text>
+
+      <circle cx="838" cy="224" r="56" fill="#16091F" stroke="#EF4444" stroke-width="3"/>
+      <text x="786" y="230" fill="#F5F3FF" font-size="16" font-weight="900">ELECTRON</text>
+
+      <circle cx="984" cy="166" r="39" fill="#140823" stroke="#38BDF8" stroke-width="3"/>
+      <text x="949" y="172" fill="#F5F3FF" font-size="15" font-weight="900">KOTLIN</text>
+
+      <circle cx="238" cy="318" r="42" fill="#140823" stroke="#EF4444" stroke-width="3"/>
+      <text x="210" y="324" fill="#F5F3FF" font-size="15" font-weight="900">HTML</text>
+
+      <circle cx="402" cy="274" r="38" fill="#140823" stroke="#A855F7" stroke-width="3"/>
+      <text x="380" y="280" fill="#F5F3FF" font-size="15" font-weight="900">CSS</text>
+
+      <circle cx="558" cy="342" r="44" fill="#140823" stroke="#38BDF8" stroke-width="3"/>
+      <text x="525" y="348" fill="#F5F3FF" font-size="15" font-weight="900">GITHUB</text>
+
+      <circle cx="730" cy="292" r="44" fill="#140823" stroke="#EF4444" stroke-width="3"/>
+      <text x="694" y="298" fill="#F5F3FF" font-size="15" font-weight="900">VERCEL</text>
+
+      <circle cx="894" cy="340" r="52" fill="#16091F" stroke="#A855F7" stroke-width="3"/>
+      <text x="852" y="335" fill="#F5F3FF" font-size="14" font-weight="900">BROWSER</text>
+      <text x="866" y="354" fill="#F5F3FF" font-size="14" font-weight="900">SHELLS</text>
     </g>
 
-    <g transform="translate(70 318)">
-      <rect width="176" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
-      <text x="20" y="27" fill="#E5E7EB">DISCORD BOTS</text>
-    </g>
-    <g transform="translate(264 318)">
-      <rect width="198" height="40" fill="#DC2626" stroke="#111111" stroke-width="4"/>
-      <text x="20" y="27" fill="#FFFFFF">BROWSER SHELLS</text>
-    </g>
-    <g transform="translate(480 318)">
-      <rect width="160" height="40" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
-      <text x="20" y="27" fill="#111111">UI POLISH</text>
-    </g>
-    <g transform="translate(658 318)">
-      <rect width="188" height="40" fill="#7C3AED" stroke="#111111" stroke-width="4"/>
-      <text x="20" y="27" fill="#F5F3FF">WEB SYSTEMS</text>
-    </g>
+    <rect x="90" y="402" width="1000" height="28" fill="#0E0718" stroke="#26113E"/>
+    <rect x="90" y="402" width="330" height="28" fill="#EF4444"/>
+    <rect x="420" y="402" width="310" height="28" fill="#A855F7"/>
+    <rect x="730" y="402" width="360" height="28" fill="#38BDF8"/>
+    <text x="100" y="448" fill="#C4B5FD" font-size="13" font-weight="800">DISCORD BOTS / UI POLISH / WEB SYSTEMS / FIREBASE / SUPABASE / MYSQL / SQLITE / BUN / VITE</text>
   </g>
 </svg>

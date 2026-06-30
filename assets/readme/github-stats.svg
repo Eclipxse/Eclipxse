@@ -1,95 +1,80 @@
 <svg width="1180" height="560" viewBox="0 0 1180 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">GitHub Stats</title>
-  <desc id="desc">A crimson purple neo-brutalist GitHub stats dashboard for Eclipxse.</desc>
-  <rect width="1180" height="560" fill="#05030A"/>
-  <rect x="18" y="18" width="1144" height="524" fill="#1A0B2E" stroke="#0A0A0A" stroke-width="6"/>
-  <rect x="42" y="42" width="1096" height="476" fill="#F8FAFC" stroke="#111111" stroke-width="5"/>
-  <path d="M42 42H1138V112H42V42Z" fill="#4C1D95" stroke="#111111" stroke-width="5"/>
-  <rect x="70" y="62" width="44" height="36" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
-  <rect x="82" y="82" width="7" height="10" fill="#DC2626"/>
-  <rect x="94" y="74" width="7" height="18" fill="#7DD3FC"/>
-  <rect x="106" y="66" width="7" height="26" fill="#A855F7"/>
-  <text x="142" y="86" fill="#F5F3FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="38" font-weight="900">GitHub Stats</text>
-  <text x="402" y="86" fill="#DDD6FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">crimson violet scoreboard / updated Jun 29 2026</text>
-  <rect x="910" y="60" width="142" height="38" fill="#111111" stroke="#111111" stroke-width="4"/>
-  <text x="938" y="85" fill="#E5E7EB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="900">REAL DATA</text>
-  <path d="M1086 55l11 24 25 10-25 10-11 24-11-24-25-10 25-10 11-24z" fill="#F8FAFC" stroke="#111111" stroke-width="4"/>
+  <title id="title">Signal Analytics</title>
+  <desc id="desc">A dark purple and red command-center GitHub stats dashboard for Eclipxse.</desc>
+  <defs>
+    <linearGradient id="screen" x1="0" y1="0" x2="1180" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05020A"/>
+      <stop offset="0.48" stop-color="#170724"/>
+      <stop offset="1" stop-color="#05020A"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#EF4444"/>
+      <stop offset="0.52" stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="scan" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 18H18" stroke="#25113B" stroke-width="1" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <rect width="1180" height="560" fill="url(#screen)"/>
+  <rect width="1180" height="560" fill="url(#scan)" opacity="0.7"/>
+  <path d="M48 42H1132V518H48V42Z" fill="#080410" stroke="#6D28D9" stroke-width="2"/>
+  <path d="M72 68H1108V492H72V68Z" fill="#0C0615" stroke="#281341" stroke-width="1.5"/>
 
   <g font-family="Inter, Segoe UI, Arial, sans-serif">
-    <rect x="70" y="148" width="330" height="188" fill="#111111" stroke="#111111" stroke-width="5"/>
-    <text x="94" y="184" fill="#E5E7EB" font-size="20" font-weight="900">MARIO.CPP ACTIVITY</text>
-    <text x="94" y="265" fill="#A855F7" font-size="82" font-weight="950">44</text>
-    <text x="226" y="235" fill="#FFFFFF" font-size="24" font-weight="900">contributions</text>
-    <text x="226" y="265" fill="#E5E7EB" font-size="17" font-weight="800">last 365 days</text>
-    <rect x="94" y="290" width="238" height="22" fill="#E5E7EB" stroke="#111111" stroke-width="3"/>
-    <rect x="94" y="290" width="126" height="22" fill="#DC2626" stroke="#111111" stroke-width="3"/>
-    <text x="94" y="329" fill="#E5E7EB" font-size="13" font-weight="800">12 active days / best day 12 commits</text>
+    <text x="104" y="116" fill="#F5F3FF" font-size="34" font-weight="950">Signal Analytics</text>
+    <text x="104" y="143" fill="#A78BFA" font-size="14" font-weight="800" letter-spacing="3">GITHUB PROFILE TELEMETRY / UPDATED JUN 30 2026</text>
+    <rect x="892" y="88" width="154" height="40" fill="#12071E" stroke="#EF4444"/>
+    <text x="918" y="114" fill="#F5F3FF" font-size="14" font-weight="900">REAL DATA</text>
 
-    <rect x="430" y="148" width="200" height="86" fill="#7C3AED" stroke="#111111" stroke-width="5"/>
-    <text x="452" y="182" fill="#F5F3FF" font-size="38" font-weight="950">10</text>
-    <text x="452" y="208" fill="#DDD6FE" font-size="16" font-weight="900">public repos</text>
-    <path d="M584 166l9 19 20 8-20 8-9 19-9-19-20-8 20-8 9-19z" fill="#F8FAFC" stroke="#111111" stroke-width="4"/>
-
-    <rect x="654" y="148" width="200" height="86" fill="#F8FAFC" stroke="#111111" stroke-width="5"/>
-    <text x="676" y="182" fill="#111111" font-size="38" font-weight="950">2</text>
-    <text x="676" y="208" fill="#1F2937" font-size="16" font-weight="900">day streak</text>
-    <circle cx="804" cy="192" r="28" fill="#E5E7EB" stroke="#DC2626" stroke-width="7"/>
-    <path d="M804 151c8 7 3 16 0 20-3-5-8-10 0-20z" fill="#DC2626"/>
-
-    <rect x="878" y="148" width="230" height="86" fill="#111111" stroke="#111111" stroke-width="5"/>
-    <text x="900" y="182" fill="#A855F7" font-size="38" font-weight="950">0</text>
-    <text x="900" y="208" fill="#E5E7EB" font-size="16" font-weight="900">stars</text>
-    <rect x="982" y="158" width="64" height="72" fill="#111111"/>
-    <path d="M1013 166l9 20 22 3-16 15 4 22-19-11-19 11 4-22-16-15 22-3 9-20z" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="2"/>
-
-    <rect x="430" y="254" width="678" height="96" fill="#F8FAFC" stroke="#111111" stroke-width="5"/>
-    <text x="452" y="286" fill="#111111" font-size="19" font-weight="950">LANGUAGE MIX</text>
-    <rect x="452" y="304" width="460" height="16" fill="#111111" stroke="#111111" stroke-width="3"/>
-    <rect x="452" y="304" width="172" height="16" fill="#EF4444"/>
-    <rect x="624" y="304" width="172" height="16" fill="#A855F7"/>
-    <rect x="796" y="304" width="116" height="16" fill="#7DD3FC"/>
-    <circle cx="946" cy="281" r="7" fill="#EF4444"/><text x="962" y="287" fill="#1F2937" font-size="14" font-weight="800">JavaScript 3</text>
-    <circle cx="946" cy="307" r="7" fill="#A855F7"/><text x="962" y="313" fill="#1F2937" font-size="14" font-weight="800">TypeScript 3</text>
-    <circle cx="946" cy="333" r="7" fill="#38BDF8"/><text x="962" y="339" fill="#1F2937" font-size="14" font-weight="800">Vue 2</text>
-
-    <rect x="70" y="362" width="1038" height="116" fill="#E5E7EB" stroke="#111111" stroke-width="5"/>
-    <text x="96" y="397" fill="#111111" font-size="22" font-weight="950">DAILY PULSE</text>
-    <text x="252" y="397" fill="#1F2937" font-size="15" font-weight="800">recent pushes, commits, and experiments</text>
-    <g stroke="#111111" stroke-width="3">
-      <rect x="96" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="126" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="156" y="420" width="22" height="22" fill="#7C3AED"/>
-      <rect x="186" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="216" y="420" width="22" height="22" fill="#DC2626"/>
-      <rect x="246" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="276" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="306" y="420" width="22" height="22" fill="#7C3AED"/>
-      <rect x="336" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="366" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="396" y="420" width="22" height="22" fill="#7DD3FC"/>
-      <rect x="426" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="456" y="420" width="22" height="22" fill="#7C3AED"/>
-      <rect x="486" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="516" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="546" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="576" y="420" width="22" height="22" fill="#DC2626"/>
-      <rect x="606" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="636" y="420" width="22" height="22" fill="#7C3AED"/>
-      <rect x="666" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="696" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="726" y="420" width="22" height="22" fill="#EF4444"/>
-      <rect x="756" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="786" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="816" y="420" width="22" height="22" fill="#7C3AED"/>
-      <rect x="846" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="876" y="420" width="22" height="22" fill="#DC2626"/>
-      <rect x="906" y="420" width="22" height="22" fill="#F8FAFC"/>
-      <rect x="936" y="420" width="22" height="22" fill="#EF4444"/>
-      <rect x="966" y="420" width="22" height="22" fill="#DC2626"/>
-      <rect x="996" y="420" width="22" height="22" fill="#DC2626"/>
-      <rect x="1026" y="420" width="22" height="22" fill="#DC2626"/>
+    <g filter="url(#glow)">
+      <circle cx="240" cy="300" r="112" fill="#090413" stroke="#A855F7" stroke-width="3"/>
+      <circle cx="240" cy="300" r="78" fill="none" stroke="#EF4444" stroke-width="14" stroke-dasharray="220 490" transform="rotate(-90 240 300)"/>
+      <circle cx="240" cy="300" r="52" fill="none" stroke="#38BDF8" stroke-width="4" opacity="0.8"/>
     </g>
-    <text x="96" y="463" fill="#1F2937" font-size="14" font-weight="900">active days</text>
-    <text x="972" y="463" fill="#111111" font-size="14" font-weight="900">best: 12 on Jun 26</text>
+    <text x="188" y="292" fill="#F5F3FF" font-size="74" font-weight="950">49</text>
+    <text x="166" y="330" fill="#C4B5FD" font-size="16" font-weight="800">CONTRIBUTIONS</text>
+    <text x="176" y="356" fill="#7DD3FC" font-size="12" font-weight="900">13 ACTIVE DAYS</text>
+
+    <rect x="414" y="196" width="170" height="104" fill="#12071E" stroke="#EF4444"/>
+    <text x="438" y="242" fill="#F5F3FF" font-size="40" font-weight="950">12</text>
+    <text x="438" y="270" fill="#C4B5FD" font-size="13" font-weight="850">PUBLIC REPOS</text>
+
+    <rect x="612" y="196" width="170" height="104" fill="#12071E" stroke="#A855F7"/>
+    <text x="636" y="242" fill="#F5F3FF" font-size="40" font-weight="950">3</text>
+    <text x="636" y="270" fill="#C4B5FD" font-size="13" font-weight="850">DAY STREAK</text>
+
+    <rect x="810" y="196" width="170" height="104" fill="#12071E" stroke="#38BDF8"/>
+    <text x="834" y="242" fill="#F5F3FF" font-size="40" font-weight="950">0</text>
+    <text x="834" y="270" fill="#C4B5FD" font-size="13" font-weight="850">STARS</text>
+
+    <rect x="414" y="330" width="566" height="96" fill="#0A0511" stroke="#29143F"/>
+    <text x="438" y="363" fill="#F5F3FF" font-size="16" font-weight="900">LANGUAGE MIX</text>
+    <rect x="438" y="384" width="404" height="14" fill="#111827"/>
+    <rect x="438" y="384" width="162" height="14" fill="#EF4444"/>
+    <rect x="600" y="384" width="122" height="14" fill="#A855F7"/>
+    <rect x="722" y="384" width="82" height="14" fill="#38BDF8"/>
+    <rect x="804" y="384" width="38" height="14" fill="#7C3AED"/>
+    <circle cx="868" cy="356" r="6" fill="#EF4444"/><text x="884" y="361" fill="#C4B5FD" font-size="13" font-weight="800">JavaScript 4</text>
+    <circle cx="868" cy="383" r="6" fill="#A855F7"/><text x="884" y="388" fill="#C4B5FD" font-size="13" font-weight="800">TypeScript 3</text>
+    <circle cx="868" cy="410" r="6" fill="#38BDF8"/><text x="884" y="415" fill="#C4B5FD" font-size="13" font-weight="800">Vue 2</text>
+
+    <text x="104" y="470" fill="#F5F3FF" font-size="15" font-weight="900">BEST DAY</text>
+    <path d="M198 465H414" stroke="url(#signal)" stroke-width="6"/>
+    <text x="434" y="470" fill="#C4B5FD" font-size="14" font-weight="800">12 contributions on Jun 26</text>
+    <text x="760" y="470" fill="#F5F3FF" font-size="15" font-weight="900">LONGEST STREAK</text>
+    <path d="M912 465H980" stroke="#A855F7" stroke-width="6"/>
+    <text x="996" y="470" fill="#C4B5FD" font-size="14" font-weight="800">3 days</text>
   </g>
+
+  <path d="M72 68L118 42M1108 68L1132 42M72 492L48 518M1108 492L1132 518" stroke="#EF4444" stroke-width="2"/>
+  <path d="M1044 88l12 24 27 4-20 19 5 27-24-13-24 13 5-27-20-19 27-4 12-24z" fill="#F5F3FF" stroke="#A855F7" stroke-width="3"/>
 </svg>
