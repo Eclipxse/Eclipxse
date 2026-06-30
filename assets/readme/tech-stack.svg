@@ -1,77 +1,43 @@
-<svg width="1180" height="500" viewBox="0 0 1180 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Skill Constellation</title>
-  <desc id="desc">A dark purple and red constellation-style tech stack board for Eclipxse.</desc>
-  <defs>
-    <radialGradient id="halo" cx="50%" cy="50%" r="60%">
-      <stop offset="0" stop-color="#2B0D4C"/>
-      <stop offset="0.55" stop-color="#0B0412"/>
-      <stop offset="1" stop-color="#05020A"/>
-    </radialGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#A855F7" opacity="0.35"/>
-    </pattern>
-  </defs>
-
-  <rect width="1180" height="500" fill="url(#halo)"/>
-  <rect width="1180" height="500" fill="url(#dots)"/>
-  <rect x="50" y="42" width="1080" height="416" fill="#090413" stroke="#6D28D9" stroke-width="2"/>
-  <path d="M50 104H1130M100 458V424M1080 42V76" stroke="#EF4444" stroke-width="2"/>
-
+<svg width="1180" height="380" viewBox="0 0 1180 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Stack</title>
+  <desc id="desc">A sleek graphite tech stack board with muted purple and soft red accents.</desc>
+  <rect width="1180" height="380" fill="#090B10"/>
+  <rect x="52" y="42" width="1076" height="296" rx="18" fill="#151821" stroke="#2A2F3A"/>
   <g font-family="Inter, Segoe UI, Arial, sans-serif">
-    <text x="90" y="84" fill="#F5F3FF" font-size="34" font-weight="950">Skill Constellation</text>
-    <text x="428" y="84" fill="#C4B5FD" font-size="15" font-weight="800" letter-spacing="3">TOOLS I ACTUALLY TOUCH</text>
+    <text x="88" y="92" fill="#F4F5F7" font-size="26" font-weight="850">Stack</text>
+    <text x="178" y="92" fill="#8D95A6" font-size="13" font-weight="650">small set, used on real builds</text>
+    <path d="M88 118H1092" stroke="#252A35"/>
 
-    <path d="M205 192L360 150L520 206L664 158L838 224L984 166" stroke="#3B1A65" stroke-width="2"/>
-    <path d="M238 318L402 274L558 342L730 292L894 340" stroke="#3B1A65" stroke-width="2"/>
-    <path d="M520 206L558 342M664 158L730 292M360 150L402 274" stroke="#3B1A65" stroke-width="2"/>
+    <text x="88" y="154" fill="#6B7280" font-size="12" font-weight="800" letter-spacing="2">LANGUAGES</text>
+    <rect x="88" y="174" width="126" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
+    <text x="116" y="197" fill="#F4F5F7" font-size="13" font-weight="750">Python</text>
+    <rect x="226" y="174" width="150" height="36" rx="8" fill="#191B26" stroke="#8B5CF6"/>
+    <text x="252" y="197" fill="#F4F5F7" font-size="13" font-weight="750">TypeScript</text>
+    <rect x="388" y="174" width="126" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
+    <text x="424" y="197" fill="#F4F5F7" font-size="13" font-weight="750">Kotlin</text>
+    <rect x="526" y="174" width="126" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
+    <text x="563" y="197" fill="#F4F5F7" font-size="13" font-weight="750">HTML</text>
+    <rect x="664" y="174" width="96" height="36" rx="8" fill="#191B26" stroke="#F87171"/>
+    <text x="695" y="197" fill="#F4F5F7" font-size="13" font-weight="750">CSS</text>
 
-    <g filter="url(#glow)">
-      <circle cx="205" cy="192" r="42" fill="#140823" stroke="#A855F7" stroke-width="3"/>
-      <text x="164" y="198" fill="#F5F3FF" font-size="15" font-weight="900">PYTHON</text>
+    <text x="88" y="250" fill="#6B7280" font-size="12" font-weight="800" letter-spacing="2">APP + WEB</text>
+    <rect x="88" y="270" width="120" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
+    <text x="124" y="293" fill="#F4F5F7" font-size="13" font-weight="750">React</text>
+    <rect x="220" y="270" width="126" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
+    <text x="254" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Node.js</text>
+    <rect x="358" y="270" width="142" height="36" rx="8" fill="#191B26" stroke="#8B5CF6"/>
+    <text x="393" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Electron</text>
+    <rect x="512" y="270" width="112" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
+    <text x="545" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Vite</text>
+    <rect x="636" y="270" width="132" height="36" rx="8" fill="#191B26" stroke="#F87171"/>
+    <text x="674" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Bun</text>
+    <rect x="780" y="270" width="176" height="36" rx="8" fill="#0F1117" stroke="#2C3140"/>
+    <text x="815" y="293" fill="#F4F5F7" font-size="13" font-weight="750">Browser Shells</text>
 
-      <circle cx="360" cy="150" r="54" fill="#16091F" stroke="#EF4444" stroke-width="3"/>
-      <text x="303" y="157" fill="#F5F3FF" font-size="16" font-weight="900">TYPESCRIPT</text>
-
-      <circle cx="520" cy="206" r="44" fill="#140823" stroke="#38BDF8" stroke-width="3"/>
-      <text x="492" y="212" fill="#F5F3FF" font-size="16" font-weight="900">REACT</text>
-
-      <circle cx="664" cy="158" r="44" fill="#140823" stroke="#A855F7" stroke-width="3"/>
-      <text x="628" y="164" fill="#F5F3FF" font-size="16" font-weight="900">NODE</text>
-
-      <circle cx="838" cy="224" r="56" fill="#16091F" stroke="#EF4444" stroke-width="3"/>
-      <text x="786" y="230" fill="#F5F3FF" font-size="16" font-weight="900">ELECTRON</text>
-
-      <circle cx="984" cy="166" r="39" fill="#140823" stroke="#38BDF8" stroke-width="3"/>
-      <text x="949" y="172" fill="#F5F3FF" font-size="15" font-weight="900">KOTLIN</text>
-
-      <circle cx="238" cy="318" r="42" fill="#140823" stroke="#EF4444" stroke-width="3"/>
-      <text x="210" y="324" fill="#F5F3FF" font-size="15" font-weight="900">HTML</text>
-
-      <circle cx="402" cy="274" r="38" fill="#140823" stroke="#A855F7" stroke-width="3"/>
-      <text x="380" y="280" fill="#F5F3FF" font-size="15" font-weight="900">CSS</text>
-
-      <circle cx="558" cy="342" r="44" fill="#140823" stroke="#38BDF8" stroke-width="3"/>
-      <text x="525" y="348" fill="#F5F3FF" font-size="15" font-weight="900">GITHUB</text>
-
-      <circle cx="730" cy="292" r="44" fill="#140823" stroke="#EF4444" stroke-width="3"/>
-      <text x="694" y="298" fill="#F5F3FF" font-size="15" font-weight="900">VERCEL</text>
-
-      <circle cx="894" cy="340" r="52" fill="#16091F" stroke="#A855F7" stroke-width="3"/>
-      <text x="852" y="335" fill="#F5F3FF" font-size="14" font-weight="900">BROWSER</text>
-      <text x="866" y="354" fill="#F5F3FF" font-size="14" font-weight="900">SHELLS</text>
-    </g>
-
-    <rect x="90" y="402" width="1000" height="28" fill="#0E0718" stroke="#26113E"/>
-    <rect x="90" y="402" width="330" height="28" fill="#EF4444"/>
-    <rect x="420" y="402" width="310" height="28" fill="#A855F7"/>
-    <rect x="730" y="402" width="360" height="28" fill="#38BDF8"/>
-    <text x="100" y="448" fill="#C4B5FD" font-size="13" font-weight="800">DISCORD BOTS / UI POLISH / WEB SYSTEMS / FIREBASE / SUPABASE / MYSQL / SQLITE / BUN / VITE</text>
+    <rect x="824" y="136" width="268" height="88" rx="12" fill="#10131A" stroke="#2C3140"/>
+    <text x="850" y="168" fill="#F4F5F7" font-size="16" font-weight="800">Workflow</text>
+    <text x="850" y="194" fill="#9CA3AF" font-size="13" font-weight="600">GitHub, Vercel, Cloudflare</text>
+    <path d="M850 210H1026" stroke="#374151" stroke-width="6" stroke-linecap="round"/>
+    <path d="M850 210H936" stroke="#8B5CF6" stroke-width="6" stroke-linecap="round"/>
   </g>
 </svg>

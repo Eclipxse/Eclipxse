@@ -1,71 +1,57 @@
-<svg width="1180" height="430" viewBox="0 0 1180 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Active Signal</title>
-  <desc id="desc">A dark purple and red command-center board showing Eclipxse's active projects.</desc>
+<svg width="1180" height="320" viewBox="0 0 1180 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Now Building</title>
+  <desc id="desc">A sleek graphite project board with subtle purple and soft red accents.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1180" y2="430" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#05020A"/>
-      <stop offset="0.5" stop-color="#12051F"/>
-      <stop offset="1" stop-color="#05020A"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1180" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080A0F"/>
+      <stop offset="1" stop-color="#11131A"/>
     </linearGradient>
-    <linearGradient id="panel" x1="70" y1="80" x2="1110" y2="360" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#160827"/>
-      <stop offset="1" stop-color="#08040F"/>
+    <linearGradient id="line" x1="96" y1="0" x2="1084" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="0.55" stop-color="#6B7280"/>
+      <stop offset="1" stop-color="#F87171"/>
     </linearGradient>
-    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#EF4444"/>
-      <stop offset="0.55" stop-color="#A855F7"/>
-      <stop offset="1" stop-color="#38BDF8"/>
-    </linearGradient>
-    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0.6 0 0 0 0.3 0 0.2 0 0 0.1 0 0 0.8 0 0.9 0 0 0 0.55 0"/>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" stroke="#2E1450" stroke-width="1" opacity="0.5"/>
-    </pattern>
   </defs>
 
-  <rect width="1180" height="430" fill="url(#bg)"/>
-  <rect width="1180" height="430" fill="url(#grid)" opacity="0.65"/>
-  <path d="M70 346H1110M92 90H1088M92 90L70 112V346L92 368H1088L1110 346V112L1088 90H92Z" stroke="#6D28D9" stroke-width="2"/>
-  <path d="M112 112H1068V324H112V112Z" fill="url(#panel)" stroke="#31204C" stroke-width="1.5"/>
+  <rect width="1180" height="320" fill="url(#bg)"/>
+  <rect x="52" y="42" width="1076" height="236" rx="18" fill="#151821" stroke="#2A2F3A"/>
+  <rect x="76" y="66" width="1028" height="188" rx="14" fill="#0F1117" stroke="#252A35"/>
+  <path d="M96 96H1084" stroke="url(#line)" stroke-width="2"/>
 
   <g font-family="Inter, Segoe UI, Arial, sans-serif">
-    <text x="132" y="156" fill="#F5F3FF" font-size="18" font-weight="800" letter-spacing="4">ECLIPXSE // ACTIVE SIGNAL</text>
-    <text x="132" y="205" fill="#F5F3FF" font-size="56" font-weight="950">Now Cooking</text>
-    <text x="134" y="235" fill="#A78BFA" font-size="17" font-weight="700">browser polish, bot systems, portfolio identity, micro tools</text>
+    <text x="96" y="88" fill="#F4F5F7" font-size="24" font-weight="850">Now building</text>
+    <text x="270" y="88" fill="#8D95A6" font-size="13" font-weight="650">clean projects, quiet polish, no noise</text>
 
-    <g filter="url(#softGlow)">
-      <circle cx="290" cy="286" r="34" fill="#090413" stroke="#A855F7" stroke-width="3"/>
-      <path d="M290 254v64M258 286h64" stroke="#EF4444" stroke-width="5"/>
-      <circle cx="290" cy="286" r="13" fill="#38BDF8"/>
-    </g>
-    <text x="344" y="280" fill="#F5F3FF" font-size="18" font-weight="900">AURA BROWSER</text>
-    <text x="344" y="304" fill="#C4B5FD" font-size="13" font-weight="700">dark UI, SVG controls, smooth tabs</text>
+    <rect x="96" y="124" width="258" height="92" rx="12" fill="#171A23" stroke="#2C3140"/>
+    <rect x="96" y="124" width="4" height="92" rx="2" fill="#8B5CF6"/>
+    <text x="122" y="154" fill="#F4F5F7" font-size="18" font-weight="800">Aura Browser</text>
+    <text x="122" y="181" fill="#9CA3AF" font-size="13" font-weight="600">dark UI, tabs, SVG controls</text>
+    <rect x="122" y="196" width="96" height="6" rx="3" fill="#8B5CF6"/>
+    <rect x="224" y="196" width="42" height="6" rx="3" fill="#2D3340"/>
 
-    <rect x="690" y="136" width="300" height="42" rx="0" fill="#0A0612" stroke="#EF4444" stroke-width="1.5"/>
-    <text x="716" y="164" fill="#F5F3FF" font-size="14" font-weight="850">01 / Discord Bot Lab</text>
-    <path d="M660 157H690" stroke="#EF4444" stroke-width="3"/>
-    <circle cx="656" cy="157" r="5" fill="#EF4444"/>
+    <rect x="380" y="124" width="222" height="92" rx="12" fill="#171A23" stroke="#2C3140"/>
+    <rect x="380" y="124" width="4" height="92" rx="2" fill="#F87171"/>
+    <text x="406" y="154" fill="#F4F5F7" font-size="18" font-weight="800">Discord Bots</text>
+    <text x="406" y="181" fill="#9CA3AF" font-size="13" font-weight="600">music, commands, utility</text>
+    <circle cx="409" cy="201" r="4" fill="#F87171"/>
+    <circle cx="425" cy="201" r="4" fill="#4B5563"/>
+    <circle cx="441" cy="201" r="4" fill="#4B5563"/>
 
-    <rect x="740" y="205" width="300" height="42" rx="0" fill="#0A0612" stroke="#A855F7" stroke-width="1.5"/>
-    <text x="766" y="233" fill="#F5F3FF" font-size="14" font-weight="850">02 / Portfolio Rebuild</text>
-    <path d="M710 226H740" stroke="#A855F7" stroke-width="3"/>
-    <circle cx="706" cy="226" r="5" fill="#A855F7"/>
+    <rect x="628" y="124" width="222" height="92" rx="12" fill="#171A23" stroke="#2C3140"/>
+    <rect x="628" y="124" width="4" height="92" rx="2" fill="#6B7280"/>
+    <text x="654" y="154" fill="#F4F5F7" font-size="18" font-weight="800">Portfolio</text>
+    <text x="654" y="181" fill="#9CA3AF" font-size="13" font-weight="600">identity, layout, details</text>
+    <path d="M654 201H766" stroke="#374151" stroke-width="6" stroke-linecap="round"/>
+    <path d="M654 201H718" stroke="#A78BFA" stroke-width="6" stroke-linecap="round"/>
 
-    <rect x="690" y="274" width="300" height="42" rx="0" fill="#0A0612" stroke="#38BDF8" stroke-width="1.5"/>
-    <text x="716" y="302" fill="#F5F3FF" font-size="14" font-weight="850">03 / Micro Tools</text>
-    <path d="M660 295H690" stroke="#38BDF8" stroke-width="3"/>
-    <circle cx="656" cy="295" r="5" fill="#38BDF8"/>
+    <rect x="876" y="124" width="208" height="92" rx="12" fill="#171A23" stroke="#2C3140"/>
+    <rect x="876" y="124" width="4" height="92" rx="2" fill="#A78BFA"/>
+    <text x="902" y="154" fill="#F4F5F7" font-size="18" font-weight="800">Micro Tools</text>
+    <text x="902" y="181" fill="#9CA3AF" font-size="13" font-weight="600">small ideas made useful</text>
+    <rect x="902" y="196" width="44" height="6" rx="3" fill="#F87171"/>
+    <rect x="952" y="196" width="66" height="6" rx="3" fill="#8B5CF6"/>
 
-    <path d="M1022 126l16 32 36 5-26 25 6 36-32-17-32 17 6-36-26-25 36-5 16-32z" fill="#F5F3FF" stroke="#A855F7" stroke-width="3"/>
-    <text x="906" y="360" fill="#EF4444" font-size="12" font-weight="900" letter-spacing="3">LIVE ROADMAP</text>
+    <text x="96" y="242" fill="#6B7280" font-size="12" font-weight="700" letter-spacing="2">CURRENT MODE</text>
+    <text x="225" y="242" fill="#F4F5F7" font-size="12" font-weight="700">shipping, then polishing</text>
   </g>
-
-  <path d="M112 324H300L348 368M1068 112H914L872 90" stroke="#EF4444" stroke-width="2" opacity="0.75"/>
-  <path d="M112 112H260L316 90M1068 324H920L866 368" stroke="#38BDF8" stroke-width="2" opacity="0.6"/>
 </svg>
