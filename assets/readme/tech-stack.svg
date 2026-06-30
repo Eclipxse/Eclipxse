@@ -1,14 +1,14 @@
 <svg width="1180" height="430" viewBox="0 0 1180 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Tech Stack</title>
-  <desc id="desc">A midnight luxury neo-brutalist tech stack board for Eclipxse.</desc>
-  <rect width="1180" height="430" fill="#070A0F"/>
-  <rect x="18" y="18" width="1144" height="394" fill="#E5E7EB" stroke="#111111" stroke-width="6"/>
+  <desc id="desc">A crimson purple neo-brutalist tech stack board for Eclipxse.</desc>
+  <rect width="1180" height="430" fill="#05030A"/>
+  <rect x="18" y="18" width="1144" height="394" fill="#1A0B2E" stroke="#0A0A0A" stroke-width="6"/>
   <rect x="42" y="42" width="1096" height="346" fill="#F8FAFC" stroke="#111111" stroke-width="5"/>
-  <path d="M42 42H1138V102H42V42Z" fill="#D4AF37" stroke="#111111" stroke-width="5"/>
+  <path d="M42 42H1138V102H42V42Z" fill="#4C1D95" stroke="#111111" stroke-width="5"/>
   <rect x="70" y="60" width="34" height="26" fill="#7DD3FC" stroke="#111111" stroke-width="4"/>
   <path d="M66 86H108L116 96H58L66 86Z" fill="#111111"/>
-  <text x="128" y="82" fill="#111111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="900">Tech Stack</text>
-  <text x="342" y="82" fill="#1F2937" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">curated, not the whole internet</text>
+  <text x="128" y="82" fill="#F5F3FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="900">Tech Stack</text>
+  <text x="342" y="82" fill="#DDD6FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">curated, not the whole internet</text>
   <path d="M1050 60l9 20 21 8-21 8-9 20-9-20-21-8 21-8 9-20z" fill="#FFFFFF" stroke="#111111" stroke-width="4"/>
 
   <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="0.5">
@@ -17,7 +17,7 @@
       <text x="22" y="27" fill="#E5E7EB">PYTHON</text>
     </g>
     <g transform="translate(216 132)">
-      <rect width="170" height="40" fill="#10B981" stroke="#111111" stroke-width="4"/>
+      <rect width="170" height="40" fill="#DC2626" stroke="#111111" stroke-width="4"/>
       <text x="24" y="27" fill="#FFFFFF">TYPESCRIPT</text>
     </g>
     <g transform="translate(404 132)">
@@ -25,8 +25,8 @@
       <text x="22" y="27" fill="#E5E7EB">REACT</text>
     </g>
     <g transform="translate(554 132)">
-      <rect width="138" height="40" fill="#D4AF37" stroke="#111111" stroke-width="4"/>
-      <text x="21" y="27" fill="#111111">NODE.JS</text>
+      <rect width="138" height="40" fill="#7C3AED" stroke="#111111" stroke-width="4"/>
+      <text x="21" y="27" fill="#F5F3FF">NODE.JS</text>
     </g>
     <g transform="translate(710 132)">
       <rect width="142" height="40" fill="#7DD3FC" stroke="#111111" stroke-width="4"/>
@@ -34,7 +34,7 @@
     </g>
     <g transform="translate(870 132)">
       <rect width="120" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
-      <text x="20" y="27" fill="#FACC15">KOTLIN</text>
+      <text x="20" y="27" fill="#EF4444">KOTLIN</text>
     </g>
 
     <g transform="translate(70 194)">
@@ -43,7 +43,7 @@
     </g>
     <g transform="translate(208 194)">
       <rect width="108" height="40" fill="#8B5CF6" stroke="#111111" stroke-width="4"/>
-      <text x="27" y="27" fill="#111111">CSS</text>
+      <text x="27" y="27" fill="#F5F3FF">CSS</text>
     </g>
     <g transform="translate(334 194)">
       <rect width="110" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
@@ -54,7 +54,7 @@
       <text x="21" y="27" fill="#111111">GITHUB</text>
     </g>
     <g transform="translate(622 194)">
-      <rect width="132" height="40" fill="#10B981" stroke="#111111" stroke-width="4"/>
+      <rect width="132" height="40" fill="#DC2626" stroke="#111111" stroke-width="4"/>
       <text x="21" y="27" fill="#FFFFFF">VERCEL</text>
     </g>
     <g transform="translate(772 194)">
@@ -63,8 +63,8 @@
     </g>
 
     <g transform="translate(70 256)">
-      <rect width="150" height="40" fill="#D4AF37" stroke="#111111" stroke-width="4"/>
-      <text x="21" y="27" fill="#111111">FIREBASE</text>
+      <rect width="150" height="40" fill="#7C3AED" stroke="#111111" stroke-width="4"/>
+      <text x="21" y="27" fill="#F5F3FF">FIREBASE</text>
     </g>
     <g transform="translate(238 256)">
       <rect width="152" height="40" fill="#111111" stroke="#111111" stroke-width="4"/>
@@ -83,8 +83,8 @@
       <text x="28" y="27" fill="#E5E7EB">BUN</text>
     </g>
     <g transform="translate(800 256)">
-      <rect width="112" height="40" fill="#D4AF37" stroke="#111111" stroke-width="4"/>
-      <text x="22" y="27" fill="#111111">VITE</text>
+      <rect width="112" height="40" fill="#7C3AED" stroke="#111111" stroke-width="4"/>
+      <text x="22" y="27" fill="#F5F3FF">VITE</text>
     </g>
 
     <g transform="translate(70 318)">
@@ -92,7 +92,7 @@
       <text x="20" y="27" fill="#E5E7EB">DISCORD BOTS</text>
     </g>
     <g transform="translate(264 318)">
-      <rect width="198" height="40" fill="#10B981" stroke="#111111" stroke-width="4"/>
+      <rect width="198" height="40" fill="#DC2626" stroke="#111111" stroke-width="4"/>
       <text x="20" y="27" fill="#FFFFFF">BROWSER SHELLS</text>
     </g>
     <g transform="translate(480 318)">
@@ -100,8 +100,8 @@
       <text x="20" y="27" fill="#111111">UI POLISH</text>
     </g>
     <g transform="translate(658 318)">
-      <rect width="188" height="40" fill="#D4AF37" stroke="#111111" stroke-width="4"/>
-      <text x="20" y="27" fill="#111111">WEB SYSTEMS</text>
+      <rect width="188" height="40" fill="#7C3AED" stroke="#111111" stroke-width="4"/>
+      <text x="20" y="27" fill="#F5F3FF">WEB SYSTEMS</text>
     </g>
   </g>
 </svg>

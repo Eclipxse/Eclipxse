@@ -8,20 +8,20 @@
 
 <br>
 
-<img src="./assets/readme/now-cooking.svg" alt="Midnight luxury neo-brutalist now cooking project board" width="100%" />
+<img src="./assets/readme/now-cooking.svg" alt="Crimson purple neo-brutalist now cooking project board" width="100%" />
 
 <br>
 
-<img src="./assets/readme/tech-stack.svg" alt="Midnight luxury neo-brutalist tech stack board" width="100%" />
+<img src="./assets/readme/tech-stack.svg" alt="Crimson purple neo-brutalist tech stack board" width="100%" />
 
 <br>
 
-<img src="./assets/readme/github-stats.svg" alt="Midnight luxury neo-brutalist GitHub stats dashboard" width="100%" />
+<img src="./assets/readme/github-stats.svg" alt="Crimson purple neo-brutalist GitHub stats dashboard" width="100%" />
 
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Eclipxse&icon=0&color=d4af37&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=Eclipxse&icon=0&color=a855f7&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views" />
 </p>
 
-<!-- Profile generated with Codex + midnight luxury aura. -->
+<!-- Profile generated with Codex + crimson purple aura. -->
