@@ -11,8 +11,18 @@
       <circle cx="1" cy="1" r=".7" fill="#153B91" opacity=".25"/>
     </pattern>
   </defs>
-  <rect width="1180" height="500" fill="#F1EFE9"/>
-  <rect width="1180" height="500" fill="#F1EFE9" filter="url(#paper)"/>
+  <rect width="1180" height="500" fill="#F1EFE9" fill-opacity=".68"/>
+  <rect width="1180" height="500" fill="#F1EFE9" fill-opacity=".22" filter="url(#paper)"/>
+  <g fill="#153B91" opacity=".15" font-family="Consolas, monospace" font-size="8">
+    <text x="714" y="79">0x00A91C  PUSH   ORIGIN/MAIN</text>
+    <text x="714" y="91">0x00B42F  CALL   RUNTIME_INIT</text>
+    <text x="714" y="103">0x00F113  LOAD   AURA_CONFIG</text>
+    <text x="714" y="115">0x00CC21  MOV    BUILD_BUFFER</text>
+    <text x="946" y="74">SIGNAL 01100110</text>
+    <text x="946" y="86">BUFFER 11010101</text>
+    <text x="946" y="98">OUTPUT 00101110</text>
+    <text x="946" y="110">STATUS 10110001</text>
+  </g>
   <g fill="#153B91">
     <rect x="0" y="0" width="12" height="500"/>
     <rect x="1168" y="0" width="12" height="500"/>
@@ -20,7 +30,6 @@
     <text x="926" y="30" font-family="Consolas, monospace" font-size="9" font-weight="700">ECLIPXSE / ARCHIVE 02</text>
     <path d="M40 46H1140" stroke="#153B91" stroke-opacity=".55"/>
 
-    <text x="40" y="98" font-family="Georgia, serif" font-size="48" font-weight="700" font-style="italic">System Index</text>
     <path d="M355 78H430" stroke="#153B91" stroke-width="3"/>
     <path d="M449 58L454 75L471 80L454 85L449 102L444 85L427 80L444 75Z"/>
     <text x="40" y="124" font-family="Consolas, monospace" font-size="10">A WORKING CATALOGUE OF TOOLS, SYSTEMS, AND CURRENT OBSESSIONS.</text>
@@ -96,6 +105,12 @@
     <rect x="884" y="428" width="24" height="5"/><rect x="918" y="428" width="74" height="5"/>
     <rect x="1002" y="428" width="52" height="5"/><rect x="1064" y="428" width="12" height="5"/>
     <rect x="896" y="437" width="44" height="5"/><rect x="952" y="437" width="108" height="5"/>
+  </g>
+  <g fill="#153B91" opacity=".42">
+    <rect x="682" y="128" width="98" height="3"/><rect x="698" y="134" width="134" height="3"/>
+    <rect x="660" y="140" width="52" height="3"/><rect x="726" y="140" width="92" height="3"/>
+    <rect x="746" y="446" width="28" height="4"/><rect x="782" y="446" width="86" height="4"/>
+    <rect x="728" y="454" width="62" height="4"/><rect x="800" y="454" width="44" height="4"/>
   </g>
   <rect x="1088" y="400" width="52" height="46" fill="url(#dots)"/>
 </svg>
