@@ -1,0 +1,101 @@
+<svg width="1180" height="500" viewBox="0 0 1180 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">System Index</title>
+  <desc id="desc">An editorial index of Eclipxse's current projects, languages, runtimes, and tools.</desc>
+  <defs>
+    <filter id="paper" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="3" seed="9" result="n"/>
+      <feColorMatrix in="n" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .055 0" result="grain"/>
+      <feBlend in="SourceGraphic" in2="grain" mode="multiply"/>
+    </filter>
+    <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".7" fill="#153B91" opacity=".25"/>
+    </pattern>
+  </defs>
+  <rect width="1180" height="500" fill="#F1EFE9"/>
+  <rect width="1180" height="500" fill="#F1EFE9" filter="url(#paper)"/>
+  <g fill="#153B91">
+    <rect x="0" y="0" width="12" height="500"/>
+    <rect x="1168" y="0" width="12" height="500"/>
+    <text x="40" y="30" font-family="Consolas, monospace" font-size="9" font-weight="700">DOCUMENT: SYS_INDEX // ACCESS: PUBLIC</text>
+    <text x="926" y="30" font-family="Consolas, monospace" font-size="9" font-weight="700">ECLIPXSE / ARCHIVE 02</text>
+    <path d="M40 46H1140" stroke="#153B91" stroke-opacity=".55"/>
+
+    <text x="40" y="98" font-family="Georgia, serif" font-size="48" font-weight="700" font-style="italic">System Index</text>
+    <path d="M355 78H430" stroke="#153B91" stroke-width="3"/>
+    <path d="M449 58L454 75L471 80L454 85L449 102L444 85L427 80L444 75Z"/>
+    <text x="40" y="124" font-family="Consolas, monospace" font-size="10">A WORKING CATALOGUE OF TOOLS, SYSTEMS, AND CURRENT OBSESSIONS.</text>
+
+    <path d="M40 148H1140" stroke="#153B91"/>
+    <path d="M414 148V390M790 148V390" stroke="#153B91" stroke-opacity=".45"/>
+
+    <text x="40" y="177" font-family="Consolas, monospace" font-size="10" font-weight="700">01 // CURRENT TRANSMISSION</text>
+    <text x="40" y="228" font-family="Georgia, serif" font-size="35" font-weight="700">AURA BROWSER</text>
+    <text x="40" y="252" font-family="Georgia, serif" font-size="15" font-style="italic">A desktop browser with quieter chrome</text>
+    <text x="40" y="274" font-family="Georgia, serif" font-size="15" font-style="italic">and sharper instincts.</text>
+    <path d="M40 294H374" stroke="#153B91" stroke-width="2"/>
+    <text x="40" y="320" font-family="Consolas, monospace" font-size="9">CORE:</text>
+    <text x="110" y="320" font-family="Consolas, monospace" font-size="9" font-weight="700">ELECTRON / TYPESCRIPT / VITE</text>
+    <text x="40" y="340" font-family="Consolas, monospace" font-size="9">STATE:</text>
+    <text x="110" y="340" font-family="Consolas, monospace" font-size="9" font-weight="700">ACTIVE DEVELOPMENT</text>
+    <text x="40" y="360" font-family="Consolas, monospace" font-size="9">OTHER:</text>
+    <text x="110" y="360" font-family="Consolas, monospace" font-size="9">DISCORD BOTS / MICRO TOOLS</text>
+
+    <text x="438" y="177" font-family="Consolas, monospace" font-size="10" font-weight="700">02 // LANGUAGE MEMORY</text>
+    <text x="438" y="209" font-family="Consolas, monospace" font-size="9">A01</text>
+    <text x="492" y="209" font-family="Georgia, serif" font-size="18" font-weight="700">TypeScript</text>
+    <text x="700" y="209" font-family="Consolas, monospace" font-size="9">PRIMARY</text>
+    <path d="M438 221H758" stroke="#153B91" stroke-opacity=".35"/>
+    <text x="438" y="249" font-family="Consolas, monospace" font-size="9">A02</text>
+    <text x="492" y="249" font-family="Georgia, serif" font-size="18" font-weight="700">Python</text>
+    <text x="700" y="249" font-family="Consolas, monospace" font-size="9">UTILITY</text>
+    <path d="M438 261H758" stroke="#153B91" stroke-opacity=".35"/>
+    <text x="438" y="289" font-family="Consolas, monospace" font-size="9">A03</text>
+    <text x="492" y="289" font-family="Georgia, serif" font-size="18" font-weight="700">Kotlin</text>
+    <text x="700" y="289" font-family="Consolas, monospace" font-size="9">BOTS</text>
+    <path d="M438 301H758" stroke="#153B91" stroke-opacity=".35"/>
+    <text x="438" y="329" font-family="Consolas, monospace" font-size="9">A04</text>
+    <text x="492" y="329" font-family="Georgia, serif" font-size="18" font-weight="700">HTML / CSS</text>
+    <text x="700" y="329" font-family="Consolas, monospace" font-size="9">SURFACE</text>
+    <path d="M438 341H758" stroke="#153B91" stroke-opacity=".35"/>
+    <text x="438" y="369" font-family="Consolas, monospace" font-size="9">A05</text>
+    <text x="492" y="369" font-family="Georgia, serif" font-size="18" font-weight="700">Vue</text>
+    <text x="700" y="369" font-family="Consolas, monospace" font-size="9">WEB</text>
+
+    <text x="814" y="177" font-family="Consolas, monospace" font-size="10" font-weight="700">03 // RUNTIME / DELIVERY</text>
+    <text x="814" y="212" font-family="Georgia, serif" font-size="21" font-weight="700">React</text>
+    <text x="990" y="212" font-family="Consolas, monospace" font-size="9">INTERFACE</text>
+    <text x="814" y="249" font-family="Georgia, serif" font-size="21" font-weight="700">Node.js</text>
+    <text x="990" y="249" font-family="Consolas, monospace" font-size="9">RUNTIME</text>
+    <text x="814" y="286" font-family="Georgia, serif" font-size="21" font-weight="700">Electron</text>
+    <text x="990" y="286" font-family="Consolas, monospace" font-size="9">DESKTOP</text>
+    <text x="814" y="323" font-family="Georgia, serif" font-size="21" font-weight="700">GitHub</text>
+    <text x="990" y="323" font-family="Consolas, monospace" font-size="9">SOURCE</text>
+    <text x="814" y="360" font-family="Georgia, serif" font-size="21" font-weight="700">Vercel / CF</text>
+    <text x="990" y="360" font-family="Consolas, monospace" font-size="9">DELIVERY</text>
+
+    <path d="M40 390H1140" stroke="#153B91"/>
+    <text x="40" y="418" font-family="Consolas, monospace" font-size="9" font-weight="700">STACK_SIGNATURE:</text>
+    <rect x="172" y="400" width="122" height="27" fill="#153B91"/>
+    <text x="191" y="418" fill="#F1EFE9" font-family="Consolas, monospace" font-size="9" font-weight="700">TYPESCRIPT</text>
+    <rect x="302" y="400" width="92" height="27" fill="#153B91" fill-opacity=".85"/>
+    <text x="324" y="418" fill="#F1EFE9" font-family="Consolas, monospace" font-size="9" font-weight="700">REACT</text>
+    <rect x="402" y="400" width="106" height="27" fill="#153B91" fill-opacity=".7"/>
+    <text x="421" y="418" fill="#F1EFE9" font-family="Consolas, monospace" font-size="9" font-weight="700">ELECTRON</text>
+    <rect x="516" y="400" width="76" height="27" fill="#153B91" fill-opacity=".55"/>
+    <text x="539" y="418" fill="#F1EFE9" font-family="Consolas, monospace" font-size="9" font-weight="700">VITE</text>
+    <rect x="600" y="400" width="84" height="27" fill="#153B91" fill-opacity=".4"/>
+    <text x="623" y="418" fill="#F1EFE9" font-family="Consolas, monospace" font-size="9" font-weight="700">NODE</text>
+
+    <text x="40" y="467" font-family="Consolas, monospace" font-size="8">BUILD FIRST / REFINE HARD / KEEP THE SOURCE OPEN</text>
+    <text x="952" y="467" font-family="Consolas, monospace" font-size="8">END OF INDEX //</text>
+  </g>
+  <g fill="#153B91" opacity=".68">
+    <rect x="908" y="401" width="22" height="5"/><rect x="936" y="401" width="52" height="5"/>
+    <rect x="890" y="410" width="58" height="5"/><rect x="956" y="410" width="92" height="5"/>
+    <rect x="920" y="419" width="118" height="5"/><rect x="1050" y="419" width="32" height="5"/>
+    <rect x="884" y="428" width="24" height="5"/><rect x="918" y="428" width="74" height="5"/>
+    <rect x="1002" y="428" width="52" height="5"/><rect x="1064" y="428" width="12" height="5"/>
+    <rect x="896" y="437" width="44" height="5"/><rect x="952" y="437" width="108" height="5"/>
+  </g>
+  <rect x="1088" y="400" width="52" height="46" fill="url(#dots)"/>
+</svg>

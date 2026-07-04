@@ -1,0 +1,44 @@
+<svg width="1180" height="520" viewBox="0 0 1180 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" seed="17" result="noise"/>
+      <feColorMatrix in="noise" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .08 0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+  <g fill="#153B91" font-family="Consolas, 'Courier New', monospace">
+    <text x="50" y="36" font-size="10" font-weight="700">SYSTEM: RESTLESS // MODE: BUILD</text>
+    <text x="918" y="36" font-size="10" font-weight="700">VER: 02.06 // DATE: 04/07/26</text>
+    <path d="M50 54H1130" stroke="#153B91" stroke-opacity=".42"/>
+
+    <text x="52" y="86" font-size="10">PROFILE ARCHIVE / 001</text>
+    <text x="54" y="202" font-family="Georgia, serif" font-size="22" font-style="italic">building strange little machines</text>
+    <text x="54" y="230" font-size="11">BROWSERS / BOTS / TOOLS / WEB SYSTEMS</text>
+    <path d="M54 249H435" stroke="#153B91" stroke-width="2"/>
+
+    <text x="54" y="286" font-size="9">CURRENT_PROTOCOL:</text>
+    <text x="190" y="286" font-size="9" font-weight="700">AURA_BROWSER</text>
+    <text x="54" y="306" font-size="9">LOAD_CONFIG:</text>
+    <text x="190" y="306" font-size="9">ELECTRON / TYPESCRIPT / VITE</text>
+    <text x="54" y="326" font-size="9">STATUS:</text>
+    <text x="190" y="326" font-size="9" font-weight="700">IN_BUILD // OPEN_SOURCE</text>
+
+    <text x="54" y="382" font-size="8" opacity=".72">0x00A91C   PUSH     ORIGIN/MAIN</text>
+    <text x="54" y="397" font-size="8" opacity=".72">0x00B42F   COMMIT   MAKE_IT_REAL</text>
+    <text x="54" y="412" font-size="8" opacity=".72">0x00F113   CALL     SHIP_AND_LEARN</text>
+
+    <text x="1002" y="452" font-size="9">ECLIPXSE</text>
+    <text x="1002" y="468" font-size="8">MARIO.CPP</text>
+    <path d="M50 482H1130" stroke="#153B91" stroke-opacity=".5"/>
+    <text x="50" y="501" font-size="8">SIGNAL LOCKED // NO FINAL FORM // KEEP BUILDING</text>
+
+    <path d="M463 112H486M474.5 100V124" stroke="#153B91" stroke-width="2"/>
+    <path d="M474.5 92L478 108L494 112L478 116L474.5 132L471 116L455 112L471 108Z" fill="#153B91"/>
+  </g>
+  <g fill="#153B91" opacity=".75" filter="url(#rough)">
+    <rect x="439" y="426" width="64" height="4"/><rect x="451" y="434" width="92" height="4"/>
+    <rect x="422" y="442" width="46" height="4"/><rect x="483" y="442" width="78" height="4"/>
+    <rect x="446" y="450" width="114" height="4"/><rect x="522" y="458" width="52" height="4"/>
+    <rect x="418" y="466" width="26" height="4"/><rect x="460" y="466" width="82" height="4"/>
+  </g>
+</svg>
