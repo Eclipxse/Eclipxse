@@ -1,0 +1,57 @@
+<svg width="1180" height="520" viewBox="0 0 1180 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Source Divination</title>
+  <desc id="desc">A devotional blue gothic poster about building the things you wish existed.</desc>
+  <defs>
+    <filter id="grain" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".68" numOctaves="3" seed="42" result="n"/>
+      <feColorMatrix in="n" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .07 0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="1180" height="520" fill="#F1EFE9" fill-opacity=".12" filter="url(#grain)"/>
+  <g fill="#153B91" font-family="Consolas, monospace">
+    <text x="46" y="32" font-size="9" font-weight="700">CLASSIFIED UNDER: ECLIPXSE PROTOCOL</text>
+    <text x="916" y="32" font-size="9" font-weight="700">STATUS: UNFINISHED // GOOD</text>
+    <path d="M46 48H1134" stroke="#153B91" stroke-opacity=".55"/>
+
+    <text x="48" y="146" font-size="9">SOURCE_ID:</text>
+    <text x="144" y="146" font-size="9" font-weight="700">MARIO.CPP</text>
+    <text x="48" y="164" font-size="9">DIRECTIVE:</text>
+    <text x="144" y="164" font-size="9">MAKE_THE_IDEA_REAL</text>
+    <text x="48" y="182" font-size="9">METHOD:</text>
+    <text x="144" y="182" font-size="9">BUILD / BREAK / LEARN</text>
+    <text x="48" y="200" font-size="9">OUTPUT:</text>
+    <text x="144" y="200" font-size="9">OPEN_SOURCE_ARTIFACT</text>
+
+    <text x="48" y="250" font-size="8" opacity=".82">00100110  CREATE  NEW_REPOSITORY</text>
+    <text x="48" y="265" font-size="8" opacity=".82">01010101  WRITE   FIRST_VERSION</text>
+    <text x="48" y="280" font-size="8" opacity=".82">01101110  TEST    WEIRD_IDEA</text>
+    <text x="48" y="295" font-size="8" opacity=".82">10100101  PUSH    BEFORE_READY</text>
+    <text x="48" y="310" font-size="8" opacity=".82">11001010  REFINE  UNTIL_IT_HITS</text>
+
+    <text x="918" y="144" font-size="8" opacity=".78">MEMORY_CHECK   OK</text>
+    <text x="918" y="159" font-size="8" opacity=".78">CURIOSITY      HIGH</text>
+    <text x="918" y="174" font-size="8" opacity=".78">FINAL_FORM     NONE</text>
+    <text x="918" y="189" font-size="8" opacity=".78">BUILD_SIGNAL   ACTIVE</text>
+    <text x="918" y="204" font-size="8" opacity=".78">SOURCE_ACCESS  PUBLIC</text>
+
+    <path d="M46 352H418" stroke="#153B91" stroke-width="2"/>
+    <text x="46" y="389" font-family="Georgia, serif" font-size="25" font-style="italic">Build what you wish existed.</text>
+    <text x="46" y="416" font-family="Georgia, serif" font-size="15" font-style="italic">Leave the source where others can find it.</text>
+
+    <path d="M46 462H1134" stroke="#153B91" stroke-opacity=".55"/>
+    <text x="46" y="485" font-size="8">ARCHIVE ID: SRC-DVN-005</text>
+    <text x="474" y="485" font-size="8">SIGNAL: KEEP BUILDING</text>
+    <text x="1002" y="485" font-size="8">END //</text>
+
+    <path d="M418 88L423 105L440 110L423 115L418 132L413 115L396 110L413 105Z"/>
+  </g>
+  <g fill="#153B91" opacity=".78">
+    <rect x="370" y="224" width="62" height="5"/><rect x="442" y="224" width="104" height="5"/>
+    <rect x="352" y="234" width="98" height="5"/><rect x="460" y="234" width="48" height="5"/>
+    <rect x="326" y="244" width="42" height="5"/><rect x="380" y="244" width="136" height="5"/>
+    <rect x="798" y="382" width="94" height="5"/><rect x="902" y="382" width="132" height="5"/>
+    <rect x="776" y="392" width="48" height="5"/><rect x="836" y="392" width="164" height="5"/>
+    <rect x="820" y="402" width="124" height="5"/><rect x="956" y="402" width="64" height="5"/>
+  </g>
+</svg>

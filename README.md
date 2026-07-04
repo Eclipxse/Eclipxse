@@ -13,7 +13,15 @@
 
 <br>
 
+<img src="./assets/readme/dual-process.png" alt="Dual Process poster about engineering and visual taste" width="100%" />
+
+<br>
+
 <img src="./assets/readme/archive-log.png" alt="GitHub activity archive log" width="100%" />
+
+<br>
+
+<img src="./assets/readme/source-divination.png" alt="Source Divination build philosophy poster" width="100%" />
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Eclipxse&icon=0&color=153b91&style=flat-square&label=PROFILE+VIEWS" alt="Profile views" />

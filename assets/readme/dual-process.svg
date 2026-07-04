@@ -1,0 +1,65 @@
+<svg width="1180" height="500" viewBox="0 0 1180 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Dual Process</title>
+  <desc id="desc">A torn blue gothic poster about balancing engineering logic with visual taste.</desc>
+  <defs>
+    <filter id="grain" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="31" result="n"/>
+      <feColorMatrix in="n" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .08 0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <pattern id="check" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#153B91"/><rect x="6" y="6" width="6" height="6" fill="#153B91"/>
+    </pattern>
+  </defs>
+  <rect width="1180" height="500" fill="#F1EFE9" fill-opacity=".14" filter="url(#grain)"/>
+  <path d="M245 292L292 286L338 294L386 289L438 296L486 288L532 294L578 286L626 295L674 289L724 296L770 287L820 294L870 288L930 296L920 380L870 374L820 382L770 375L720 383L672 374L624 381L578 373L530 382L482 374L434 381L386 375L338 382L290 374L252 380Z" fill="#153B91" fill-opacity=".9"/>
+  <g fill="#153B91" font-family="Consolas, monospace">
+    <path d="M24 24H1156V476H24Z" fill="none" stroke="#153B91" stroke-width="2"/>
+    <path d="M32 32H1148V468H32Z" fill="none" stroke="#153B91" stroke-opacity=".62"/>
+    <path d="M24 44H1156M24 454H1156" stroke="#153B91" stroke-opacity=".65"/>
+    <text x="48" y="39" font-size="9" font-weight="700">REGISTER: DUAL_PROCESS // MODE: PARALLEL</text>
+    <text x="930" y="39" font-size="9" font-weight="700">ARCHIVE 04 // 04.07.26</text>
+
+    <text x="48" y="78" font-size="10" font-weight="700">THREAD_A / ENGINEERING</text>
+    <text x="48" y="98" font-size="8">STATE      DETERMINISTIC</text>
+    <text x="48" y="112" font-size="8">INPUT      PROBLEM</text>
+    <text x="48" y="126" font-size="8">PROCESS    BUILD / TEST / SHIP</text>
+    <text x="48" y="140" font-size="8">OUTPUT     WORKING SYSTEM</text>
+
+    <text x="946" y="78" font-size="10" font-weight="700">THREAD_B / TASTE</text>
+    <text x="946" y="98" font-size="8">STATE      INSTINCTIVE</text>
+    <text x="946" y="112" font-size="8">INPUT      FEELING</text>
+    <text x="946" y="126" font-size="8">PROCESS    CUT / REFINE / FRAME</text>
+    <text x="946" y="140" font-size="8">OUTPUT     DESIRED OBJECT</text>
+
+    <text x="48" y="190" font-size="8" opacity=".8">AX 002B   BX 1F3A   CX 4E7D</text>
+    <text x="48" y="204" font-size="8" opacity=".8">DX 9E1B   SP 0E7C   SI 3E5F</text>
+    <text x="48" y="218" font-size="8" opacity=".8">CALL MERGE_THREADS</text>
+    <text x="48" y="232" font-size="8" opacity=".8">JMP OUTPUT_FINAL</text>
+
+    <text x="958" y="190" font-size="8" opacity=".8">FORM 00101110</text>
+    <text x="958" y="204" font-size="8" opacity=".8">COLOR 01010011</text>
+    <text x="958" y="218" font-size="8" opacity=".8">SPACE 11100010</text>
+    <text x="958" y="232" font-size="8" opacity=".8">RHYTHM 01001101</text>
+
+    <path d="M590 46L578 80L600 112L582 148L602 182L579 218L597 254L576 292L602 326L580 366L598 404L586 454" fill="none" stroke="#F1EFE9" stroke-width="13"/>
+    <path d="M590 46L578 80L600 112L582 148L602 182L579 218L597 254L576 292L602 326L580 366L598 404L586 454" fill="none" stroke="#153B91" stroke-opacity=".25" stroke-width="1"/>
+
+    <rect x="498" y="144" width="70" height="54" fill="url(#check)" opacity=".38"/>
+    <rect x="610" y="218" width="84" height="62" fill="url(#check)" opacity=".38"/>
+    <rect x="510" y="276" width="58" height="38" fill="url(#check)" opacity=".3"/>
+
+    <path d="M82 352H232M948 352H1098" stroke="#153B91" stroke-width="2"/>
+    <path d="M50 368H250M930 368H1130" stroke="#153B91" stroke-opacity=".45"/>
+
+    <text x="48" y="432" font-size="9">LOGIC WITHOUT TASTE IS NOISE.</text>
+    <text x="930" y="432" font-size="9">TASTE WITHOUT LOGIC IS DECORATION.</text>
+    <text x="486" y="470" font-size="8">MERGE STATUS: STABLE //</text>
+  </g>
+  <g fill="#153B91" opacity=".78">
+    <rect x="356" y="334" width="84" height="5"/><rect x="448" y="334" width="116" height="5"/>
+    <rect x="330" y="344" width="54" height="5"/><rect x="394" y="344" width="152" height="5"/>
+    <rect x="620" y="314" width="118" height="5"/><rect x="746" y="314" width="64" height="5"/>
+    <rect x="638" y="324" width="68" height="5"/><rect x="716" y="324" width="132" height="5"/>
+  </g>
+</svg>
