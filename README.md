@@ -17,6 +17,10 @@
 
 <br>
 
+<img src="./assets/readme/human-signal.png" alt="Human Signal poster featuring two marble figures embracing" width="100%" />
+
+<br>
+
 <img src="./assets/readme/archive-log.png" alt="GitHub activity archive log" width="100%" />
 
 <br>

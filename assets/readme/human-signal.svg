@@ -1,0 +1,55 @@
+<svg width="1180" height="560" viewBox="0 0 1180 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Human Signal</title>
+  <desc id="desc">A blue gothic poster featuring two classical marble figures embracing.</desc>
+  <defs>
+    <filter id="grain" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="57" result="n"/>
+      <feColorMatrix in="n" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .07 0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="1180" height="560" fill="#F1EFE9" fill-opacity=".08" filter="url(#grain)"/>
+  <g fill="#153B91" font-family="Consolas, monospace">
+    <text x="46" y="32" font-size="9" font-weight="700">SYSTEM: OPEN // MODE: CONNECT</text>
+    <text x="914" y="32" font-size="9" font-weight="700">ARCHIVE 06 // HUMAN_CHANNEL</text>
+    <path d="M46 48H1134" stroke="#153B91" stroke-opacity=".52"/>
+
+    <text x="48" y="146" font-size="9">CHANNEL:</text>
+    <text x="142" y="146" font-size="9" font-weight="700">HUMAN_TO_HUMAN</text>
+    <text x="48" y="164" font-size="9">STATE:</text>
+    <text x="142" y="164" font-size="9">PRESENT</text>
+    <text x="48" y="182" font-size="9">DISTANCE:</text>
+    <text x="142" y="182" font-size="9">ZERO</text>
+    <text x="48" y="200" font-size="9">SIGNAL:</text>
+    <text x="142" y="200" font-size="9">HELD</text>
+
+    <text x="48" y="244" font-size="8" opacity=".82">00110001  REACH</text>
+    <text x="48" y="259" font-size="8" opacity=".82">00110010  TRUST</text>
+    <text x="48" y="274" font-size="8" opacity=".82">00110011  REMAIN</text>
+    <text x="48" y="289" font-size="8" opacity=".82">00110100  RETURN</text>
+
+    <text x="978" y="144" font-size="8" opacity=".78">MEMORY      OK</text>
+    <text x="978" y="159" font-size="8" opacity=".78">CONTACT     TRUE</text>
+    <text x="978" y="174" font-size="8" opacity=".78">NOISE       LOW</text>
+    <text x="978" y="189" font-size="8" opacity=".78">PULSE       SYNC</text>
+    <text x="978" y="204" font-size="8" opacity=".78">STATUS      SAFE</text>
+
+    <path d="M46 416H386" stroke="#153B91" stroke-width="2"/>
+    <text x="46" y="450" font-family="Georgia, serif" font-size="22" font-style="italic">Not every signal needs a screen.</text>
+    <text x="46" y="476" font-family="Georgia, serif" font-size="14" font-style="italic">Some things are understood by staying close.</text>
+
+    <path d="M46 508H1134" stroke="#153B91" stroke-opacity=".55"/>
+    <text x="46" y="531" font-size="8">PROTOCOL ID: HMN-SGN-006</text>
+    <text x="478" y="531" font-size="8">CONNECTION: STABLE</text>
+    <text x="1022" y="531" font-size="8">END //</text>
+
+    <path d="M418 84L423 101L440 106L423 111L418 128L413 111L396 106L413 101Z"/>
+  </g>
+  <g fill="#153B91" opacity=".76">
+    <rect x="348" y="234" width="68" height="5"/><rect x="426" y="234" width="108" height="5"/>
+    <rect x="326" y="244" width="104" height="5"/><rect x="442" y="244" width="56" height="5"/>
+    <rect x="798" y="392" width="92" height="5"/><rect x="902" y="392" width="124" height="5"/>
+    <rect x="776" y="402" width="48" height="5"/><rect x="836" y="402" width="166" height="5"/>
+    <rect x="822" y="412" width="118" height="5"/><rect x="952" y="412" width="70" height="5"/>
+  </g>
+</svg>
