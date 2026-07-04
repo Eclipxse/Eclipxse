@@ -1,117 +1,86 @@
-<svg width="1180" height="470" viewBox="0 0 1180 470" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Field Telemetry</title>
-  <desc id="desc">GitHub activity telemetry for Eclipxse with contribution, repository, streak, and language data.</desc>
+<svg width="1180" height="450" viewBox="0 0 1180 450" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Console</title>
+  <desc id="desc">A bold graphite neo-brutalist GitHub stats board with skeuomorphic meters.</desc>
   <defs>
-    <linearGradient id="back" x1="0" y1="0" x2="1180" y2="470" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#050609"/>
-      <stop offset="0.52" stop-color="#0B0C11"/>
-      <stop offset="1" stop-color="#050609"/>
+    <linearGradient id="raised" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F4F5F7"/>
+      <stop offset="0.58" stop-color="#B9C0CA"/>
+      <stop offset="1" stop-color="#78808D"/>
     </linearGradient>
-    <linearGradient id="body" x1="50" y1="36" x2="1130" y2="414" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1C1F27"/>
-      <stop offset="0.46" stop-color="#11131A"/>
-      <stop offset="1" stop-color="#08090D"/>
+    <linearGradient id="dark" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#252B36"/>
+      <stop offset="1" stop-color="#10131A"/>
     </linearGradient>
-    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#A978FF"/>
-      <stop offset="0.62" stop-color="#7547DB"/>
-      <stop offset="1" stop-color="#D84B60"/>
-    </linearGradient>
-    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#3F4551"/>
-      <stop offset="0.45" stop-color="#D5DAE2"/>
-      <stop offset="0.55" stop-color="#707784"/>
-      <stop offset="1" stop-color="#353B46"/>
-    </linearGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#D84B60"/>
-      <stop offset="0.48" stop-color="#9D68FF"/>
-      <stop offset="1" stop-color="#58C9E6"/>
-    </linearGradient>
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M20 0H0V20" stroke="#FFFFFF" stroke-opacity="0.03"/>
-    </pattern>
-    <filter id="shadow" x="-10%" y="-10%" width="130%" height="145%">
-      <feDropShadow dx="12" dy="14" stdDeviation="0" flood-color="#000000" flood-opacity="0.9"/>
-      <feDropShadow dx="0" dy="24" stdDeviation="20" flood-color="#000000" flood-opacity="0.55"/>
-    </filter>
-    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="shadow" x="-8%" y="-8%" width="120%" height="125%">
+      <feDropShadow dx="8" dy="8" stdDeviation="0" flood-color="#050507"/>
     </filter>
   </defs>
 
-  <rect width="1180" height="470" fill="url(#back)"/>
-  <rect width="1180" height="470" fill="url(#grid)"/>
-  <g filter="url(#shadow)">
-    <rect x="50" y="36" width="1080" height="378" rx="8" fill="#06070A" stroke="#2B2F39" stroke-width="2"/>
-    <rect x="58" y="44" width="1064" height="362" rx="5" fill="url(#body)" stroke="#3A3F4B"/>
+  <rect width="1180" height="450" fill="#090B10"/>
+  <rect x="58" y="42" width="1064" height="330" rx="8" fill="#050507"/>
+  <rect x="46" y="30" width="1064" height="330" rx="8" fill="#1A1E27" stroke="#050507" stroke-width="5"/>
+  <path d="M80 104H1076" stroke="#303642" stroke-width="2"/>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="80" y="82" fill="#F4F5F7" font-size="31" font-weight="950">GitHub Console</text>
+    <text x="322" y="82" fill="#AAB1BD" font-size="14" font-weight="800">updated Jun 30, 2026</text>
+
+    <g filter="url(#shadow)">
+      <rect x="80" y="132" width="250" height="156" rx="8" fill="url(#raised)" stroke="#050507" stroke-width="4"/>
+      <path d="M92 144H318" stroke="#FFFFFF" stroke-width="2" opacity="0.65"/>
+      <text x="108" y="166" fill="#252A35" font-size="12" font-weight="950" letter-spacing="2">CONTRIBUTIONS</text>
+      <text x="108" y="237" fill="#0B0D12" font-size="70" font-weight="950">49</text>
+      <text x="205" y="237" fill="#7C3AED" font-size="18" font-weight="950">last year</text>
+      <rect x="108" y="256" width="170" height="12" rx="6" fill="#5D6674"/>
+      <rect x="108" y="256" width="100" height="12" rx="6" fill="#8B5CF6"/>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="370" y="132" width="154" height="82" rx="8" fill="url(#dark)" stroke="#050507" stroke-width="4"/>
+      <path d="M380 144H514" stroke="#FFFFFF" stroke-width="2" opacity="0.12"/>
+      <text x="396" y="174" fill="#F4F5F7" font-size="36" font-weight="950">12</text>
+      <text x="396" y="197" fill="#AAB1BD" font-size="12" font-weight="900">public repos</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="550" y="132" width="154" height="82" rx="8" fill="url(#dark)" stroke="#050507" stroke-width="4"/>
+      <path d="M560 144H694" stroke="#FFFFFF" stroke-width="2" opacity="0.12"/>
+      <text x="576" y="174" fill="#F4F5F7" font-size="36" font-weight="950">3</text>
+      <text x="576" y="197" fill="#AAB1BD" font-size="12" font-weight="900">day streak</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="730" y="132" width="154" height="82" rx="8" fill="url(#dark)" stroke="#050507" stroke-width="4"/>
+      <path d="M740 144H874" stroke="#FFFFFF" stroke-width="2" opacity="0.12"/>
+      <text x="756" y="174" fill="#F4F5F7" font-size="36" font-weight="950">0</text>
+      <text x="756" y="197" fill="#AAB1BD" font-size="12" font-weight="900">stars</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="910" y="132" width="166" height="82" rx="8" fill="#8B5CF6" stroke="#050507" stroke-width="4"/>
+      <path d="M920 144H1064" stroke="#FFFFFF" stroke-width="2" opacity="0.24"/>
+      <text x="936" y="170" fill="#F4F5F7" font-size="14" font-weight="950">STATUS</text>
+      <text x="936" y="195" fill="#F4F5F7" font-size="12" font-weight="900">building + polish</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="370" y="246" width="706" height="82" rx="8" fill="url(#raised)" stroke="#050507" stroke-width="4"/>
+      <path d="M382 258H1064" stroke="#FFFFFF" stroke-width="2" opacity="0.6"/>
+      <text x="396" y="286" fill="#0B0D12" font-size="17" font-weight="950">Language Mix</text>
+      <rect x="396" y="302" width="390" height="12" rx="6" fill="#5D6674"/>
+      <rect x="396" y="302" width="156" height="12" rx="6" fill="#F87171"/>
+      <rect x="552" y="302" width="116" height="12" fill="#8B5CF6"/>
+      <rect x="668" y="302" width="78" height="12" fill="#343B49"/>
+      <rect x="746" y="302" width="40" height="12" rx="6" fill="#A78BFA"/>
+      <text x="820" y="286" fill="#252A35" font-size="12" font-weight="950">JavaScript 4</text>
+      <text x="820" y="309" fill="#252A35" font-size="12" font-weight="950">TypeScript 3</text>
+      <text x="934" y="286" fill="#252A35" font-size="12" font-weight="950">Vue 2</text>
+      <text x="934" y="309" fill="#252A35" font-size="12" font-weight="950">Kotlin 1</text>
+    </g>
+
+    <text x="80" y="348" fill="#8A92A3" font-size="12" font-weight="950" letter-spacing="2">BEST DAY</text>
+    <text x="176" y="348" fill="#F4F5F7" font-size="12" font-weight="900">12 contributions on Jun 26</text>
+    <text x="414" y="348" fill="#8A92A3" font-size="12" font-weight="950" letter-spacing="2">LONGEST STREAK</text>
+    <text x="570" y="348" fill="#F4F5F7" font-size="12" font-weight="900">3 days</text>
   </g>
-
-  <rect x="58" y="44" width="1064" height="48" fill="#0A0B10"/>
-  <rect x="58" y="44" width="8" height="48" fill="#D84B60"/>
-  <text x="84" y="74" fill="#F1F3F7" font-family="Consolas, Segoe UI, sans-serif" font-size="14" font-weight="700">FIELD TELEMETRY // 03</text>
-  <text x="284" y="74" fill="#737B89" font-family="Consolas, Segoe UI, sans-serif" font-size="11">GITHUB / LAST 365 DAYS</text>
-  <rect x="914" y="57" width="180" height="24" rx="3" fill="#171922" stroke="#3B404C"/>
-  <circle cx="932" cy="69" r="4" fill="#9D68FF" filter="url(#glow)"/>
-  <text x="944" y="73" fill="#C8CDD6" font-family="Consolas, Segoe UI, sans-serif" font-size="9" font-weight="700">SYNCED 04 JUL 2026</text>
-
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <rect x="82" y="116" width="282" height="240" rx="6" fill="#0A0C11" stroke="#3B414D"/>
-    <text x="106" y="145" fill="#777F8E" font-family="Consolas, Segoe UI, sans-serif" font-size="10" font-weight="700">TOTAL CONTRIBUTIONS</text>
-    <text x="102" y="238" fill="#F3F4F7" font-size="92" font-weight="900">52</text>
-    <rect x="106" y="256" width="232" height="10" rx="2" fill="#272C35"/>
-    <rect x="106" y="256" width="152" height="10" rx="2" fill="url(#signal)"/>
-    <text x="106" y="290" fill="#AEB5C2" font-family="Consolas, Segoe UI, sans-serif" font-size="11" font-weight="700">13 ACTIVE DAYS</text>
-    <text x="106" y="312" fill="#747C8A" font-family="Consolas, Segoe UI, sans-serif" font-size="10">BEST OUTPUT / 12 IN ONE DAY</text>
-    <rect x="106" y="326" width="104" height="6" rx="2" fill="#9D68FF"/>
-    <rect x="216" y="326" width="42" height="6" rx="2" fill="#D84B60"/>
-    <rect x="264" y="326" width="22" height="6" rx="2" fill="#58C9E6"/>
-
-    <text x="396" y="126" fill="#777F8E" font-family="Consolas, Segoe UI, sans-serif" font-size="10" font-weight="700">ACTIVITY TRACE / RECENT BURST</text>
-    <rect x="396" y="140" width="698" height="116" rx="5" fill="#090B10" stroke="#343A46"/>
-    <path d="M420 228H1070M420 198H1070M420 168H1070" stroke="#282D37" stroke-width="1"/>
-    <path d="M420 228L452 228L484 228L516 228L548 228L580 228L612 228L644 228L676 228L708 228L740 228L772 228L804 228L836 228L868 228L900 228L932 151L964 202L996 164L1028 184L1070 228" stroke="url(#bar)" stroke-width="3" fill="none"/>
-    <path d="M420 228L452 228L484 228L516 228L548 228L580 228L612 228L644 228L676 228L708 228L740 228L772 228L804 228L836 228L868 228L900 228L932 151L964 202L996 164L1028 184L1070 228V244H420Z" fill="url(#bar)" opacity="0.08"/>
-    <circle cx="932" cy="151" r="5" fill="#D84B60" filter="url(#glow)"/>
-    <circle cx="964" cy="202" r="4" fill="#8E5BEA"/>
-    <circle cx="996" cy="164" r="5" fill="#9D68FF" filter="url(#glow)"/>
-    <circle cx="1028" cy="184" r="4" fill="#58C9E6"/>
-    <text x="420" y="247" fill="#69717F" font-family="Consolas, Segoe UI, sans-serif" font-size="8">JUN 21</text>
-    <text x="922" y="247" fill="#AEB5C2" font-family="Consolas, Segoe UI, sans-serif" font-size="8">26</text>
-    <text x="956" y="247" fill="#AEB5C2" font-family="Consolas, Segoe UI, sans-serif" font-size="8">28</text>
-    <text x="988" y="247" fill="#AEB5C2" font-family="Consolas, Segoe UI, sans-serif" font-size="8">29</text>
-    <text x="1020" y="247" fill="#AEB5C2" font-family="Consolas, Segoe UI, sans-serif" font-size="8">30</text>
-
-    <rect x="396" y="272" width="158" height="84" rx="5" fill="#0C0E14" stroke="#3B414D"/>
-    <text x="416" y="296" fill="#777F8E" font-family="Consolas, Segoe UI, sans-serif" font-size="9" font-weight="700">PUBLIC REPOS</text>
-    <text x="416" y="338" fill="#F2F3F6" font-size="38" font-weight="900">12</text>
-    <path d="M492 330H532" stroke="#9D68FF" stroke-width="4"/>
-
-    <rect x="566" y="272" width="158" height="84" rx="5" fill="#0C0E14" stroke="#3B414D"/>
-    <text x="586" y="296" fill="#777F8E" font-family="Consolas, Segoe UI, sans-serif" font-size="9" font-weight="700">BEST STREAK</text>
-    <text x="586" y="338" fill="#F2F3F6" font-size="38" font-weight="900">03</text>
-    <text x="647" y="336" fill="#AEB5C2" font-family="Consolas, Segoe UI, sans-serif" font-size="9">DAYS</text>
-
-    <rect x="736" y="272" width="358" height="84" rx="5" fill="#0C0E14" stroke="#3B414D"/>
-    <text x="756" y="296" fill="#777F8E" font-family="Consolas, Segoe UI, sans-serif" font-size="9" font-weight="700">LANGUAGE ALLOCATION</text>
-    <rect x="756" y="310" width="318" height="10" rx="2" fill="#292E38"/>
-    <rect x="756" y="310" width="145" height="10" rx="2" fill="#A978FF"/>
-    <rect x="901" y="310" width="108" height="10" fill="#D84B60"/>
-    <rect x="1009" y="310" width="54" height="10" fill="#58C9E6"/>
-    <rect x="1063" y="310" width="11" height="10" rx="2" fill="#747C8A"/>
-    <text x="756" y="340" fill="#C4C9D2" font-family="Consolas, Segoe UI, sans-serif" font-size="9" font-weight="700">JS 4</text>
-    <text x="818" y="340" fill="#C4C9D2" font-family="Consolas, Segoe UI, sans-serif" font-size="9" font-weight="700">TS 3</text>
-    <text x="880" y="340" fill="#C4C9D2" font-family="Consolas, Segoe UI, sans-serif" font-size="9" font-weight="700">VUE 2</text>
-    <text x="954" y="340" fill="#C4C9D2" font-family="Consolas, Segoe UI, sans-serif" font-size="9" font-weight="700">KT 1</text>
-    <text x="1032" y="340" fill="#D66A7A" font-family="Consolas, Segoe UI, sans-serif" font-size="9" font-weight="700">STARS 0</text>
-  </g>
-
-  <rect x="58" y="378" width="1064" height="28" fill="#08090D"/>
-  <rect x="58" y="378" width="212" height="28" fill="url(#steel)"/>
-  <text x="76" y="396" fill="#08090D" font-family="Consolas, Segoe UI, sans-serif" font-size="10" font-weight="800">LAST PEAK / 26 JUN 2026</text>
-  <text x="292" y="396" fill="#7E8694" font-family="Consolas, Segoe UI, sans-serif" font-size="10">12 CONTRIBUTIONS</text>
-  <path d="M414 392H846" stroke="#2F3540" stroke-width="2"/>
-  <path d="M414 392H706" stroke="url(#signal)" stroke-width="2"/>
-  <text x="946" y="396" fill="#7E8694" font-family="Consolas, Segoe UI, sans-serif" font-size="9">ECLIPXSE / LIVE FIELD DATA</text>
 </svg>

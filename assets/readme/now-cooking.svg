@@ -1,132 +1,71 @@
-<svg width="1180" height="420" viewBox="0 0 1180 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Project Deck</title>
-  <desc id="desc">A dark hardware-inspired project console featuring Aura Browser.</desc>
+<svg width="1180" height="350" viewBox="0 0 1180 350" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Now Building</title>
+  <desc id="desc">A bold graphite neo-brutalist project board with skeuomorphic raised panels.</desc>
   <defs>
-    <linearGradient id="back" x1="0" y1="0" x2="1180" y2="420" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#050609"/>
-      <stop offset="0.55" stop-color="#0B0C12"/>
-      <stop offset="1" stop-color="#050609"/>
+    <linearGradient id="bevel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F3F4F6"/>
+      <stop offset="0.5" stop-color="#BCC2CC"/>
+      <stop offset="1" stop-color="#7C8491"/>
     </linearGradient>
-    <linearGradient id="chassis" x1="62" y1="42" x2="1118" y2="370" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1D2028"/>
-      <stop offset="0.38" stop-color="#11131A"/>
-      <stop offset="1" stop-color="#090A0F"/>
+    <linearGradient id="darkBevel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#262B36"/>
+      <stop offset="1" stop-color="#11141B"/>
     </linearGradient>
-    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#5B6270"/>
-      <stop offset="0.22" stop-color="#D8DEE8"/>
-      <stop offset="0.5" stop-color="#646B78"/>
-      <stop offset="0.78" stop-color="#C5CAD4"/>
-      <stop offset="1" stop-color="#404652"/>
-    </linearGradient>
-    <linearGradient id="signal" x1="420" y1="0" x2="1100" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#9D68FF"/>
-      <stop offset="0.56" stop-color="#6A42D9"/>
-      <stop offset="1" stop-color="#D84B60"/>
-    </linearGradient>
-    <linearGradient id="screen" x1="430" y1="104" x2="868" y2="314" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#171923"/>
-      <stop offset="1" stop-color="#090A0F"/>
-    </linearGradient>
-    <radialGradient id="screenGlow" cx="0" cy="0" r="1" gradientTransform="translate(690 235) rotate(132) scale(270 190)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7B47E4" stop-opacity="0.24"/>
-      <stop offset="0.48" stop-color="#21143D" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#090A0F" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="mesh" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0H0V24" stroke="#FFFFFF" stroke-opacity="0.025"/>
-    </pattern>
-    <filter id="shadow" x="-10%" y="-10%" width="130%" height="145%">
-      <feDropShadow dx="12" dy="14" stdDeviation="0" flood-color="#000000" flood-opacity="0.9"/>
-      <feDropShadow dx="0" dy="24" stdDeviation="20" flood-color="#000000" flood-opacity="0.55"/>
-    </filter>
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="hardShadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="10" dy="10" stdDeviation="0" flood-color="#050507"/>
     </filter>
   </defs>
 
-  <rect width="1180" height="420" fill="url(#back)"/>
-  <rect width="1180" height="420" fill="url(#mesh)"/>
-  <g filter="url(#shadow)">
-    <rect x="50" y="36" width="1080" height="334" rx="8" fill="#06070A" stroke="#2B2F39" stroke-width="2"/>
-    <rect x="58" y="44" width="1064" height="318" rx="5" fill="url(#chassis)" stroke="#3A3F4B"/>
-  </g>
+  <rect width="1180" height="350" fill="#090B10"/>
+  <rect x="58" y="40" width="1064" height="250" rx="8" fill="#0D0F15"/>
+  <rect x="46" y="28" width="1064" height="250" rx="8" fill="#1A1E27" stroke="#050507" stroke-width="5"/>
+  <path d="M62 46H1094" stroke="#3B414D" stroke-width="2"/>
+  <path d="M62 260H1094" stroke="#050507" stroke-width="3"/>
+  <rect x="74" y="60" width="1008" height="52" rx="6" fill="#0B0D12" stroke="#050507" stroke-width="4"/>
+  <rect x="84" y="70" width="138" height="12" fill="#8B5CF6"/>
+  <rect x="84" y="88" width="74" height="12" fill="#F87171"/>
 
-  <path d="M58 92H1122" stroke="#343945"/>
-  <rect x="58" y="44" width="8" height="48" fill="#8A55F0"/>
-  <rect x="66" y="44" width="158" height="48" fill="#171923"/>
-  <text x="84" y="74" fill="#F1F3F7" font-family="Consolas, Segoe UI, sans-serif" font-size="14" font-weight="700">PROJECT DECK // 01</text>
-  <text x="246" y="74" fill="#777F8E" font-family="Consolas, Segoe UI, sans-serif" font-size="12">ECLIPXSE LABS</text>
-  <circle cx="1048" cy="68" r="5" fill="#9D68FF" filter="url(#glow)"/>
-  <text x="1062" y="72" fill="#C9CED8" font-family="Consolas, Segoe UI, sans-serif" font-size="11" font-weight="700">ONLINE</text>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="248" y="93" fill="#F4F5F7" font-size="31" font-weight="950">Now Building</text>
+    <text x="520" y="93" fill="#AAB1BD" font-size="14" font-weight="800">raised graphite / bold but not loud</text>
 
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="84" y="132" fill="#858D9C" font-family="Consolas, Segoe UI, sans-serif" font-size="11" font-weight="700">PRIMARY BUILD</text>
-    <text x="82" y="189" fill="#F5F6F8" font-size="48" font-weight="900">AURA</text>
-    <text x="82" y="235" fill="#A878FF" font-size="48" font-weight="900">BROWSER</text>
-    <rect x="84" y="253" width="248" height="2" fill="url(#steel)"/>
-    <text x="84" y="280" fill="#AEB5C2" font-size="13" font-weight="600">Desktop browsing, rebuilt with taste.</text>
-    <text x="84" y="302" fill="#707887" font-family="Consolas, Segoe UI, sans-serif" font-size="11">ELECTRON / TYPESCRIPT / VITE</text>
-    <rect x="84" y="308" width="98" height="24" rx="3" fill="#231A37" stroke="#8152DC"/>
-    <circle cx="98" cy="320" r="4" fill="#9D68FF"/>
-    <text x="110" y="324" fill="#ECE8F7" font-family="Consolas, Segoe UI, sans-serif" font-size="10" font-weight="700">IN BUILD</text>
-
-    <rect x="382" y="106" width="470" height="210" rx="6" fill="#050609" stroke="#505764" stroke-width="2"/>
-    <rect x="390" y="114" width="454" height="194" rx="3" fill="url(#screen)"/>
-    <rect x="390" y="114" width="454" height="28" fill="#20232C"/>
-    <circle cx="407" cy="128" r="4" fill="#D84B60"/>
-    <circle cx="421" cy="128" r="4" fill="#646C79"/>
-    <circle cx="435" cy="128" r="4" fill="#9D68FF"/>
-    <rect x="462" y="121" width="248" height="14" rx="3" fill="#11131A" stroke="#343945"/>
-    <path d="M476 128H690" stroke="#4B5260"/>
-    <rect x="720" y="121" width="14" height="14" rx="2" fill="#2A203E"/>
-    <path d="M725 128H729M727 126V130" stroke="#A878FF" stroke-width="1.5" stroke-linecap="round"/>
-    <rect x="390" y="142" width="454" height="166" fill="url(#screenGlow)"/>
-    <rect x="406" y="158" width="72" height="134" rx="3" fill="#0D0F15" stroke="#2D323D"/>
-    <rect x="418" y="172" width="48" height="6" rx="2" fill="#9D68FF"/>
-    <rect x="418" y="192" width="32" height="5" rx="2" fill="#454C59"/>
-    <rect x="418" y="208" width="38" height="5" rx="2" fill="#454C59"/>
-    <rect x="418" y="224" width="27" height="5" rx="2" fill="#D84B60"/>
-    <rect x="418" y="259" width="48" height="20" rx="3" fill="#1C1728" stroke="#6241A7"/>
-    <path d="M430 269H454" stroke="#AE82FF" stroke-width="2" stroke-linecap="round"/>
-    <text x="514" y="180" fill="#7D8594" font-family="Consolas, Segoe UI, sans-serif" font-size="10">NEW TAB / AURA://HOME</text>
-    <text x="514" y="221" fill="#F2F3F6" font-size="27" font-weight="800">Browse your way.</text>
-    <text x="514" y="246" fill="#8D95A4" font-size="12">quiet chrome / sharp controls / zero clutter</text>
-    <rect x="514" y="267" width="94" height="24" rx="3" fill="#8A55F0"/>
-    <text x="534" y="283" fill="#FFFFFF" font-family="Consolas, Segoe UI, sans-serif" font-size="10" font-weight="700">OPEN DECK</text>
-    <rect x="620" y="267" width="72" height="24" rx="3" fill="#151821" stroke="#3C424F"/>
-    <text x="638" y="283" fill="#B2B8C3" font-family="Consolas, Segoe UI, sans-serif" font-size="10">GITHUB</text>
-
-    <text x="886" y="128" fill="#858D9C" font-family="Consolas, Segoe UI, sans-serif" font-size="11" font-weight="700">BUILD CHANNELS</text>
-    <g font-family="Consolas, Segoe UI, sans-serif">
-      <rect x="886" y="146" width="208" height="40" rx="3" fill="#11131A" stroke="#343945"/>
-      <rect x="886" y="146" width="5" height="40" fill="#9D68FF"/>
-      <text x="906" y="164" fill="#EEF0F4" font-size="11" font-weight="700">01 / INTERFACE</text>
-      <text x="906" y="178" fill="#727A89" font-size="9">DARK SYSTEM UI</text>
-      <rect x="886" y="194" width="208" height="40" rx="3" fill="#11131A" stroke="#343945"/>
-      <rect x="886" y="194" width="5" height="40" fill="#596170"/>
-      <text x="906" y="212" fill="#EEF0F4" font-size="11" font-weight="700">02 / NAVIGATION</text>
-      <text x="906" y="226" fill="#727A89" font-size="9">TABS + SHORTCUTS</text>
-      <rect x="886" y="242" width="208" height="40" rx="3" fill="#11131A" stroke="#343945"/>
-      <rect x="886" y="242" width="5" height="40" fill="#D84B60"/>
-      <text x="906" y="260" fill="#EEF0F4" font-size="11" font-weight="700">03 / POLISH</text>
-      <text x="906" y="274" fill="#727A89" font-size="9">MOTION + DETAILS</text>
-      <rect x="886" y="294" width="208" height="22" rx="3" fill="#201629" stroke="#563675"/>
-      <text x="906" y="309" fill="#C69AFF" font-size="9" font-weight="700">TRANSMISSION ACTIVE</text>
-      <path d="M1044 305H1076" stroke="#D84B60" stroke-width="2"/>
-      <circle cx="1082" cy="305" r="3" fill="#D84B60" filter="url(#glow)"/>
+    <g filter="url(#hardShadow)">
+      <rect x="84" y="142" width="238" height="86" rx="8" fill="url(#bevel)" stroke="#050507" stroke-width="4"/>
+      <path d="M94 153H310" stroke="#FFFFFF" stroke-width="2" opacity="0.65"/>
+      <path d="M94 216H310" stroke="#050507" stroke-width="3" opacity="0.35"/>
+      <text x="108" y="176" fill="#0B0D12" font-size="18" font-weight="950">Aura Browser</text>
+      <text x="108" y="201" fill="#252A35" font-size="13" font-weight="800">tabs, dark UI, controls</text>
+      <rect x="108" y="211" width="92" height="7" rx="3.5" fill="#8B5CF6"/>
     </g>
-  </g>
 
-  <rect x="58" y="336" width="1064" height="26" fill="#08090D"/>
-  <rect x="58" y="336" width="170" height="26" fill="#E8EBF1"/>
-  <text x="76" y="353" fill="#0A0B0F" font-family="Consolas, Segoe UI, sans-serif" font-size="10" font-weight="800">CURRENT TRANSMISSION</text>
-  <text x="248" y="353" fill="#838B99" font-family="Consolas, Segoe UI, sans-serif" font-size="10">BROWSER</text>
-  <path d="M306 349H372" stroke="#9D68FF" stroke-width="3"/>
-  <text x="390" y="353" fill="#838B99" font-family="Consolas, Segoe UI, sans-serif" font-size="10">BOTS</text>
-  <path d="M430 349H482" stroke="#505764" stroke-width="3"/>
-  <text x="502" y="353" fill="#838B99" font-family="Consolas, Segoe UI, sans-serif" font-size="10">PORTFOLIO</text>
-  <path d="M570 349H622" stroke="#D84B60" stroke-width="3"/>
-  <text x="1012" y="353" fill="#707887" font-family="Consolas, Segoe UI, sans-serif" font-size="9">MARIO.CPP</text>
+    <g filter="url(#hardShadow)">
+      <rect x="358" y="142" width="210" height="86" rx="8" fill="url(#darkBevel)" stroke="#050507" stroke-width="4"/>
+      <path d="M368 153H556" stroke="#FFFFFF" stroke-width="2" opacity="0.16"/>
+      <text x="382" y="176" fill="#F4F5F7" font-size="18" font-weight="950">Discord Bots</text>
+      <text x="382" y="201" fill="#AAB1BD" font-size="13" font-weight="800">music + utility flows</text>
+      <circle cx="386" cy="214" r="5" fill="#F87171"/>
+      <circle cx="404" cy="214" r="5" fill="#6B7280"/>
+      <circle cx="422" cy="214" r="5" fill="#6B7280"/>
+    </g>
+
+    <g filter="url(#hardShadow)">
+      <rect x="604" y="142" width="210" height="86" rx="8" fill="url(#bevel)" stroke="#050507" stroke-width="4"/>
+      <path d="M614 153H802" stroke="#FFFFFF" stroke-width="2" opacity="0.65"/>
+      <text x="628" y="176" fill="#0B0D12" font-size="18" font-weight="950">Portfolio</text>
+      <text x="628" y="201" fill="#252A35" font-size="13" font-weight="800">identity + layout</text>
+      <rect x="628" y="211" width="98" height="7" rx="3.5" fill="#F87171"/>
+    </g>
+
+    <g filter="url(#hardShadow)">
+      <rect x="850" y="142" width="210" height="86" rx="8" fill="url(#darkBevel)" stroke="#050507" stroke-width="4"/>
+      <path d="M860 153H1048" stroke="#FFFFFF" stroke-width="2" opacity="0.16"/>
+      <text x="874" y="176" fill="#F4F5F7" font-size="18" font-weight="950">Micro Tools</text>
+      <text x="874" y="201" fill="#AAB1BD" font-size="13" font-weight="800">small useful builds</text>
+      <rect x="874" y="211" width="68" height="7" rx="3.5" fill="#8B5CF6"/>
+      <rect x="950" y="211" width="44" height="7" rx="3.5" fill="#F87171"/>
+    </g>
+
+    <text x="84" y="256" fill="#8A92A3" font-size="12" font-weight="900" letter-spacing="2">CURRENT MODE</text>
+    <text x="218" y="256" fill="#F4F5F7" font-size="12" font-weight="900">shipping first, polishing hard after</text>
+  </g>
 </svg>

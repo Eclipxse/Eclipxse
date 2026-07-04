@@ -8,15 +8,15 @@
 
 <br>
 
-<img src="./assets/readme/now-cooking.svg" alt="Afterdark project deck featuring Aura Browser" width="100%" />
+<img src="./assets/readme/now-cooking.svg" alt="Bold neo-brutalist graphite active projects board" width="100%" />
 
 <br>
 
-<img src="./assets/readme/tech-stack.svg" alt="Afterdark modular toolchain rack" width="100%" />
+<img src="./assets/readme/tech-stack.svg" alt="Bold neo-brutalist graphite tech stack board" width="100%" />
 
 <br>
 
-<img src="./assets/readme/github-stats.svg" alt="Afterdark GitHub field telemetry board" width="100%" />
+<img src="./assets/readme/github-stats.svg" alt="Bold neo-brutalist graphite GitHub stats board" width="100%" />
 
 ---
 
@@ -24,4 +24,4 @@
   <img src="https://komarev.com/ghpvc/?username=Eclipxse&icon=0&color=a855f7&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views" />
 </p>
 
-<!-- Custom profile system: Afterdark hardware / Eclipxse. -->
+<!-- Profile generated with Codex + bold graphite neo-brutal aura. -->
