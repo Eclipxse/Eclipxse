@@ -15,23 +15,22 @@
   <meta property="og:site_name" content="Eclipxse">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Blunt38 Privacy Policy">
-  <meta property="og:description" content="How Blunt38 collects, uses, stores, and deletes Discord application data.">
+  <meta property="og:description" content="How Blunt38 handles Discord application data.">
   <meta property="og:image" content="https://eclipxse.in/assets/images/brand/logo-social.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Blunt38 Privacy Policy">
-  <meta name="twitter:description" content="How Blunt38 collects, uses, stores, and deletes Discord application data.">
+  <meta name="twitter:description" content="How Blunt38 handles Discord application data.">
   <meta name="twitter:image" content="https://eclipxse.in/assets/images/brand/logo-social.jpg">
-  <meta name="twitter:image:alt" content="Eclipxse logo with an ornate eclipse mark">
 
   <link rel="canonical" href="https://eclipxse.in/privacy/">
   <link rel="icon" href="../assets/favicon/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
   <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
-  <link rel="stylesheet" href="../styles/privacy.css">
+  <link rel="preload" href="../assets/fonts/Breton.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Machine.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="../styles/privacy.css?v=20260721-r2">
 
   <script type="application/ld+json">
   {
@@ -41,335 +40,247 @@
     "url": "https://eclipxse.in/privacy/",
     "name": "Blunt38 Privacy Policy",
     "description": "Privacy Policy for the Blunt38 Discord bot.",
-    "dateModified": "2026-07-20",
+    "dateModified": "2026-07-21",
     "isPartOf": { "@id": "https://eclipxse.in/#website" },
     "inLanguage": "en"
   }
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to policy</a>
+  <a class="skip-link" href="#policy">Skip to policy</a>
 
-  <div class="ambient" aria-hidden="true">
-    <div class="ambient-orbit"></div>
-    <div class="ambient-grid"></div>
-  </div>
-
-  <header class="site-header">
-    <a class="brand" href="../index.html" aria-label="Eclipxse home">
-      <img src="../assets/images/brand/logo-square.jpg" alt="" width="44" height="44">
-      <span class="brand-copy">
-        <strong>Eclipxse</strong>
-        <span>Blunt38 / Legal</span>
-      </span>
+  <header class="topbar">
+    <a class="identity" href="../index.html" aria-label="Eclipxse home">
+      <img src="../assets/images/brand/logo-square.jpg" alt="" width="36" height="36">
+      <span>Eclipxse</span>
     </a>
-    <a class="back-link" href="../index.html">Back home <span aria-hidden="true">↗</span></a>
+
+    <div class="topbar-actions">
+      <span>Blunt38 / Legal</span>
+      <a href="../index.html">Back home <span aria-hidden="true">↗</span></a>
+    </div>
   </header>
 
-  <main id="main-content">
-    <section class="policy-hero" aria-labelledby="policy-title">
-      <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> Discord application privacy</p>
-      <h1 id="policy-title">Blunt38<br><span>Privacy Policy</span></h1>
-      <p class="hero-copy">
-        This policy explains what data Blunt38 processes, why it is needed, where it may be sent,
-        how long it is kept, and how you can request access or deletion.
-      </p>
+  <main id="policy">
+    <section class="intro" aria-labelledby="policy-title">
+      <div class="intro-labels">
+        <span>Privacy policy</span>
+        <time datetime="2026-07-21">Updated 21 July 2026</time>
+      </div>
 
-      <dl class="policy-meta">
-        <div>
-          <dt>Effective</dt>
-          <dd><time datetime="2026-07-20">20 July 2026</time></dd>
-        </div>
-        <div>
-          <dt>Operator</dt>
-          <dd>Eclipxse</dd>
-        </div>
-        <div>
-          <dt>Privacy contact</dt>
-          <dd><a href="mailto:lawliet@eclipxse.in">lawliet@eclipxse.in</a></dd>
-        </div>
-      </dl>
+      <h1 id="policy-title">Privacy Policy</h1>
+
+      <div class="intro-summary">
+        <p>
+          A clear account of what data the Blunt38 Discord bot processes,
+          why it is needed, and how you can request access or deletion.
+        </p>
+
+        <dl>
+          <div>
+            <dt>Application</dt>
+            <dd>Blunt38</dd>
+          </div>
+          <div>
+            <dt>Operator</dt>
+            <dd>Eclipxse</dd>
+          </div>
+          <div>
+            <dt>Contact</dt>
+            <dd><a href="mailto:lawliet@eclipxse.in">lawliet@eclipxse.in</a></dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
-    <div class="policy-layout">
-      <aside class="policy-index" aria-label="Policy contents">
-        <div class="index-card">
-          <p class="index-label">Policy map</p>
-          <nav>
-            <a href="#scope"><span>01</span> Scope</a>
-            <a href="#data"><span>02</span> Data processed</a>
-            <a href="#use"><span>03</span> How data is used</a>
-            <a href="#ai"><span>04</span> AI features</a>
-            <a href="#dashboard"><span>05</span> Dashboard &amp; storage</a>
-            <a href="#sharing"><span>06</span> Service providers</a>
-            <a href="#retention"><span>07</span> Retention</a>
-            <a href="#rights"><span>08</span> Your choices</a>
-            <a href="#security"><span>09</span> Security</a>
-            <a href="#children"><span>10</span> Children</a>
-            <a href="#changes"><span>11</span> Changes</a>
-            <a href="#contact"><span>12</span> Contact</a>
-          </nav>
-        </div>
+    <div class="document-layout">
+      <aside class="contents" aria-label="Policy contents">
+        <p>Contents</p>
+        <nav>
+          <a href="#overview"><span>01</span> Overview</a>
+          <a href="#data"><span>02</span> Data processed</a>
+          <a href="#use"><span>03</span> How it is used</a>
+          <a href="#providers"><span>04</span> AI and providers</a>
+          <a href="#retention"><span>05</span> Storage and retention</a>
+          <a href="#choices"><span>06</span> Your choices</a>
+          <a href="#safety"><span>07</span> Safety and age</a>
+          <a href="#contact"><span>08</span> Contact</a>
+        </nav>
 
-        <div class="trust-card" aria-label="Privacy commitments">
-          <span>No sale of data</span>
-          <span>No advertising profiles</span>
-          <span>Deletion requests supported</span>
+        <div class="plain-language">
+          <span aria-hidden="true"></span>
+          <p>No data sales.<br>No advertising profiles.</p>
         </div>
       </aside>
 
-      <article class="policy-content">
-        <section id="scope" class="policy-section">
-          <div class="section-heading">
-            <span>01</span>
-            <h2>Scope</h2>
-          </div>
-          <div class="section-body">
+      <article class="policy-body">
+        <section id="overview" class="policy-section">
+          <div class="section-number">01</div>
+          <div class="section-content">
+            <h2>Overview</h2>
             <p>
-              This Privacy Policy applies to <strong>Blunt38</strong>, including the Discord bot, its optional web
-              dashboard, and its browser-based Draw Party game. Blunt38 is operated by Eclipxse.
+              This policy applies to the Blunt38 Discord bot, its web dashboard,
+              and its Draw Party browser game. It does not cover Discord itself
+              or third-party services you access independently.
             </p>
             <p>
-              Discord separately processes information under its own privacy policy. Server owners and
-              administrators also control how Blunt38 is configured in their Discord servers and may have their
-              own rules for server content.
+              Blunt38 processes only the information needed to provide features
+              selected by server administrators or requested by users. Eclipxse
+              does not sell personal data or use it to build advertising profiles.
             </p>
-            <div class="callout">
-              Blunt38 processes data only to provide requested bot features, administer connected servers,
-              maintain security, and respond to support or privacy requests. It does not sell Discord data or use
-              it for targeted advertising.
-            </div>
           </div>
         </section>
 
         <section id="data" class="policy-section">
-          <div class="section-heading">
-            <span>02</span>
-            <h2>Data Blunt38 processes</h2>
-          </div>
-          <div class="section-body">
-            <p>The exact data depends on which features a server administrator enables and which commands users choose to run.</p>
+          <div class="section-number">02</div>
+          <div class="section-content">
+            <h2>Data processed</h2>
+            <p>The exact data depends on the features enabled in a Discord server.</p>
 
-            <div class="data-grid">
-              <article>
+            <div class="data-list">
+              <div>
                 <h3>Discord identifiers</h3>
-                <p>Server, user, moderator, channel, message, role, and temporary voice-channel identifiers.</p>
-              </article>
-              <article>
-                <h3>Server configuration</h3>
-                <p>Selected channels and roles, welcome text, log settings, ticket settings, AI configuration, and visual preferences.</p>
-              </article>
-              <article>
+                <p>User, server, channel, role, message, moderator, and temporary voice-channel IDs.</p>
+              </div>
+              <div>
+                <h3>Server settings</h3>
+                <p>Configured channels and roles, welcome text, logs, tickets, AI settings, and appearance preferences.</p>
+              </div>
+              <div>
                 <h3>Feature records</h3>
-                <p>Moderation actions and reasons, polls and votes, role panels, giveaway entries, XP and levels, birthday month/day, and temporary voice ownership.</p>
-              </article>
-              <article>
-                <h3>Command and message content</h3>
-                <p>Command inputs, suggestions, ticket content processed for on-demand transcripts, and messages submitted to enabled AI features.</p>
-              </article>
-              <article>
-                <h3>Dashboard account data</h3>
-                <p>Discord user ID, username, avatar URL, and the IDs of servers you are allowed to manage.</p>
-              </article>
-              <article>
-                <h3>Draw Party data</h3>
-                <p>Player name, socket identifier, room membership, guesses, drawing strokes, scores, and sound preference.</p>
-              </article>
+                <p>Moderation cases, polls and votes, role panels, giveaways, XP and levels, birthday month/day, and temporary voice ownership.</p>
+              </div>
+              <div>
+                <h3>Submitted content</h3>
+                <p>Command inputs, suggestions, ticket messages used for requested transcripts, and messages sent to enabled AI features.</p>
+              </div>
+              <div>
+                <h3>Dashboard account</h3>
+                <p>Your Discord ID, username, avatar URL, and the IDs of servers you are permitted to manage.</p>
+              </div>
+              <div>
+                <h3>Draw Party</h3>
+                <p>Player name, socket ID, room membership, guesses, drawing strokes, scores, and sound preference.</p>
+              </div>
             </div>
 
-            <p>
-              The bot may also receive technical logs needed to diagnose errors or abuse. Hosting and network
-              providers may process IP addresses, request paths, browser or device details, and timestamps when
-              you use the dashboard, game, or this policy page.
+            <p class="note">
+              Blunt38 does not request your Discord password. Authentication is handled by Discord OAuth.
             </p>
           </div>
         </section>
 
         <section id="use" class="policy-section">
-          <div class="section-heading">
-            <span>03</span>
+          <div class="section-number">03</div>
+          <div class="section-content">
             <h2>How data is used</h2>
-          </div>
-          <div class="section-body">
-            <ul class="policy-list">
-              <li>Respond to commands and interactions.</li>
-              <li>Operate moderation, tickets, roles, polls, giveaways, levels, birthdays, welcome messages, and temporary voice channels.</li>
-              <li>Authenticate authorized server administrators and save dashboard configuration.</li>
-              <li>Provide optional AI replies, music playback, and browser game rooms.</li>
-              <li>Prevent abuse, troubleshoot failures, and protect the bot and connected servers.</li>
-              <li>Comply with lawful requests and enforce applicable platform rules.</li>
+            <ul>
+              <li>Respond to commands and Discord interactions.</li>
+              <li>Run moderation, tickets, roles, polls, giveaways, levels, birthdays, welcome messages, and temporary voice channels.</li>
+              <li>Authenticate server administrators and save dashboard configuration.</li>
+              <li>Provide optional AI replies, music playback, and Draw Party rooms.</li>
+              <li>Prevent abuse, diagnose failures, and protect the service.</li>
+              <li>Meet lawful obligations and enforce applicable platform rules.</li>
             </ul>
-            <p>
-              Where applicable law requires a legal basis, processing is based on providing the feature you or a
-              server administrator requested, legitimate interests in operating and securing the service, consent
-              where required for optional features, and compliance with legal obligations.
-            </p>
           </div>
         </section>
 
-        <section id="ai" class="policy-section">
-          <div class="section-heading">
-            <span>04</span>
-            <h2>AI features</h2>
-          </div>
-          <div class="section-body">
+        <section id="providers" class="policy-section">
+          <div class="section-number">04</div>
+          <div class="section-content">
+            <h2>AI and service providers</h2>
             <p>
-              If a server administrator enables AI replies, Blunt38 may send the relevant message content together
-              with the server name, channel name, username, and configured bot prompt to the AI provider selected
-              by the operator. The supported providers are OpenAI, Groq, and OpenRouter; only the configured provider
-              receives a given request.
+              When an AI feature is used, relevant message content, instructions,
+              and limited context may be sent to the AI provider configured by the
+              operator: OpenAI, Groq, or OpenRouter. Blunt38 does not store AI prompts
+              in its feature database, although Discord and the selected provider may
+              retain data under their own policies.
             </p>
-            <p>
-              Blunt38 does not store AI prompt content in its feature database. The original message and the bot's
-              reply may remain in Discord, and the selected AI provider may retain or process requests under its own
-              terms and privacy policy. Do not submit passwords, financial data, health information, or other
-              sensitive personal data to AI commands.
-            </p>
-          </div>
-        </section>
 
-        <section id="dashboard" class="policy-section">
-          <div class="section-heading">
-            <span>05</span>
-            <h2>Dashboard, cookies, and local storage</h2>
-          </div>
-          <div class="section-body">
-            <p>
-              The optional dashboard uses Discord OAuth with the <code>identify</code> and <code>guilds</code> scopes.
-              It creates a signed, HTTP-only login cookie containing your Discord identity, manageable server IDs,
-              and expiry time. The login cookie lasts up to seven days. A separate OAuth security-state cookie lasts
-              up to ten minutes.
-            </p>
-            <p>
-              Discord access tokens are used during sign-in to request your identity and server list; they are not
-              included in Blunt38's dashboard session cookie. The Draw Party game stores the player name and sound
-              preference in the user's browser using local storage so they can be reused on the same device.
-            </p>
-          </div>
-        </section>
+            <div class="provider-list">
+              <div><strong>Discord</strong><span>Interactions, OAuth, messages, servers, roles, channels, and voice.</span></div>
+              <div><strong>Database hosting</strong><span>Supabase or the configured PostgreSQL host for persistent settings and records.</span></div>
+              <div><strong>AI providers</strong><span>OpenAI, Groq, or OpenRouter when an optional AI feature is requested.</span></div>
+              <div><strong>Music services</strong><span>Lavalink and supported sources for searches, links, and playback.</span></div>
+              <div><strong>Web infrastructure</strong><span>Hosting, CDN, security, diagnostics, and availability.</span></div>
+            </div>
 
-        <section id="sharing" class="policy-section">
-          <div class="section-heading">
-            <span>06</span>
-            <h2>Service providers and sharing</h2>
-          </div>
-          <div class="section-body">
-            <p>Data is shared only when needed to operate a requested feature, comply with law, or protect the service. Relevant providers may include:</p>
-            <ul class="policy-list provider-list">
-              <li><strong>Discord</strong> — bot interactions, OAuth, messages, servers, roles, channels, voice, and platform delivery.</li>
-              <li><strong>Supabase or the operator's PostgreSQL host</strong> — persistent feature and configuration storage when database mode is enabled.</li>
-              <li><strong>OpenAI, Groq, or OpenRouter</strong> — optional AI requests, depending on the configured provider.</li>
-              <li><strong>Lavalink and music sources</strong> — music search terms, links, and playback requests.</li>
-              <li><strong>Hosting, CDN, and infrastructure providers</strong> — delivery, network security, diagnostics, and uptime.</li>
-            </ul>
-            <p>
-              Blunt38 does not sell, rent, or disclose Discord API data to data brokers, advertising networks, or
-              marketing services. Information may be disclosed if required by law, to investigate abuse, or to
-              protect users, Discord, Blunt38, or others.
-            </p>
+            <p>Eclipxse does not allow these providers to use bot data for Eclipxse advertising.</p>
           </div>
         </section>
 
         <section id="retention" class="policy-section">
-          <div class="section-heading">
-            <span>07</span>
-            <h2>Retention</h2>
-          </div>
-          <div class="section-body">
+          <div class="section-number">05</div>
+          <div class="section-content">
+            <h2>Storage and retention</h2>
             <div class="retention-list">
-              <div><span>Dashboard login</span><strong>Up to 7 days</strong></div>
-              <div><span>OAuth security state</span><strong>Up to 10 minutes</strong></div>
-              <div><span>Draw Party server rooms</span><strong>Up to 3 hours</strong></div>
-              <div><span>Draw Party browser preferences</span><strong>Until cleared by the user</strong></div>
-              <div><span>AI input in Blunt38's database</span><strong>Not stored there</strong></div>
-              <div><span>Server configuration and feature records</span><strong>Until deleted or no longer needed</strong></div>
+              <div><strong>OAuth state</strong><span>Approximately 10 minutes.</span></div>
+              <div><strong>Dashboard session</strong><span>Up to 7 days; stored in a signed, HTTP-only cookie.</span></div>
+              <div><strong>Draw Party room</strong><span>In memory while active; inactive rooms expire after approximately 3 hours.</span></div>
+              <div><strong>Server settings and feature records</strong><span>Until deleted, no longer required, or removal is requested and verified.</span></div>
+              <div><strong>Ticket transcript</strong><span>Generated on request from recent Discord messages and delivered through Discord.</span></div>
             </div>
             <p>
-              Messages, replies, suggestions, and generated ticket transcripts may remain in Discord according to
-              the server's own retention and deletion actions. External providers may apply their own retention
-              periods. Removing Blunt38 from a server stops new processing there but may not automatically erase
-              existing database records; a server owner or affected user can request deletion as described below.
-            </p>
-            <p>
-              Limited information may be retained longer when reasonably necessary for security, fraud prevention,
-              dispute resolution, or legal compliance.
+              The Draw Party name and sound preference may be stored in your browser's
+              local storage. Removing Blunt38 from a server does not automatically erase
+              all database records; a server owner may request deletion.
             </p>
           </div>
         </section>
 
-        <section id="rights" class="policy-section">
-          <div class="section-heading">
-            <span>08</span>
-            <h2>Your choices and data requests</h2>
-          </div>
-          <div class="section-body">
+        <section id="choices" class="policy-section">
+          <div class="section-number">06</div>
+          <div class="section-content">
+            <h2>Your choices</h2>
             <p>
-              Depending on your location, you may have rights to access, correct, delete, restrict, export, or object
-              to the processing of your personal data. You can also stop using commands, leave a participating server,
-              clear Draw Party browser storage, log out of the dashboard, or ask a server administrator to disable an
-              optional feature.
+              Server administrators can disable optional features, change configuration,
+              clear browser storage, or remove Blunt38. You may request access, correction,
+              or deletion of data associated with your Discord account or server.
             </p>
-            <div class="request-card">
-              <p class="index-label">Request deletion or access</p>
-              <p>Email <a href="mailto:lawliet@eclipxse.in?subject=Blunt38%20Data%20Request">lawliet@eclipxse.in</a> with the subject <strong>Blunt38 Data Request</strong>.</p>
-              <p>Include your Discord user ID and relevant server ID. Additional verification may be requested to prevent unauthorized deletion.</p>
-              <p>Verified requests will be handled as soon as reasonably possible and normally within 30 days.</p>
+
+            <div class="request-box">
+              <span>Data request</span>
+              <p>
+                Email <a href="mailto:lawliet@eclipxse.in?subject=Blunt38%20Data%20Request">lawliet@eclipxse.in</a>
+                with the subject <strong>Blunt38 Data Request</strong>. Include your Discord user ID
+                and any relevant server ID.
+              </p>
+              <p>
+                Additional verification may be required to prevent unauthorized disclosure
+                or deletion. Verified requests are normally handled within 30 days.
+              </p>
             </div>
           </div>
         </section>
 
-        <section id="security" class="policy-section">
-          <div class="section-heading">
-            <span>09</span>
-            <h2>Security</h2>
-          </div>
-          <div class="section-body">
+        <section id="safety" class="policy-section">
+          <div class="section-number">07</div>
+          <div class="section-content">
+            <h2>Safety and age</h2>
             <p>
-              Blunt38 uses access controls, signed HTTP-only dashboard cookies, restricted Discord permissions,
-              database security controls, and other reasonable safeguards intended to protect stored data. No
-              internet service can guarantee absolute security. If a material data incident occurs, affected users
-              and Discord will be notified when required.
+              Reasonable technical and organizational safeguards are used to protect data,
+              including restricted credentials, signed sessions, and access checks. No online
+              service can guarantee absolute security.
+            </p>
+            <p>
+              Blunt38 is intended for people permitted to use Discord under Discord's terms.
+              It is not directed to children below the minimum age required in their country.
+              If you believe a child provided data improperly, contact Eclipxse for deletion.
+            </p>
+            <p>
+              This policy may change when Blunt38's features or providers change. Material
+              revisions will update the date at the top of this page.
             </p>
           </div>
         </section>
 
-        <section id="children" class="policy-section">
-          <div class="section-heading">
-            <span>10</span>
-            <h2>Children</h2>
-          </div>
-          <div class="section-body">
-            <p>
-              Blunt38 is intended only for people old enough to use Discord under Discord's Terms of Service and the
-              laws of their country. Blunt38 does not knowingly collect personal data from children below the
-              applicable minimum age. Contact the operator if you believe such data has been processed.
-            </p>
-          </div>
-        </section>
-
-        <section id="changes" class="policy-section">
-          <div class="section-heading">
-            <span>11</span>
-            <h2>Policy changes</h2>
-          </div>
-          <div class="section-body">
-            <p>
-              This policy may be updated when Blunt38's features, providers, or legal obligations change. The
-              effective date at the top of this page will be updated when material changes are published. Continued
-              use after an update means the revised policy applies to later processing.
-            </p>
-          </div>
-        </section>
-
-        <section id="contact" class="policy-section final-section">
-          <div class="section-heading">
-            <span>12</span>
+        <section id="contact" class="policy-section contact-section">
+          <div class="section-number">08</div>
+          <div class="section-content">
             <h2>Contact</h2>
-          </div>
-          <div class="section-body">
-            <p>Questions, complaints, and privacy requests can be sent to:</p>
+            <p>Questions, complaints, and privacy requests can be sent directly to Eclipxse.</p>
             <a class="contact-link" href="mailto:lawliet@eclipxse.in">
-              <span>Eclipxse / Blunt38</span>
+              <span>Privacy contact</span>
               <strong>lawliet@eclipxse.in</strong>
               <span aria-hidden="true">↗</span>
             </a>
@@ -379,9 +290,9 @@
     </div>
   </main>
 
-  <footer class="policy-footer">
-    <span>Blunt38 / Privacy / 2026</span>
-    <a href="#main-content">Back to top ↑</a>
+  <footer>
+    <span>Eclipxse / Blunt38 / Privacy</span>
+    <a href="#policy">Back to top ↑</a>
   </footer>
 </body>
 </html>
