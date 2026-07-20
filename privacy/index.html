@@ -30,7 +30,7 @@
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
   <link rel="preload" href="../assets/fonts/Breton.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/Machine.otf" as="font" type="font/otf" crossorigin>
-  <link rel="stylesheet" href="../styles/privacy.css?v=20260721-r2">
+  <link rel="stylesheet" href="../styles/privacy.css?v=20260721-r3">
 
   <script type="application/ld+json">
   {
@@ -48,6 +48,15 @@
 </head>
 <body>
   <a class="skip-link" href="#policy">Skip to policy</a>
+
+  <div class="motion-field" aria-hidden="true">
+    <span class="motion-blob motion-blob-red"></span>
+    <span class="motion-blob motion-blob-orange"></span>
+    <span class="motion-blob motion-blob-cyan"></span>
+    <span class="motion-glow"></span>
+    <span class="motion-grain"></span>
+  </div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
 
   <header class="topbar">
     <a class="identity" href="../index.html" aria-label="Eclipxse home">
@@ -68,7 +77,10 @@
         <time datetime="2026-07-21">Updated 21 July 2026</time>
       </div>
 
-      <h1 id="policy-title">Privacy Policy</h1>
+      <h1 id="policy-title" aria-label="Privacy Policy">
+        <span class="title-word"><span class="title-word-inner">Privacy</span></span>
+        <span class="title-word title-word-alt"><span class="title-word-inner">Policy.</span></span>
+      </h1>
 
       <div class="intro-summary">
         <p>
@@ -294,5 +306,10 @@
     <span>Eclipxse / Blunt38 / Privacy</span>
     <a href="#policy">Back to top ↑</a>
   </footer>
+
+  <script defer src="../js/vendor/gsap.min.js"></script>
+  <script defer src="../js/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="../js/vendor/lenis.min.js"></script>
+  <script defer src="../js/privacy.js?v=20260721-r3"></script>
 </body>
 </html>
