@@ -1887,29 +1887,29 @@ function setupProjectsSection() {
       category: 'Web App', year: '2026', tags: ['Full-stack', 'Vercel', 'Web App'],
       images: [],
     },
-    'zenith': {
-      desc: isEn ? "A 2D farming game prototype in progress, used to learn gameplay loops, scenes, interaction and small-game structure." : "A 2D farming game prototype in progress, used to learn gameplay loops, scenes, interaction and small-game structure.",
-      category: 'Lab', year: 'Learning', tags: ['Godot', 'GDScript', 'Game Design'],
+    'godot-farming': {
+      desc: isEn ? "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops." : "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops.",
+      category: 'Game Prototype', year: '2026', tags: ['Godot 4', 'GDScript', '2D Game'],
       images: [],
     },
-    'skymcdb': {
-      desc: isEn ? "Small Python scripts and automation experiments for learning faster workflows, parsing, utilities and practical problem solving." : "Small Python scripts and automation experiments for learning faster workflows, parsing, utilities and practical problem solving.",
-      category: 'Lab', year: 'Learning', tags: ['Python', 'CLI', 'Automation'],
+    'blunt38': {
+      desc: isEn ? "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game." : "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game.",
+      category: 'Discord Platform', year: '2026', tags: ['TypeScript', 'Discord.js', 'Next.js'],
       images: [],
     },
-    'chromablock': {
-      desc: isEn ? "A learning log for reverse engineering concepts, debugging habits, file formats and how software behaves underneath." : "A learning log for reverse engineering concepts, debugging habits, file formats and how software behaves underneath.",
-      category: 'Lab', year: 'Learning', tags: ['Reversing', 'Debugging', 'Systems'],
+    'game-research': {
+      desc: isEn ? "A hands-on reverse-engineering study of a live game process using Cheat Engine to scan memory, trace changing values and understand runtime behavior." : "A hands-on reverse-engineering study of a live game process using Cheat Engine to scan memory, trace changing values and understand runtime behavior.",
+      category: 'Technical Research', year: '2026', tags: ['Reverse Engineering', 'Cheat Engine', 'Debugging'],
       images: [],
     },
-    'symphony': {
-      desc: isEn ? "Low-level experiments for learning C, memory, files, compilation and the basics behind higher-level tools." : "Low-level experiments for learning C, memory, files, compilation and the basics behind higher-level tools.",
-      category: 'Lab', year: 'Learning', tags: ['C', 'Linux', 'Debugging'],
+    'marishoku-os': {
+      desc: isEn ? "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO." : "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO.",
+      category: 'Debian Remix', year: 'V1.3', tags: ['Debian 13', 'KDE Plasma 6', 'Linux'],
       images: [],
     },
-    'echo': {
-      desc: isEn ? "This portfolio rebuild: a motion-led personal site adapted around my real projects, labs and current skills." : "This portfolio rebuild: a motion-led personal site adapted around my real projects, labs and current skills.",
-      category: 'Portfolio', year: '2026', tags: ['GSAP', 'Lenis', 'JavaScript'],
+    'eclipxse-beam': {
+      desc: isEn ? "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing." : "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing.",
+      category: 'Native + Web App', year: '2026', tags: ['Rust', 'Slint', 'WebRTC'],
       images: [],
     },
   };

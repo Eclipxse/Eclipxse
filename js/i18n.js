@@ -19,10 +19,10 @@
   }
 
   const T = {
-    'meta.description': 'Eclipxse is a creative developer and toolmaker building full-stack web apps, scripts, reverse-engineering tools, Python/C projects, and small Godot games.',
+    'meta.description': 'Eclipxse is a creative developer and toolmaker building full-stack platforms, Discord systems, reverse-engineering studies, native apps, Debian experiences, and small Godot games.',
 
     'index.title': 'Eclipxse | Creative Developer, Toolmaker & Game Scripter',
-    'index.description': 'Eclipxse is a creative developer and toolmaker building full-stack web apps, scripts, reverse-engineering tools, Python/C projects, and small Godot games.',
+    'index.description': 'Eclipxse is a creative developer and toolmaker building full-stack platforms, Discord systems, reverse-engineering studies, native apps, Debian experiences, and small Godot games.',
     'index.h1': 'Eclipxse, Creative Developer, toolmaker, game scripter, reverse engineering learner, full-stack web developer, and Godot game creator.',
     'index.hero.tagline': 'Quiet builder, <span class="other-accent">bringing ideas to life</span>,<br>through motion, systems and detail.',
     'index.about.text': 'As a<span class="other-accent"> creative developer</span>, I build tailored web experiences, tools, apps and small games, blending clean engineering with <span class="other-accent">emotion</span>.',
@@ -79,7 +79,7 @@
     'contact.brief.deliverables': 'Expected deliverables',
 
     'works.title': 'Work | Eclipxse Projects',
-    'works.description': 'Selected Eclipxse projects across full-stack websites, Python tools, reverse-engineering notes, game scripting, C experiments, and Godot prototypes.',
+    'works.description': 'Selected Eclipxse projects across full-stack platforms, Discord systems, reverse engineering, native apps, Debian customization, and Godot prototypes.',
     'works.h1': 'Projects, Eclipxse, Creative Developer. Explore selected builds across web development, tools, scripts, apps and games.',
 
     'common.aria.back': 'Back to home',
