@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://eclipxse.in/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-07-23</lastmod>
   </url>
   <url>
     <loc>https://eclipxse.in/works/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://eclipxse.in/info/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://eclipxse.in/contact/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-07-22</lastmod>
+  </url>
+  <url>
+    <loc>https://eclipxse.in/privacy/</loc>
+    <lastmod>2026-07-22</lastmod>
   </url>
 </urlset>

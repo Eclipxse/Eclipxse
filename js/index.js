@@ -812,6 +812,7 @@ function setupProjectsSection() {
   const preview = document.getElementById('proj-preview');
   let currentIdx = -1;
   gsap.set(card, { opacity: 0 });
+  items.forEach(item => item.setAttribute('aria-pressed', 'false'));
 
   
   const _coverCache = [];
@@ -857,6 +858,11 @@ function setupProjectsSection() {
   cover.addEventListener('click', () => {
     if (currentIdx >= 0) openProject(items[currentIdx].dataset.id, items[currentIdx]);
   });
+  cover.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    event.preventDefault();
+    if (currentIdx >= 0) openProject(items[currentIdx].dataset.id, items[currentIdx]);
+  });
 
   function onProjectsScroll() {
     if (!_projectsVisible) {
@@ -885,15 +891,24 @@ function setupProjectsSection() {
   onProjectsScroll();
 
   function deactivateAll() {
-    if (currentIdx >= 0) items[currentIdx].classList.remove('active');
+    if (currentIdx >= 0) {
+      items[currentIdx].classList.remove('active');
+      items[currentIdx].setAttribute('aria-pressed', 'false');
+    }
     currentIdx = -1;
     gsap.to(card, { opacity: 0, duration: 0.25, ease: 'power2.in' });
   }
 
   function activateProject(i) {
     if (i === currentIdx) return;
-    if (currentIdx >= 0) items[currentIdx].classList.remove('active');
+    if (currentIdx >= 0) {
+      items[currentIdx].classList.remove('active');
+      items[currentIdx].setAttribute('aria-pressed', 'false');
+    }
     items[i].classList.add('active');
+    items[i].setAttribute('aria-pressed', 'true');
+    cover.alt = items[i].textContent.trim() + ' project cover';
+    cover.setAttribute('aria-label', 'Open ' + items[i].textContent.trim() + ' project');
 
     if (currentIdx === -1) {
       
@@ -923,13 +938,17 @@ function setupProjectsSection() {
   
   let _detTiltTargetRY = 0, _detTiltTargetRX = 0, _detTiltRY = 0, _detTiltRX = 0;
 
-  cover.addEventListener('mouseenter', () => {
+  cover.addEventListener('mousemove', () => {
     projCursor.classList.add('active');
   });
 
   cover.addEventListener('mouseleave', () => {
     projCursor.classList.remove('active');
   });
+
+  window.addEventListener('scroll', () => {
+    projCursor.classList.remove('active');
+  }, { passive: true });
 
   
   let _cachedSelImg = null;
@@ -1981,6 +2000,15 @@ function setupProjectsSection() {
   let _galleryRAF = null;
   let _galleryY = 0, _galleryMaxScroll = 0;
   let _qGalleryY = null;
+  let _previouslyFocusedElement = null;
+
+  const _detailBackgroundEls = [].slice.call(document.body.children).filter(function (el) {
+    return el !== detailEl && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE';
+  });
+
+  function setDetailBackgroundInert(isInert) {
+    _detailBackgroundEls.forEach(function (el) { el.inert = isInert; });
+  }
 
   let _activeThumbIdx = -1;
   let _thumbImgs = []; 
@@ -2003,11 +2031,16 @@ function setupProjectsSection() {
       _thumbImgs[i].style.width = (100 + t * 40) + '%';
     }
     if (closestIdx !== _activeThumbIdx) {
-      if (_activeThumbIdx >= 0 && _thumbImgs[_activeThumbIdx]) _thumbImgs[_activeThumbIdx].classList.remove('active');
+      if (_activeThumbIdx >= 0 && _thumbImgs[_activeThumbIdx]) {
+        _thumbImgs[_activeThumbIdx].classList.remove('active');
+        _thumbImgs[_activeThumbIdx].parentElement.setAttribute('aria-pressed', 'false');
+      }
       _thumbImgs[closestIdx].classList.add('active');
+      _thumbImgs[closestIdx].parentElement.setAttribute('aria-pressed', 'true');
       _activeThumbIdx = closestIdx;
       if (_cachedSelImg) {
         _cachedSelImg.src = _thumbImgs[closestIdx].src;
+        _cachedSelImg.alt = detailTitle.textContent + ' project image ' + (closestIdx + 1) + ' of ' + _thumbImgs.length;
       }
     }
     _galleryRAF = requestAnimationFrame(updateActiveThumb);
@@ -2018,6 +2051,10 @@ function setupProjectsSection() {
     if (!proj || projectOpen) return;
     projectOpen = true; window._projectOpen = true;
     _flyingSourceItem = clickedItem;
+    _previouslyFocusedElement = document.activeElement instanceof HTMLElement ? document.activeElement : clickedItem;
+    setDetailBackgroundInert(true);
+    detailEl.inert = false;
+    detailEl.setAttribute('aria-hidden', 'false');
 
     history.pushState({ project: id }, '', '#' + id);
     lenis.stop();
@@ -2053,21 +2090,33 @@ function setupProjectsSection() {
     }).join('');
     
     var allImages = [clickedItem.dataset.img].concat(proj.images);
-    detailThumbsInner.innerHTML = allImages.map(function (src) { return '<img src="' + src + '" alt="" decoding="async">'; }).join('');
-    detailSelected.innerHTML = '<img src="' + allImages[0] + '" alt="" decoding="async">';
-    detailThumbsInner.querySelectorAll('img').forEach(function (img, i) {
+    var projectName = clickedItem.textContent.trim();
+    detailThumbsInner.innerHTML = allImages.map(function (src, i) {
+      return '<button type="button" class="detail-thumb" aria-label="Show ' + projectName + ' image ' + (i + 1) + ' of ' + allImages.length + '" aria-pressed="false">' +
+        '<img src="' + src + '" alt="" decoding="async"></button>';
+    }).join('');
+    detailSelected.innerHTML = '<img src="' + allImages[0] + '" alt="' + projectName + ' project image 1 of ' + allImages.length + '" decoding="async">';
+    detailThumbsInner.querySelectorAll('.detail-thumb').forEach(function (button, i) {
+      var img = button.querySelector('img');
       if (img.decode) img.decode().catch(function () { });
-      
-      img.addEventListener('click', function () {
-        if (_activeThumbIdx >= 0 && _thumbImgs[_activeThumbIdx]) _thumbImgs[_activeThumbIdx].classList.remove('active');
+      button.addEventListener('click', function () {
+        if (_activeThumbIdx >= 0 && _thumbImgs[_activeThumbIdx]) {
+          _thumbImgs[_activeThumbIdx].classList.remove('active');
+          _thumbImgs[_activeThumbIdx].parentElement.setAttribute('aria-pressed', 'false');
+        }
         img.classList.add('active');
+        button.setAttribute('aria-pressed', 'true');
         _activeThumbIdx = i;
-        if (_cachedSelImg) _cachedSelImg.src = img.src;
+        if (_cachedSelImg) {
+          _cachedSelImg.src = img.src;
+          _cachedSelImg.alt = projectName + ' project image ' + (i + 1) + ' of ' + allImages.length;
+        }
       });
     });
     _activeThumbIdx = 0;
     _thumbImgs = [].slice.call(detailThumbsInner.querySelectorAll('img'));
     _thumbImgs[0].classList.add('active');
+    _thumbImgs[0].parentElement.setAttribute('aria-pressed', 'true');
     _cachedSelImg = detailSelected.querySelector('img');
     _galleryY = 0;
     gsap.set(detailThumbsInner, { y: 0 });
@@ -2098,6 +2147,7 @@ function setupProjectsSection() {
     tl.to(detailTags, { opacity: 1, duration: 0.5, ease: 'power2.out' }, 1.3);
     tl.to(detailLinks, { opacity: 1, duration: 0.5, ease: 'power2.out' }, 1.35);
     tl.to(detailBack, { opacity: 1, duration: 0.5, ease: 'power2.out' }, 1.3);
+    tl.add(function () { detailBack.focus({ preventScroll: true }); }, 1.4);
 
     
     tl.fromTo(detailGalleryWrap, { opacity: 0 }, { opacity: 1, duration: 0.8, ease: 'power3.out' }, 1.2);
@@ -2164,6 +2214,9 @@ function setupProjectsSection() {
     
     tl.add(function () {
       detailEl.classList.remove('active');
+      detailEl.setAttribute('aria-hidden', 'true');
+      detailEl.inert = true;
+      setDetailBackgroundInert(false);
       gsap.set([detailTitleWrap, detailDesc, detailTags, detailLinks, detailBack, detailGalleryWrap], { opacity: 0 });
       gsap.set(flyingTitle, { opacity: 0 });
       _activeThumbIdx = -1;
@@ -2173,6 +2226,10 @@ function setupProjectsSection() {
         _flyingSourceItem.style.visibility = '';
         _flyingSourceItem = null;
       }
+      if (_previouslyFocusedElement && document.contains(_previouslyFocusedElement)) {
+        _previouslyFocusedElement.focus({ preventScroll: true });
+      }
+      _previouslyFocusedElement = null;
       lenis.start();
       ScrollTrigger.refresh();
     });
@@ -2208,6 +2265,35 @@ function setupProjectsSection() {
   
   detailBack.addEventListener('click', closeProject);
   window.addEventListener('popstate', function () { if (projectOpen) closeProject(); });
+
+  document.addEventListener('keydown', function (event) {
+    if (!projectOpen) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeProject();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+
+    var focusable = [].slice.call(detailEl.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')).filter(function (el) {
+      return el.getClientRects().length > 0;
+    });
+    if (!focusable.length) {
+      event.preventDefault();
+      detailEl.focus({ preventScroll: true });
+      return;
+    }
+
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus({ preventScroll: true });
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus({ preventScroll: true });
+    }
+  });
 
   
   function preloadProjectImages() {
@@ -2424,6 +2510,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Custom cursor logic: Show project cover when hovering on award items
     const awardCursor = document.createElement('img');
+    awardCursor.alt = '';
+    awardCursor.setAttribute('aria-hidden', 'true');
     awardCursor.style.position = 'fixed';
     awardCursor.style.top = '0';
     awardCursor.style.left = '0';
@@ -2439,26 +2527,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let isAwardHovered = false;
 
+    const hideAwardCursor = () => {
+      if (!isAwardHovered) return;
+      isAwardHovered = false;
+      gsap.to(awardCursor, { opacity: 0, scale: 0.8, duration: 0.2, overwrite: "auto" });
+    };
+
     window.addEventListener('mousemove', (e) => {
       if (isAwardHovered) {
         gsap.set(awardCursor, { x: e.clientX, y: e.clientY });
       }
     });
 
+    window.addEventListener('scroll', hideAwardCursor, { passive: true });
+
     awardItems.forEach(item => {
-      item.addEventListener('mouseenter', (e) => {
-        isAwardHovered = true;
-        const imgSrc = item.getAttribute('data-cursor-img');
-        if (imgSrc) {
-          awardCursor.src = imgSrc;
+      item.addEventListener('mousemove', (e) => {
+        if (!isAwardHovered) {
+          isAwardHovered = true;
+          const imgSrc = item.getAttribute('data-cursor-img');
+          if (imgSrc) {
+            awardCursor.src = imgSrc;
+          }
+          gsap.to(awardCursor, { opacity: 1, scale: 1, duration: 0.3, overwrite: "auto" });
         }
         gsap.set(awardCursor, { x: e.clientX, y: e.clientY });
-        gsap.to(awardCursor, { opacity: 1, scale: 1, duration: 0.3, overwrite: "auto" });
       });
-      item.addEventListener('mouseleave', () => {
-        isAwardHovered = false;
-        gsap.to(awardCursor, { opacity: 0, scale: 0.8, duration: 0.3, overwrite: "auto" });
-      });
+      item.addEventListener('mouseleave', hideAwardCursor);
     });
   }
 });
