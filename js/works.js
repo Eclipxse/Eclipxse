@@ -31,49 +31,49 @@
         cover: '../assets/images/projects/EclipxseCovers/lizziee.png'
       },
       {
-        id: 'zenith',
+        id: 'godot-farming',
         title: 'Godot Farming Prototype',
-        desc: isEn ? "A 2D farming game prototype in progress, used to learn gameplay loops, scenes, interaction and small-game structure." : "A 2D farming game prototype in progress, used to learn gameplay loops, scenes, interaction and small-game structure.",
-        category: 'Lab',
-        year: 'Learning',
-        tags: ['Godot', 'GDScript', 'Game Design'],
-        cover: '../assets/images/projects/EclipxseCovers/godot-farming.png'
-      },
-      {
-        id: 'skymcdb',
-        title: 'Python Script Lab',
-        desc: isEn ? "Small Python scripts and automation experiments for learning faster workflows, parsing, utilities and practical problem solving." : "Small Python scripts and automation experiments for learning faster workflows, parsing, utilities and practical problem solving.",
-        category: 'Lab',
-        year: 'Learning',
-        tags: ['Python', 'CLI', 'Automation'],
-        cover: '../assets/images/projects/EclipxseCovers/python-script-lab.png'
-      },
-      {
-        id: 'chromablock',
-        title: 'Reverse Engineering Notes',
-        desc: isEn ? "A learning log for reverse engineering concepts, debugging habits, file formats and how software behaves underneath." : "A learning log for reverse engineering concepts, debugging habits, file formats and how software behaves underneath.",
-        category: 'Lab',
-        year: 'Learning',
-        tags: ['Reversing', 'Debugging', 'Systems'],
-        cover: '../assets/images/projects/EclipxseCovers/reverse-engineering-notes.png'
-      },
-      {
-        id: 'symphony',
-        title: 'C/System Experiments',
-        desc: isEn ? "Low-level experiments for learning C, memory, files, compilation and the basics behind higher-level tools." : "Low-level experiments for learning C, memory, files, compilation and the basics behind higher-level tools.",
-        category: 'Lab',
-        year: 'Learning',
-        tags: ['C', 'Linux', 'Debugging'],
-        cover: '../assets/images/projects/EclipxseCovers/c-system-experiments.png'
-      },
-      {
-        id: 'echo',
-        title: 'Eclipxse Portfolio',
-        desc: isEn ? "This portfolio rebuild: a motion-led personal site adapted around my real projects, labs and current skills." : "This portfolio rebuild: a motion-led personal site adapted around my real projects, labs and current skills.",
-        category: 'Portfolio',
+        desc: isEn ? "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops." : "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops.",
+        category: 'Game Prototype',
         year: '2026',
-        tags: ['GSAP', 'Lenis', 'JavaScript'],
-        cover: '../assets/images/projects/EclipxseCovers/eclipxse-portfolio.png'
+        tags: ['Godot 4', 'GDScript', '2D Game'],
+        cover: '../assets/images/projects/EclipxseCovers/godot-farming-real.webp'
+      },
+      {
+        id: 'blunt38',
+        title: 'blunt38',
+        desc: isEn ? "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game." : "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game.",
+        category: 'Discord Platform',
+        year: '2026',
+        tags: ['TypeScript', 'Discord.js', 'Next.js'],
+        cover: '../assets/images/projects/EclipxseCovers/blunt38.webp'
+      },
+      {
+        id: 'game-research',
+        title: 'Game Reverse Engineering',
+        desc: isEn ? "A hands-on reverse-engineering study of a live game process using Cheat Engine to scan memory, trace changing values and understand runtime behavior." : "A hands-on reverse-engineering study of a live game process using Cheat Engine to scan memory, trace changing values and understand runtime behavior.",
+        category: 'Technical Research',
+        year: '2026',
+        tags: ['Reverse Engineering', 'Cheat Engine', 'Debugging'],
+        cover: '../assets/images/projects/EclipxseCovers/game-re-it-takes-two.webp'
+      },
+      {
+        id: 'marishoku-os',
+        title: 'MARISHOKU/OS',
+        desc: isEn ? "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO." : "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO.",
+        category: 'Debian Remix',
+        year: 'V1.3',
+        tags: ['Debian 13', 'KDE Plasma 6', 'Linux'],
+        cover: '../assets/images/projects/EclipxseCovers/marishoku-os.webp'
+      },
+      {
+        id: 'eclipxse-beam',
+        title: 'Eclipxse Beam',
+        desc: isEn ? "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing." : "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing.",
+        category: 'Native + Web App',
+        year: '2026',
+        tags: ['Rust', 'Slint', 'WebRTC'],
+        cover: '../assets/images/projects/EclipxseCovers/eclipxse-beam.webp'
       }
     ];
 
