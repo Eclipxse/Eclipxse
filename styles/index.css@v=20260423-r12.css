@@ -920,6 +920,43 @@ a.chr-hover {
   border-radius: 50px;
 }
 
+.detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.35rem;
+  opacity: 0;
+}
+
+.detail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.68rem 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.72);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.detail-link:hover,
+.detail-link:focus-visible {
+  color: #0a0a0a;
+  background: #f0f0f0;
+  border-color: #f0f0f0;
+  outline: none;
+}
+
+.detail-link span {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
 .detail-gallery-wrap {
   position: absolute;
   top: 0;
@@ -1797,6 +1834,7 @@ a.chr-hover {
     height: auto;
     top: auto;
     right: auto;
+    flex-direction: column;
   }
 
   .detail-back {
@@ -1805,7 +1843,35 @@ a.chr-hover {
   }
 
   .detail-thumbs {
-    width: 18%;
+    order: 2;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 1.5rem 1.5rem;
+    scrollbar-width: none;
+  }
+
+  .detail-thumbs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .detail-thumbs-inner {
+    flex-direction: row;
+    gap: 0.6rem;
+    padding: 0;
+    transform: none !important;
+  }
+
+  .detail-thumbs-inner img {
+    flex: 0 0 84px;
+    width: 84px !important;
+    height: 64px;
+    object-fit: cover;
+  }
+
+  .detail-selected {
+    order: 1;
   }
 
   
@@ -2157,16 +2223,26 @@ a.chr-hover {
   }
 
   .detail-gallery-wrap {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0 1.25rem 2rem;
-  }
-
-  .detail-thumbs {
-    display: none;
   }
 
   .detail-selected {
     padding: 0;
+  }
+
+  .detail-thumbs {
+    padding: 0.75rem 0 0;
+  }
+
+  .detail-links {
+    margin-top: 1rem;
+  }
+
+  .detail-link {
+    padding: 0.58rem 0.78rem;
+    font-size: 0.58rem;
   }
 
   .detail-selected img {

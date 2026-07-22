@@ -198,6 +198,23 @@
       border: 1px solid rgba(255,255,255,0.12);
       padding: 0.35em 0.7em; border-radius: 50px;
     }
+    .face-links {
+      display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;
+    }
+    .face-links:empty { display: none; }
+    .face-link {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.52rem 0.7rem; border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 999px; color: rgba(255,255,255,0.72);
+      font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+    .face-link:hover,
+    .face-link:focus-visible {
+      color: #0a0a0a; background: #f0f0f0; border-color: #f0f0f0; outline: none;
+    }
+    .face-link span { font-size: 0.75rem; line-height: 1; }
 
     
     .ruler {
@@ -370,6 +387,16 @@
   .face-tag {
     font-size: 0.52rem;
     padding: 0.3em 0.58em;
+  }
+
+  .face-links {
+    gap: 0.35rem;
+    margin-top: 0.65rem;
+  }
+
+  .face-link {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.5rem;
   }
 
   .ruler,

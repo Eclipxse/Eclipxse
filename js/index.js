@@ -468,10 +468,10 @@ async function setupScrollReveal() {
 
   
   const FRAME_DIR = 'assets/images/hero%20sequence/';
-  const FRAME_EXT = '.jpg';
+  const FRAME_EXT = '.webp';
   const FRAME_PAD = 4;
   const TOTAL_FRAMES = 341;
-  const FRAME_CACHE_KEY = '20260416-r2'; 
+  const FRAME_CACHE_KEY = '20260722-r1';
   const frameUrl = n => `${FRAME_DIR}${String(n).padStart(FRAME_PAD, '0')}${FRAME_EXT}?v=${FRAME_CACHE_KEY}`;
 
   const frames = new Array(TOTAL_FRAMES);
@@ -1875,42 +1875,88 @@ function setupProjectsSection() {
     'cyberdiag': {
       desc: isEn ? "A live gaming ecosystem for esports, studio services, pricing, hosting and creator-focused workflows." : "A live gaming ecosystem for esports, studio services, pricing, hosting and creator-focused workflows.",
       category: 'Full-stack Platform', year: '2026', tags: ['Full-stack', 'Gaming', 'Platform'],
-      images: [],
+      images: [
+        'assets/images/projects/galleries/gamertheorys/full-homepage.webp',
+        'assets/images/projects/galleries/gamertheorys/hero-focus.webp',
+        'assets/images/projects/galleries/gamertheorys/platform-metrics.webp',
+      ],
+      links: [],
     },
     'anima': {
       desc: isEn ? "My earlier personal portfolio build, shaped around an experimental game-like identity and full-stack developer profile." : "My earlier personal portfolio build, shaped around an experimental game-like identity and full-stack developer profile.",
       category: 'Portfolio', year: '2026', tags: ['Vue', 'Nuxt', 'TypeScript'],
-      images: [],
+      images: [
+        'assets/images/projects/galleries/eclipxse-in/full-homepage.webp',
+        'assets/images/projects/galleries/eclipxse-in/lawliet-pixel-art.webp',
+        'assets/images/projects/galleries/eclipxse-in/game-library.webp',
+      ],
+      links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Eclifolio' }],
     },
     'cyberdiag-app': {
       desc: isEn ? "A deployed web app build focused on practicing real product structure, frontend polish and full-stack fundamentals." : "A deployed web app build focused on practicing real product structure, frontend polish and full-stack fundamentals.",
       category: 'Web App', year: '2026', tags: ['Full-stack', 'Vercel', 'Web App'],
-      images: [],
+      images: [
+        'assets/images/projects/galleries/lizziee/full-homepage.webp',
+        'assets/images/projects/galleries/lizziee/character-study.webp',
+        'assets/images/projects/galleries/lizziee/side-profile.webp',
+      ],
+      links: [
+        { label: 'Source', url: 'https://github.com/Eclipxse/Lizzie' },
+      ],
     },
     'godot-farming': {
       desc: isEn ? "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops." : "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops.",
       category: 'Game Prototype', year: '2026', tags: ['Godot 4', 'GDScript', '2D Game'],
-      images: [],
+      images: [
+        'assets/images/projects/galleries/godot-farming/godot-editor.webp',
+        'assets/images/projects/galleries/godot-farming/farm-map.webp',
+        'assets/images/projects/galleries/godot-farming/scene-structure.webp',
+      ],
+      links: [],
     },
     'blunt38': {
       desc: isEn ? "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game." : "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game.",
       category: 'Discord Platform', year: '2026', tags: ['TypeScript', 'Discord.js', 'Next.js'],
-      images: [],
+      images: [
+        'assets/images/projects/galleries/blunt38/brand-banner.webp',
+        'assets/images/projects/galleries/blunt38/brand-mark.webp',
+      ],
+      links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Blunt38' }],
     },
     'game-research': {
       desc: isEn ? "A hands-on reverse-engineering study of a live game process using Cheat Engine to scan memory, trace changing values and understand runtime behavior." : "A hands-on reverse-engineering study of a live game process using Cheat Engine to scan memory, trace changing values and understand runtime behavior.",
       category: 'Technical Research', year: '2026', tags: ['Reverse Engineering', 'Cheat Engine', 'Debugging'],
-      images: [],
+      images: [
+        'assets/images/projects/galleries/game-research/research-thumbnail.webp',
+        'assets/images/projects/galleries/game-research/memory-scan.webp',
+        'assets/images/projects/galleries/game-research/raven-focus.webp',
+      ],
+      links: [],
     },
     'marishoku-os': {
       desc: isEn ? "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO." : "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO.",
       category: 'Debian Remix', year: 'V1.3', tags: ['Debian 13', 'KDE Plasma 6', 'Linux'],
-      images: [],
+      images: [
+        'assets/images/projects/galleries/marishoku-os/desktop-concept.webp',
+        'assets/images/projects/galleries/marishoku-os/ura-wallpaper.webp',
+        'assets/images/projects/galleries/marishoku-os/boot-screen.webp',
+        'assets/images/projects/galleries/marishoku-os/omote-wallpaper.webp',
+      ],
+      links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_OS' }],
     },
     'eclipxse-beam': {
       desc: isEn ? "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing." : "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing.",
       category: 'Native + Web App', year: '2026', tags: ['Rust', 'Slint', 'WebRTC'],
-      images: [],
+      images: [
+        'assets/images/projects/galleries/eclipxse-beam/send.webp',
+        'assets/images/projects/galleries/eclipxse-beam/receive.webp',
+        'assets/images/projects/galleries/eclipxse-beam/transfer.webp',
+      ],
+      links: [
+        { label: 'Live app', url: 'https://eclipxse.github.io/Eclipxse_beam/' },
+        { label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_beam' },
+        { label: 'Download', url: 'https://github.com/Eclipxse/Eclipxse_beam/releases/latest/download/Eclipxse-Beam-Native-Windows-x64.exe' },
+      ],
     },
   };
 
@@ -1920,6 +1966,7 @@ function setupProjectsSection() {
   const detailYear = document.getElementById('detail-year');
   const detailDesc = document.getElementById('detail-desc');
   const detailTags = document.getElementById('detail-tags');
+  const detailLinks = document.getElementById('detail-links');
   const detailThumbs = document.getElementById('detail-thumbs');
   const detailThumbsInner = document.getElementById('detail-thumbs-inner');
   const detailSelected = document.getElementById('detail-selected');
@@ -2001,6 +2048,9 @@ function setupProjectsSection() {
     detailYear.textContent = proj.year;
     detailDesc.textContent = proj.desc;
     detailTags.innerHTML = proj.tags.map(function (t) { return '<span class="detail-tag">' + t + '</span>'; }).join('');
+    detailLinks.innerHTML = (proj.links || []).map(function (link) {
+      return '<a class="detail-link" href="' + link.url + '" target="_blank" rel="noopener noreferrer">' + link.label + '<span aria-hidden="true">↗</span></a>';
+    }).join('');
     
     var allImages = [clickedItem.dataset.img].concat(proj.images);
     detailThumbsInner.innerHTML = allImages.map(function (src) { return '<img src="' + src + '" alt="" decoding="async">'; }).join('');
@@ -2046,6 +2096,7 @@ function setupProjectsSection() {
     
     tl.to(detailDesc, { opacity: 1, duration: 0.6, ease: 'power2.out' }, 1.2);
     tl.to(detailTags, { opacity: 1, duration: 0.5, ease: 'power2.out' }, 1.3);
+    tl.to(detailLinks, { opacity: 1, duration: 0.5, ease: 'power2.out' }, 1.35);
     tl.to(detailBack, { opacity: 1, duration: 0.5, ease: 'power2.out' }, 1.3);
 
     
@@ -2074,7 +2125,7 @@ function setupProjectsSection() {
     var tl = gsap.timeline();
 
     
-    tl.to([detailDesc, detailTags, detailBack], { opacity: 0, duration: 0.3, ease: 'power2.in' }, 0);
+    tl.to([detailDesc, detailTags, detailLinks, detailBack], { opacity: 0, duration: 0.3, ease: 'power2.in' }, 0);
     tl.to(detailGalleryWrap, { opacity: 0, duration: 0.4, ease: 'power2.in' }, 0);
 
     
@@ -2113,7 +2164,7 @@ function setupProjectsSection() {
     
     tl.add(function () {
       detailEl.classList.remove('active');
-      gsap.set([detailTitleWrap, detailDesc, detailTags, detailBack, detailGalleryWrap], { opacity: 0 });
+      gsap.set([detailTitleWrap, detailDesc, detailTags, detailLinks, detailBack, detailGalleryWrap], { opacity: 0 });
       gsap.set(flyingTitle, { opacity: 0 });
       _activeThumbIdx = -1;
       _thumbImgs = [];
@@ -2130,6 +2181,7 @@ function setupProjectsSection() {
 
   detailEl.addEventListener('wheel', function (e) {
     if (!projectOpen) return;
+    if (window.matchMedia('(max-width: 768px)').matches) return;
     e.preventDefault();
     var delta = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
     _galleryY = Math.max(-_galleryMaxScroll, Math.min(0, _galleryY - delta));
@@ -2144,6 +2196,7 @@ function setupProjectsSection() {
   }, { passive: true });
   detailEl.addEventListener('touchmove', function (e) {
     if (!projectOpen) return;
+    if (window.matchMedia('(max-width: 768px)').matches) return;
     e.preventDefault();
     var y = e.touches[0].clientY;
     var delta = _detailTouchStartY - y;

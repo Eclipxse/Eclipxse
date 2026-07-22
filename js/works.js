@@ -10,7 +10,7 @@
         category: 'Full-stack Platform',
         year: '2026',
         tags: ['Full-stack', 'Gaming', 'Platform'],
-        cover: '../assets/images/projects/EclipxseCovers/gamertheorys.png'
+        cover: '../assets/images/projects/EclipxseCovers/gamertheorys-polished.webp'
       },
       {
         id: 'anima',
@@ -19,7 +19,8 @@
         category: 'Portfolio',
         year: '2026',
         tags: ['Vue', 'Nuxt', 'TypeScript'],
-        cover: '../assets/images/projects/EclipxseCovers/eclipxse-in.png'
+        cover: '../assets/images/projects/EclipxseCovers/eclipxse-in-polished.webp',
+        links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Eclifolio' }]
       },
       {
         id: 'cyberdiag-app',
@@ -28,7 +29,10 @@
         category: 'Web App',
         year: '2026',
         tags: ['Full-stack', 'Vercel', 'Web App'],
-        cover: '../assets/images/projects/EclipxseCovers/lizziee.png'
+        cover: '../assets/images/projects/EclipxseCovers/lizziee-polished.webp',
+        links: [
+          { label: 'Source', url: 'https://github.com/Eclipxse/Lizzie' }
+        ]
       },
       {
         id: 'godot-farming',
@@ -46,7 +50,8 @@
         category: 'Discord Platform',
         year: '2026',
         tags: ['TypeScript', 'Discord.js', 'Next.js'],
-        cover: '../assets/images/projects/EclipxseCovers/blunt38.webp'
+        cover: '../assets/images/projects/EclipxseCovers/blunt38.webp',
+        links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Blunt38' }]
       },
       {
         id: 'game-research',
@@ -64,7 +69,8 @@
         category: 'Debian Remix',
         year: 'V1.3',
         tags: ['Debian 13', 'KDE Plasma 6', 'Linux'],
-        cover: '../assets/images/projects/EclipxseCovers/marishoku-os.webp'
+        cover: '../assets/images/projects/EclipxseCovers/marishoku-os.webp',
+        links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_OS' }]
       },
       {
         id: 'eclipxse-beam',
@@ -73,7 +79,12 @@
         category: 'Native + Web App',
         year: '2026',
         tags: ['Rust', 'Slint', 'WebRTC'],
-        cover: '../assets/images/projects/EclipxseCovers/eclipxse-beam.webp'
+        cover: '../assets/images/projects/EclipxseCovers/eclipxse-beam.webp',
+        links: [
+          { label: 'Live app', url: 'https://eclipxse.github.io/Eclipxse_beam/' },
+          { label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_beam' },
+          { label: 'Download', url: 'https://github.com/Eclipxse/Eclipxse_beam/releases/latest/download/Eclipxse-Beam-Native-Windows-x64.exe' }
+        ]
       }
     ];
 
@@ -129,6 +140,7 @@
               '<div class="face-year">' + proj.year + '</div>' +
               '<div class="face-desc">' + proj.desc + '</div>' +
               '<div class="face-tags">' + proj.tags.map(function(t) { return '<span class="face-tag">' + t + '</span>'; }).join('') + '</div>' +
+              '<div class="face-links">' + (proj.links || []).map(function(link) { return '<a class="face-link" href="' + link.url + '" target="_blank" rel="noopener noreferrer">' + link.label + '<span aria-hidden="true">↗</span></a>'; }).join('') + '</div>' +
             '</div>' +
           '</div>' +
         '</div>';
@@ -354,6 +366,7 @@
     }
     document.addEventListener('mousedown', function(e) {
       if (e.button !== 0) return;
+      if (e.target.closest('a')) return;
       isDragging = true;
       dragLastY = e.clientY;
       cancelSnap();
