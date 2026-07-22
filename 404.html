@@ -15,23 +15,18 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
   <link rel="preload" href="/assets/fonts/Breton.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/Machine.otf" as="font" type="font/otf" crossorigin>
-  <link rel="stylesheet" href="/styles/404.css?v=20260723-r1">
+  <link rel="stylesheet" href="/styles/404.css?v=20260723-r2">
 </head>
 <body>
   <div class="error-field" aria-hidden="true">
     <div class="field-grid"></div>
-    <div class="field-glow"></div>
-    <div class="orbit orbit-a"><span></span></div>
-    <div class="orbit orbit-b"><span></span></div>
+    <div class="signal-block"></div>
     <div class="scan-line"></div>
   </div>
 
   <header class="error-header">
-    <a class="identity magnetic" href="/" aria-label="Eclipxse home">
-      <span class="eclipse-mark" aria-hidden="true"><span></span></span>
-      <span>Eclipxse</span>
-    </a>
-    <span class="system-state"><i aria-hidden="true"></i> SYSTEM / OFF ORBIT</span>
+    <a class="identity magnetic" href="/" aria-label="Eclipxse home">Eclipxse</a>
+    <span class="system-state"><i aria-hidden="true"></i> SYSTEM / ROUTE NOT FOUND</span>
   </header>
 
   <main class="error-main">
@@ -39,19 +34,16 @@
 
     <div class="error-code" aria-hidden="true">
       <span class="digit digit-left">4</span>
-      <span class="zero">
-        <span class="zero-disc"></span>
-        <span class="zero-flare"></span>
-      </span>
+      <span class="digit digit-zero">0</span>
       <span class="digit digit-right">4</span>
     </div>
 
-    <h1>The page slipped <em>out of orbit.</em></h1>
-    <p class="error-copy">Nothing is broken on your side. This address simply does not exist—or it moved while nobody was looking.</p>
+    <h1>This page <em>does not exist.</em></h1>
+    <p class="error-copy">The address may be incorrect, or the page may have moved. Use one of the links below to continue.</p>
 
     <nav class="error-actions" aria-label="Recovery links">
       <a class="primary-action magnetic" href="/">
-        <span>Return home</span><i aria-hidden="true">↗</i>
+        <span>Return home</span><i aria-hidden="true">&#8599;</i>
       </a>
       <a class="secondary-action magnetic" href="/works/">View work</a>
     </nav>
@@ -60,9 +52,9 @@
   <footer class="error-footer">
     <span>Requested path</span>
     <code id="requested-path">/unknown</code>
-    <span class="footer-index">ECL / 404 / 2026</span>
+    <span class="footer-index">ECLIPXSE / 404 / 2026</span>
   </footer>
 
-  <script src="/js/404.js?v=20260723-r1"></script>
+  <script src="/js/404.js?v=20260723-r2"></script>
 </body>
 </html>
