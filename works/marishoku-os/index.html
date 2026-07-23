@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MARISHOKU/OS — Case study · Eclipxse</title>
+  <meta name="description" content="An experimental Debian 13 and Plasma 6 remix with custom profiles, desktop tooling, package builds and a reproducible hybrid ISO pipeline.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://eclipxse.in/works/marishoku-os/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Eclipxse">
+  <meta property="og:title" content="MARISHOKU/OS — Case study">
+  <meta property="og:description" content="An experimental Debian 13 and Plasma 6 remix with custom profiles, desktop tooling, package builds and a reproducible hybrid ISO pipeline.">
+  <meta property="og:url" content="https://eclipxse.in/works/marishoku-os/">
+  <meta property="og:image" content="https://eclipxse.in/assets/images/social/marishoku-os.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MARISHOKU/OS project preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MARISHOKU/OS — Case study">
+  <meta name="twitter:description" content="An experimental Debian 13 and Plasma 6 remix with custom profiles, desktop tooling, package builds and a reproducible hybrid ISO pipeline.">
+  <meta name="twitter:image" content="https://eclipxse.in/assets/images/social/marishoku-os.jpg">
+  <meta name="twitter:image:alt" content="MARISHOKU/OS project preview">
+  <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/case-study.css?v=20260723-r3">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"MARISHOKU/OS","url":"https://eclipxse.in/works/marishoku-os/","image":"https://eclipxse.in/assets/images/social/marishoku-os.jpg","description":"An experimental Debian 13 and Plasma 6 remix with custom profiles, desktop tooling, package builds and a reproducible hybrid ISO pipeline.","creator":{"@type":"Person","name":"Eclipxse","url":"https://eclipxse.in/"},"dateCreated":"2026"}</script>
+</head>
+<body class="project-marishoku-os">
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="case-header" id="case-header">
+    <a class="case-brand" href="/" aria-label="Eclipxse home">Eclipxse</a>
+    <nav class="case-nav" aria-label="Case study navigation">
+      <a href="/works/">All work</a>
+      <span>Case study</span>
+      <span class="case-count">07 / 08</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero" aria-labelledby="case-title">
+      <p class="case-kicker"><i aria-hidden="true"></i>Debian remix · 2026</p>
+      <h1 class="case-title" id="case-title">MARISHOKU/OS</h1>
+      <p class="case-lead">An experimental Debian 13 and Plasma 6 remix with custom profiles, desktop tooling, package builds and a reproducible hybrid ISO pipeline.</p>
+      <div class="case-actions">
+        <a class="case-action" href="https://github.com/Eclipxse/Eclipxse_OS" target="_blank" rel="noopener noreferrer">View source <span>↗</span></a>
+      </div>
+      <dl class="case-facts">
+        <div class="case-fact"><dt>Role</dt><dd>System design + Linux customization</dd></div>
+        <div class="case-fact"><dt>Stack</dt><dd>Debian 13 · Plasma 6 · Python · live-build</dd></div>
+        <div class="case-fact"><dt>Status</dt><dd>Experimental V1.3</dd></div>
+        <div class="case-fact"><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </section>
+
+    <figure class="case-hero-media">
+      <img src="/assets/images/projects/EclipxseCovers/marishoku-os.webp" alt="MARISHOKU OS desktop concept"
+        width="1600" height="900" fetchpriority="high" decoding="async" data-parallax>
+    </figure>
+
+    <div class="case-content" id="project-story">
+      <section class="case-section reveal">
+        <p class="section-index"><span>01</span> / Overview</p>
+        <div class="section-copy">
+          <h2>From desktop idea to reproducible system</h2>
+          <p>MARISHOKU/OS explores how far a cohesive desktop concept can be carried through a real Debian-based build. It combines Plasma theming, custom tools, OMOTE and URA profiles, a Debian package and a repeatable live-build configuration for producing a hybrid ISO.</p>
+        </div>
+      </section>
+
+      <div class="focus-grid">
+      <article class="focus-card reveal">
+        <span>01</span>
+        <h3>Boot-to-desktop flow</h3>
+        <p>Branding, session defaults and the desktop shell are treated as one continuous experience rather than disconnected themes.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>02</span>
+        <h3>Custom desktop layer</h3>
+        <p>Profiles, tooling and Plasma configuration shape the working environment while retaining Debian&#x27;s package foundation.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>03</span>
+        <h3>Reproducible builds</h3>
+        <p>Package and ISO automation make the experiment repeatable instead of depending on one hand-configured machine.</p>
+      </article>
+      </div>
+
+      <section class="light-section">
+        <div class="light-inner reveal">
+          <p class="section-index"><span>02</span> / Build decisions</p>
+          <div class="light-copy">
+            <h2>A concept that can actually be rebuilt</h2>
+            <p>The project separates visual assets, desktop defaults, package contents and live-build configuration. That makes changes traceable and allows a fresh image to be produced from source rather than copied from an existing installation.</p>
+            <dl class="build-list">
+              <div><dt>Base</dt><dd>Debian 13</dd></div>
+              <div><dt>Desktop</dt><dd>KDE Plasma 6</dd></div>
+              <div><dt>Distribution</dt><dd>Debian package + hybrid ISO</dd></div>
+              <div><dt>Validation</dt><dd>Hardware installer testing pending</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="gallery-head reveal">
+          <p class="section-index"><span>03</span> / Selected views</p>
+          <h2>Inside the project</h2>
+        </div>
+        <div class="gallery-list">
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/marishoku-os/boot-screen.webp" alt="Boot screen — The start of the system flow"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>01 / Boot screen</span><span>The start of the system flow</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/marishoku-os/desktop-concept.webp" alt="Desktop concept — Custom Plasma environment"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>02 / Desktop concept</span><span>Custom Plasma environment</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/marishoku-os/omote-wallpaper.webp" alt="OMOTE profile — One side of the desktop system"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>03 / OMOTE profile</span><span>One side of the desktop system</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/marishoku-os/ura-wallpaper.webp" alt="URA profile — Alternate desktop profile"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>04 / URA profile</span><span>Alternate desktop profile</span></figcaption>
+        </figure>
+        </div>
+      </section>
+
+      <section class="case-end">
+        <div class="case-end-copy reveal">
+          <p class="section-index"><span>04</span> / Current state</p>
+          <h2>Where it stands now</h2>
+          <p>Package and ISO builds are working. The project is explicitly experimental: physical-hardware validation and the full installer path still need testing before it should be treated as a general-purpose distribution.</p>
+        </div>
+        <a class="next-project reveal" href="/works/eclipxse-beam/">
+          <span>
+            <small>Next case study</small>
+            <strong>Eclipxse Beam</strong>
+          </span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="case-footer">
+    <span>© 2026 Eclipxse</span>
+    <a href="/contact/">Start a conversation ↗</a>
+  </footer>
+  <script src="/js/case-study.js?v=20260723-r1" defer></script>
+</body>
+</html>

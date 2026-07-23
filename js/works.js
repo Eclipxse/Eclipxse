@@ -6,52 +6,62 @@
       {
         id: 'cyberdiag',
         title: 'GamerTheorys',
-        desc: isEn ? "A live gaming ecosystem for esports, studio services, pricing, hosting and creator-focused workflows." : "A live gaming ecosystem for esports, studio services, pricing, hosting and creator-focused workflows.",
+        desc: isEn ? "A full-stack gaming product bringing esports, studio services, hosting and creator workflows into one focused platform." : "A full-stack gaming product bringing esports, studio services, hosting and creator workflows into one focused platform.",
         category: 'Full-stack Platform',
         year: '2026',
         tags: ['Full-stack', 'Gaming', 'Platform'],
-        cover: '../assets/images/projects/EclipxseCovers/gamertheorys-polished.webp'
+        cover: '../assets/images/projects/EclipxseCovers/gamertheorys-polished.webp',
+        links: [{ label: 'Case study', url: '/works/gamertheorys/' }]
       },
       {
         id: 'anima',
         title: 'Eclipxse.in',
-        desc: isEn ? "My earlier personal portfolio build, shaped around an experimental game-like identity and full-stack developer profile." : "My earlier personal portfolio build, shaped around an experimental game-like identity and full-stack developer profile.",
-        category: 'Portfolio',
-        year: '2026',
+        desc: isEn ? "An earlier Nuxt portfolio that turned my work into a game-like, exploratory web experience." : "An earlier Nuxt portfolio that turned my work into a game-like, exploratory web experience.",
+        category: 'Interactive Portfolio',
+        year: '2025',
         tags: ['Vue', 'Nuxt', 'TypeScript'],
         cover: '../assets/images/projects/EclipxseCovers/eclipxse-in-polished.webp',
-        links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Eclifolio' }]
+        links: [
+          { label: 'Case study', url: '/works/eclipxse-in/' },
+          { label: 'Source', url: 'https://github.com/Eclipxse/Eclifolio' }
+        ]
       },
       {
         id: 'cyberdiag-app',
         title: 'Lizziee',
-        desc: isEn ? "A deployed web app build focused on practicing real product structure, frontend polish and full-stack fundamentals." : "A deployed web app build focused on practicing real product structure, frontend polish and full-stack fundamentals.",
-        category: 'Web App',
+        desc: isEn ? "An expressive React portfolio built from custom illustration, pastel surfaces and deliberately paced scrolling." : "An expressive React portfolio built from custom illustration, pastel surfaces and deliberately paced scrolling.",
+        category: 'Creative Portfolio',
         year: '2026',
-        tags: ['Full-stack', 'Vercel', 'Web App'],
+        tags: ['React', 'Vite', 'GSAP'],
         cover: '../assets/images/projects/EclipxseCovers/lizziee-polished.webp',
         links: [
+          { label: 'Case study', url: '/works/lizziee/' },
           { label: 'Source', url: 'https://github.com/Eclipxse/Lizzie' }
         ]
       },
       {
         id: 'godot-farming',
         title: 'Godot Farming Prototype',
-        desc: isEn ? "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops." : "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops.",
+        desc: isEn ? "A 2D farming-game prototype built around layered TileMaps, reusable scenes, player movement and repeatable interactions." : "A 2D farming-game prototype built around layered TileMaps, reusable scenes, player movement and repeatable interactions.",
         category: 'Game Prototype',
         year: '2026',
         tags: ['Godot 4', 'GDScript', '2D Game'],
-        cover: '../assets/images/projects/EclipxseCovers/godot-farming-real.webp'
+        cover: '../assets/images/projects/EclipxseCovers/godot-farming-real.webp',
+        links: [{ label: 'Case study', url: '/works/godot-farming/' }]
       },
       {
         id: 'blunt38',
         title: 'blunt38',
-        desc: isEn ? "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game." : "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game.",
+        desc: isEn ? "A UI-first Discord platform with 26 command groups, moderation, AI, music, community systems, a Next.js dashboard and real-time Draw Party." : "A UI-first Discord platform with 26 command groups, moderation, AI, music, community systems, a Next.js dashboard and real-time Draw Party.",
         category: 'Discord Platform',
         year: '2026',
         tags: ['TypeScript', 'Discord.js', 'Next.js'],
         cover: '../assets/images/projects/EclipxseCovers/blunt38.webp',
-        links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Blunt38' }]
+        links: [
+          { label: 'Case study', url: '/works/blunt38/' },
+          { label: 'Source', url: 'https://github.com/Eclipxse/Blunt38' },
+          { label: 'Privacy', url: '/privacy/' }
+        ]
       },
       {
         id: 'game-research',
@@ -60,27 +70,32 @@
         category: 'Technical Research',
         year: '2026',
         tags: ['Reverse Engineering', 'Cheat Engine', 'Debugging'],
-        cover: '../assets/images/projects/EclipxseCovers/game-re-it-takes-two.webp'
+        cover: '../assets/images/projects/EclipxseCovers/game-re-it-takes-two.webp',
+        links: [{ label: 'Case study', url: '/works/game-research/' }]
       },
       {
         id: 'marishoku-os',
         title: 'MARISHOKU/OS',
-        desc: isEn ? "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO." : "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO.",
+        desc: isEn ? "An experimental Debian 13 and Plasma 6 remix with custom profiles, desktop tooling, package builds and a reproducible hybrid ISO pipeline." : "An experimental Debian 13 and Plasma 6 remix with custom profiles, desktop tooling, package builds and a reproducible hybrid ISO pipeline.",
         category: 'Debian Remix',
         year: 'V1.3',
         tags: ['Debian 13', 'KDE Plasma 6', 'Linux'],
         cover: '../assets/images/projects/EclipxseCovers/marishoku-os.webp',
-        links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_OS' }]
+        links: [
+          { label: 'Case study', url: '/works/marishoku-os/' },
+          { label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_OS' }
+        ]
       },
       {
         id: 'eclipxse-beam',
         title: 'Eclipxse Beam',
-        desc: isEn ? "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing." : "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing.",
+        desc: isEn ? "A Rust desktop app and web companion for encrypted peer-to-peer file transfer with QR pairing and no account requirement." : "A Rust desktop app and web companion for encrypted peer-to-peer file transfer with QR pairing and no account requirement.",
         category: 'Native + Web App',
         year: '2026',
         tags: ['Rust', 'Slint', 'WebRTC'],
         cover: '../assets/images/projects/EclipxseCovers/eclipxse-beam.webp',
         links: [
+          { label: 'Case study', url: '/works/eclipxse-beam/' },
           { label: 'Live app', url: 'https://eclipxse.github.io/Eclipxse_beam/' },
           { label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_beam' },
           { label: 'Download', url: 'https://github.com/Eclipxse/Eclipxse_beam/releases/latest/download/Eclipxse-Beam-Native-Windows-x64.exe' }
@@ -140,7 +155,10 @@
               '<div class="face-year">' + proj.year + '</div>' +
               '<div class="face-desc">' + proj.desc + '</div>' +
               '<div class="face-tags">' + proj.tags.map(function(t) { return '<span class="face-tag">' + t + '</span>'; }).join('') + '</div>' +
-              '<div class="face-links">' + (proj.links || []).map(function(link) { return '<a class="face-link" href="' + link.url + '" target="_blank" rel="noopener noreferrer">' + link.label + '<span aria-hidden="true">↗</span></a>'; }).join('') + '</div>' +
+              '<div class="face-links">' + (proj.links || []).map(function(link) {
+                var externalAttrs = link.url.charAt(0) === '/' ? '' : ' target="_blank" rel="noopener noreferrer"';
+                return '<a class="face-link" href="' + link.url + '"' + externalAttrs + '>' + link.label + '<span aria-hidden="true">↗</span></a>';
+              }).join('') + '</div>' +
             '</div>' +
           '</div>' +
         '</div>';

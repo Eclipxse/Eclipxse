@@ -322,26 +322,33 @@
   pointer-events: none;
 }
 
-.eclipse-mark {
+.brand-signal {
   position: relative;
   display: inline-block;
   width: 1.35rem;
   height: 1.35rem;
-  border: 1px solid currentColor;
-  border-radius: 50%;
   color: rgba(255, 255, 255, 0.75);
-  overflow: hidden;
   vertical-align: -0.28em;
 }
 
-.eclipse-mark > span {
+.brand-signal::before,
+.brand-signal::after {
+  content: '';
   position: absolute;
-  top: -1px;
-  right: -0.42rem;
-  width: 1.35rem;
-  height: 1.35rem;
-  border-radius: 50%;
-  background: #0a0a0a;
+  left: 0;
+  height: 0.18rem;
+}
+
+.brand-signal::before {
+  top: 0.28rem;
+  width: 100%;
+  background: currentColor;
+}
+
+.brand-signal::after {
+  bottom: 0.28rem;
+  width: 62%;
+  background: #ff3514;
 }
 
 @media (max-width: 768px) {

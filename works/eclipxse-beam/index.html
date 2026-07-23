@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eclipxse Beam — Case study · Eclipxse</title>
+  <meta name="description" content="A Rust desktop app and web companion for encrypted peer-to-peer file transfer with QR pairing and no account requirement.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://eclipxse.in/works/eclipxse-beam/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Eclipxse">
+  <meta property="og:title" content="Eclipxse Beam — Case study">
+  <meta property="og:description" content="A Rust desktop app and web companion for encrypted peer-to-peer file transfer with QR pairing and no account requirement.">
+  <meta property="og:url" content="https://eclipxse.in/works/eclipxse-beam/">
+  <meta property="og:image" content="https://eclipxse.in/assets/images/social/eclipxse-beam.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Eclipxse Beam project preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eclipxse Beam — Case study">
+  <meta name="twitter:description" content="A Rust desktop app and web companion for encrypted peer-to-peer file transfer with QR pairing and no account requirement.">
+  <meta name="twitter:image" content="https://eclipxse.in/assets/images/social/eclipxse-beam.jpg">
+  <meta name="twitter:image:alt" content="Eclipxse Beam project preview">
+  <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/case-study.css?v=20260723-r3">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Eclipxse Beam","url":"https://eclipxse.in/works/eclipxse-beam/","image":"https://eclipxse.in/assets/images/social/eclipxse-beam.jpg","description":"A Rust desktop app and web companion for encrypted peer-to-peer file transfer with QR pairing and no account requirement.","creator":{"@type":"Person","name":"Eclipxse","url":"https://eclipxse.in/"},"dateCreated":"2026"}</script>
+</head>
+<body class="project-eclipxse-beam">
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="case-header" id="case-header">
+    <a class="case-brand" href="/" aria-label="Eclipxse home">Eclipxse</a>
+    <nav class="case-nav" aria-label="Case study navigation">
+      <a href="/works/">All work</a>
+      <span>Case study</span>
+      <span class="case-count">08 / 08</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero" aria-labelledby="case-title">
+      <p class="case-kicker"><i aria-hidden="true"></i>Native + web app · 2026</p>
+      <h1 class="case-title" id="case-title">Eclipxse Beam</h1>
+      <p class="case-lead">A Rust desktop app and web companion for encrypted peer-to-peer file transfer with QR pairing and no account requirement.</p>
+      <div class="case-actions">
+        <a class="case-action" href="https://eclipxse.github.io/Eclipxse_beam/" target="_blank" rel="noopener noreferrer">Open web app <span>↗</span></a>
+          <a class="case-action" href="https://github.com/Eclipxse/Eclipxse_beam" target="_blank" rel="noopener noreferrer">View source <span>↗</span></a>
+          <a class="case-action" href="https://github.com/Eclipxse/Eclipxse_beam/releases/latest" target="_blank" rel="noopener noreferrer">Download Windows build <span>↗</span></a>
+      </div>
+      <dl class="case-facts">
+        <div class="case-fact"><dt>Role</dt><dd>Native + web development</dd></div>
+        <div class="case-fact"><dt>Stack</dt><dd>Rust · Slint · WebRTC · PeerJS</dd></div>
+        <div class="case-fact"><dt>Status</dt><dd>Open source · Windows x64</dd></div>
+        <div class="case-fact"><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </section>
+
+    <figure class="case-hero-media">
+      <img src="/assets/images/projects/EclipxseCovers/eclipxse-beam.webp" alt="Eclipxse Beam peer-to-peer file transfer app"
+        width="1600" height="900" fetchpriority="high" decoding="async" data-parallax>
+    </figure>
+
+    <div class="case-content" id="project-story">
+      <section class="case-section reveal">
+        <p class="section-index"><span>01</span> / Overview</p>
+        <div class="section-copy">
+          <h2>Move the file directly</h2>
+          <p>Eclipxse Beam pairs a native Windows sender with a browser-based receiver. A QR code handles discovery, WebRTC carries the encrypted peer-to-peer transfer and the workflow avoids accounts or cloud payload storage.</p>
+        </div>
+      </section>
+
+      <div class="focus-grid">
+      <article class="focus-card reveal">
+        <span>01</span>
+        <h3>Fast pairing</h3>
+        <p>The desktop app presents a QR code that opens the correct receiver session without manual server or account setup.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>02</span>
+        <h3>Direct transfer</h3>
+        <p>WebRTC moves payloads between peers while PeerJS handles the signaling needed to establish the connection.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>03</span>
+        <h3>Safe file handling</h3>
+        <p>Incoming writes use collision-safe naming so an existing file is not silently overwritten.</p>
+      </article>
+      </div>
+
+      <section class="light-section">
+        <div class="light-inner reveal">
+          <p class="section-index"><span>02</span> / Build decisions</p>
+          <div class="light-copy">
+            <h2>Reduce the ceremony around local transfer</h2>
+            <p>The product is built around one short path: select, scan, receive. Rust and Slint keep the sender lightweight and native, while the web companion makes the receiving side available without an install.</p>
+            <dl class="build-list">
+              <div><dt>Desktop</dt><dd>Rust + Slint</dd></div>
+              <div><dt>Transport</dt><dd>Encrypted WebRTC</dd></div>
+              <div><dt>Pairing</dt><dd>QR code + PeerJS signaling</dd></div>
+              <div><dt>Data model</dt><dd>No accounts or cloud payload storage</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="gallery-head reveal">
+          <p class="section-index"><span>03</span> / Selected views</p>
+          <h2>Inside the project</h2>
+        </div>
+        <div class="gallery-list">
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/eclipxse-beam/send.webp" alt="Send flow — Select and prepare a transfer"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>01 / Send flow</span><span>Select and prepare a transfer</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/eclipxse-beam/receive.webp" alt="Receive flow — Browser-based companion"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>02 / Receive flow</span><span>Browser-based companion</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/eclipxse-beam/transfer.webp" alt="Transfer state — Direct peer-to-peer progress"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>03 / Transfer state</span><span>Direct peer-to-peer progress</span></figcaption>
+        </figure>
+        </div>
+      </section>
+
+      <section class="case-end">
+        <div class="case-end-copy reveal">
+          <p class="section-index"><span>04</span> / Current state</p>
+          <h2>Where it stands now</h2>
+          <p>The current release targets Windows x64 and is unsigned. Folder transfer and resumable transfers remain future work; the direct single-file path is the present focus.</p>
+        </div>
+        <a class="next-project reveal" href="/works/gamertheorys/">
+          <span>
+            <small>Next case study</small>
+            <strong>GamerTheorys</strong>
+          </span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="case-footer">
+    <span>© 2026 Eclipxse</span>
+    <a href="/contact/">Start a conversation ↗</a>
+  </footer>
+  <script src="/js/case-study.js?v=20260723-r1" defer></script>
+</body>
+</html>

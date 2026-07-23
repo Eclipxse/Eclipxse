@@ -471,7 +471,15 @@ async function setupScrollReveal() {
   const FRAME_EXT = '.webp';
   const FRAME_PAD = 4;
   const TOTAL_FRAMES = 341;
-  const FRAME_CACHE_KEY = '20260722-r1';
+  const FRAME_CACHE_KEY = '20260723-r2';
+  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  const saveData = !!(connection && connection.saveData);
+  const effectiveType = connection && connection.effectiveType ? connection.effectiveType : '';
+  const constrainedConnection = saveData || effectiveType === 'slow-2g' || effectiveType === '2g' || effectiveType === '3g';
+  const compactFrameMode = isMobile || window.matchMedia('(max-width: 768px)').matches;
+  const adaptiveFrameStep = compactFrameMode
+    ? (constrainedConnection ? 4 : 3)
+    : (constrainedConnection || isSlowHardware ? 3 : 2);
   const frameUrl = n => `${FRAME_DIR}${String(n).padStart(FRAME_PAD, '0')}${FRAME_EXT}?v=${FRAME_CACHE_KEY}`;
 
   const frames = new Array(TOTAL_FRAMES);
@@ -517,24 +525,25 @@ async function setupScrollReveal() {
     ctx.drawImage(img, (cw - dw) * 0.5, (ch - dh) * 0.5, dw, dh);
     drawnIdx = i;
   }
-  function probe(n) {
+  function probe(n, priority = 'low') {
     return new Promise(resolve => {
       const img = new Image();
       img.decoding = 'async';
+      img.fetchPriority = priority;
       img.onload = () => resolve(img);
       img.onerror = () => resolve(null);
       img.src = frameUrl(n);
     });
   }
-  async function probeWithRetry(n, attempts = 3) {
+  async function probeWithRetry(n, attempts = 3, priority = 'low') {
     for (let k = 0; k < attempts; k++) {
-      const img = await probe(n);
+      const img = await probe(n, priority);
       if (img) return img;
     }
     return null;
   }
   async function loadFirstBatch() {
-    const first = await probeWithRetry(1, 3);
+    const first = await probeWithRetry(1, 3, 'high');
     if (!first) { console.error('Frame 1 failed to load!'); return 0; }
     frames[0] = first;
     rebuildLoadedFrameIndex();
@@ -545,7 +554,7 @@ async function setupScrollReveal() {
     const t0 = performance.now();
     const batchNums = Array.from({ length: Math.min(SPEED_BATCH, TOTAL_FRAMES - 1) }, (_, k) => k + 2);
     await Promise.all(batchNums.map(async n => {
-      const img = await probeWithRetry(n, 2);
+      const img = await probeWithRetry(n, 2, 'auto');
       if (img) frames[n - 1] = img;
     }));
     const elapsed = performance.now() - t0;
@@ -582,14 +591,21 @@ async function setupScrollReveal() {
 
   window.addEventListener('resize', resizeCanvas);
   let frameSkip = await loadFirstBatch();
-  if (isMobile) frameSkip = Math.max(frameSkip, 3);
+  frameSkip = Math.max(frameSkip, adaptiveFrameStep);
+  canvas.dataset.frameStep = String(frameSkip);
+  canvas.dataset.frameRequestEstimate = String(11 + Math.ceil((TOTAL_FRAMES - 11) / frameSkip));
 
   if (totalFrames === 0) {
     console.error('No reveal frames loaded.');
     return;
   }
 
-  loadRemainingFrames(frameSkip).catch(err => console.error('Frame background load error:', err));
+  const scheduleRemainingFrames = window.requestIdleCallback
+    ? callback => window.requestIdleCallback(callback, { timeout: 900 })
+    : callback => window.setTimeout(callback, 120);
+  scheduleRemainingFrames(() => {
+    loadRemainingFrames(frameSkip).catch(err => console.error('Frame background load error:', err));
+  });
 
   const introSettledY = Number(gsap.getProperty(pContent, 'y')) || 0;
   
@@ -1043,9 +1059,9 @@ function setupProjectsSection() {
       var imgW = Math.min(Math.max(120, vw * 0.14), 210);
       var imgH = imgW * 2 / 3;
       
-      var orbitR = (vw * 0.34 + 500) / 2; 
-      var bendRad = imgW / orbitR;
-      var cylR = orbitR;
+      var curveRadius = (vw * 0.34 + 500) / 2;
+      var bendRad = imgW / curveRadius;
+      var cylR = curveRadius;
       var sliceW = imgW / SLICES;
       var totalBendDeg = bendRad * 180 / Math.PI;
       var stepDeg = totalBendDeg / SLICES;
@@ -1892,55 +1908,63 @@ function setupProjectsSection() {
 
   const PROJECTS = {
     'cyberdiag': {
-      desc: isEn ? "A live gaming ecosystem for esports, studio services, pricing, hosting and creator-focused workflows." : "A live gaming ecosystem for esports, studio services, pricing, hosting and creator-focused workflows.",
+      desc: isEn ? "A full-stack gaming product bringing esports, studio services, hosting and creator workflows into one focused platform." : "A full-stack gaming product bringing esports, studio services, hosting and creator workflows into one focused platform.",
       category: 'Full-stack Platform', year: '2026', tags: ['Full-stack', 'Gaming', 'Platform'],
       images: [
         'assets/images/projects/galleries/gamertheorys/full-homepage.webp',
         'assets/images/projects/galleries/gamertheorys/hero-focus.webp',
         'assets/images/projects/galleries/gamertheorys/platform-metrics.webp',
       ],
-      links: [],
+      links: [{ label: 'Case study', url: '/works/gamertheorys/' }],
     },
     'anima': {
-      desc: isEn ? "My earlier personal portfolio build, shaped around an experimental game-like identity and full-stack developer profile." : "My earlier personal portfolio build, shaped around an experimental game-like identity and full-stack developer profile.",
-      category: 'Portfolio', year: '2026', tags: ['Vue', 'Nuxt', 'TypeScript'],
+      desc: isEn ? "An earlier Nuxt portfolio that turned my work into a game-like, exploratory web experience." : "An earlier Nuxt portfolio that turned my work into a game-like, exploratory web experience.",
+      category: 'Interactive Portfolio', year: '2025', tags: ['Vue', 'Nuxt', 'TypeScript'],
       images: [
         'assets/images/projects/galleries/eclipxse-in/full-homepage.webp',
         'assets/images/projects/galleries/eclipxse-in/lawliet-pixel-art.webp',
         'assets/images/projects/galleries/eclipxse-in/game-library.webp',
       ],
-      links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Eclifolio' }],
+      links: [
+        { label: 'Case study', url: '/works/eclipxse-in/' },
+        { label: 'Source', url: 'https://github.com/Eclipxse/Eclifolio' },
+      ],
     },
     'cyberdiag-app': {
-      desc: isEn ? "A deployed web app build focused on practicing real product structure, frontend polish and full-stack fundamentals." : "A deployed web app build focused on practicing real product structure, frontend polish and full-stack fundamentals.",
-      category: 'Web App', year: '2026', tags: ['Full-stack', 'Vercel', 'Web App'],
+      desc: isEn ? "An expressive React portfolio built from custom illustration, pastel surfaces and deliberately paced scrolling." : "An expressive React portfolio built from custom illustration, pastel surfaces and deliberately paced scrolling.",
+      category: 'Creative Portfolio', year: '2026', tags: ['React', 'Vite', 'GSAP'],
       images: [
         'assets/images/projects/galleries/lizziee/full-homepage.webp',
         'assets/images/projects/galleries/lizziee/character-study.webp',
         'assets/images/projects/galleries/lizziee/side-profile.webp',
       ],
       links: [
+        { label: 'Case study', url: '/works/lizziee/' },
         { label: 'Source', url: 'https://github.com/Eclipxse/Lizzie' },
       ],
     },
     'godot-farming': {
-      desc: isEn ? "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops." : "A real 2D farming game prototype built in Godot 4 while learning tilemaps, scenes, player systems, interaction and gameplay loops.",
+      desc: isEn ? "A 2D farming-game prototype built around layered TileMaps, reusable scenes, player movement and repeatable interactions." : "A 2D farming-game prototype built around layered TileMaps, reusable scenes, player movement and repeatable interactions.",
       category: 'Game Prototype', year: '2026', tags: ['Godot 4', 'GDScript', '2D Game'],
       images: [
         'assets/images/projects/galleries/godot-farming/godot-editor.webp',
         'assets/images/projects/galleries/godot-farming/farm-map.webp',
         'assets/images/projects/galleries/godot-farming/scene-structure.webp',
       ],
-      links: [],
+      links: [{ label: 'Case study', url: '/works/godot-farming/' }],
     },
     'blunt38': {
-      desc: isEn ? "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game." : "A UI-first multipurpose Discord bot combining moderation, AI, Lavalink music, tickets, leveling, temporary voice channels, a Next.js dashboard and a live drawing game.",
+      desc: isEn ? "A UI-first Discord platform with 26 command groups, moderation, AI, music, community systems, a Next.js dashboard and real-time Draw Party." : "A UI-first Discord platform with 26 command groups, moderation, AI, music, community systems, a Next.js dashboard and real-time Draw Party.",
       category: 'Discord Platform', year: '2026', tags: ['TypeScript', 'Discord.js', 'Next.js'],
       images: [
         'assets/images/projects/galleries/blunt38/brand-banner.webp',
         'assets/images/projects/galleries/blunt38/brand-mark.webp',
       ],
-      links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Blunt38' }],
+      links: [
+        { label: 'Case study', url: '/works/blunt38/' },
+        { label: 'Source', url: 'https://github.com/Eclipxse/Blunt38' },
+        { label: 'Privacy', url: '/privacy/' },
+      ],
     },
     'game-research': {
       desc: isEn ? "A hands-on reverse-engineering study of a live game process using Cheat Engine to scan memory, trace changing values and understand runtime behavior." : "A hands-on reverse-engineering study of a live game process using Cheat Engine to scan memory, trace changing values and understand runtime behavior.",
@@ -1950,10 +1974,10 @@ function setupProjectsSection() {
         'assets/images/projects/galleries/game-research/memory-scan.webp',
         'assets/images/projects/galleries/game-research/raven-focus.webp',
       ],
-      links: [],
+      links: [{ label: 'Case study', url: '/works/game-research/' }],
     },
     'marishoku-os': {
-      desc: isEn ? "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO." : "A pixel-goth Debian 13 remix with a custom Plasma 6 desktop, boot-to-desktop theming, system tools, OMOTE and URA profiles, a Debian package and a reproducible hybrid ISO.",
+      desc: isEn ? "An experimental Debian 13 and Plasma 6 remix with custom profiles, desktop tooling, package builds and a reproducible hybrid ISO pipeline." : "An experimental Debian 13 and Plasma 6 remix with custom profiles, desktop tooling, package builds and a reproducible hybrid ISO pipeline.",
       category: 'Debian Remix', year: 'V1.3', tags: ['Debian 13', 'KDE Plasma 6', 'Linux'],
       images: [
         'assets/images/projects/galleries/marishoku-os/desktop-concept.webp',
@@ -1961,10 +1985,13 @@ function setupProjectsSection() {
         'assets/images/projects/galleries/marishoku-os/boot-screen.webp',
         'assets/images/projects/galleries/marishoku-os/omote-wallpaper.webp',
       ],
-      links: [{ label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_OS' }],
+      links: [
+        { label: 'Case study', url: '/works/marishoku-os/' },
+        { label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_OS' },
+      ],
     },
     'eclipxse-beam': {
-      desc: isEn ? "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing." : "A private file-transfer project with a native Rust and Slint Windows app plus a browser companion, using encrypted WebRTC and QR-based pairing.",
+      desc: isEn ? "A Rust desktop app and web companion for encrypted peer-to-peer file transfer with QR pairing and no account requirement." : "A Rust desktop app and web companion for encrypted peer-to-peer file transfer with QR pairing and no account requirement.",
       category: 'Native + Web App', year: '2026', tags: ['Rust', 'Slint', 'WebRTC'],
       images: [
         'assets/images/projects/galleries/eclipxse-beam/send.webp',
@@ -1972,6 +1999,7 @@ function setupProjectsSection() {
         'assets/images/projects/galleries/eclipxse-beam/transfer.webp',
       ],
       links: [
+        { label: 'Case study', url: '/works/eclipxse-beam/' },
         { label: 'Live app', url: 'https://eclipxse.github.io/Eclipxse_beam/' },
         { label: 'Source', url: 'https://github.com/Eclipxse/Eclipxse_beam' },
         { label: 'Download', url: 'https://github.com/Eclipxse/Eclipxse_beam/releases/latest/download/Eclipxse-Beam-Native-Windows-x64.exe' },
@@ -2086,7 +2114,8 @@ function setupProjectsSection() {
     detailDesc.textContent = proj.desc;
     detailTags.innerHTML = proj.tags.map(function (t) { return '<span class="detail-tag">' + t + '</span>'; }).join('');
     detailLinks.innerHTML = (proj.links || []).map(function (link) {
-      return '<a class="detail-link" href="' + link.url + '" target="_blank" rel="noopener noreferrer">' + link.label + '<span aria-hidden="true">↗</span></a>';
+      var externalAttrs = link.url.charAt(0) === '/' ? '' : ' target="_blank" rel="noopener noreferrer"';
+      return '<a class="detail-link" href="' + link.url + '"' + externalAttrs + '>' + link.label + '<span aria-hidden="true">↗</span></a>';
     }).join('');
     
     var allImages = [clickedItem.dataset.img].concat(proj.images);
@@ -2526,6 +2555,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.set(awardCursor, { xPercent: -50, yPercent: -50, scale: 0.8, opacity: 0 });
 
     let isAwardHovered = false;
+    let suppressAwardCursorUntil = 0;
 
     const hideAwardCursor = () => {
       if (!isAwardHovered) return;
@@ -2539,10 +2569,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    window.addEventListener('scroll', hideAwardCursor, { passive: true });
+    window.addEventListener('scroll', () => {
+      suppressAwardCursorUntil = performance.now() + 180;
+      hideAwardCursor();
+    }, { passive: true });
 
     awardItems.forEach(item => {
       item.addEventListener('mousemove', (e) => {
+        if (performance.now() < suppressAwardCursorUntil) return;
         if (!isAwardHovered) {
           isAwardHovered = true;
           const imgSrc = item.getAttribute('data-cursor-img');
