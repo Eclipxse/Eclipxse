@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Godot Farming — Case study · Eclipxse</title>
+  <meta name="description" content="A small farming-game prototype used to build the foundations of a tile-based world, player movement and repeatable interactions.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://eclipxse.in/works/godot-farming/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Eclipxse">
+  <meta property="og:title" content="Godot Farming — Case study">
+  <meta property="og:description" content="A small farming-game prototype used to build the foundations of a tile-based world, player movement and repeatable interactions.">
+  <meta property="og:url" content="https://eclipxse.in/works/godot-farming/">
+  <meta property="og:image" content="https://eclipxse.in/assets/images/social/godot-farming.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Godot Farming project preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Godot Farming — Case study">
+  <meta name="twitter:description" content="A small farming-game prototype used to build the foundations of a tile-based world, player movement and repeatable interactions.">
+  <meta name="twitter:image" content="https://eclipxse.in/assets/images/social/godot-farming.jpg">
+  <meta name="twitter:image:alt" content="Godot Farming project preview">
+  <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/case-study.css?v=20260723-r3">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Godot Farming","url":"https://eclipxse.in/works/godot-farming/","image":"https://eclipxse.in/assets/images/social/godot-farming.jpg","description":"A small farming-game prototype used to build the foundations of a tile-based world, player movement and repeatable interactions.","creator":{"@type":"Person","name":"Eclipxse","url":"https://eclipxse.in/"},"dateCreated":"2026"}</script>
+</head>
+<body class="project-godot-farming">
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="case-header" id="case-header">
+    <a class="case-brand" href="/" aria-label="Eclipxse home">Eclipxse</a>
+    <nav class="case-nav" aria-label="Case study navigation">
+      <a href="/works/">All work</a>
+      <span>Case study</span>
+      <span class="case-count">04 / 08</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero" aria-labelledby="case-title">
+      <p class="case-kicker"><i aria-hidden="true"></i>2D game prototype · 2026</p>
+      <h1 class="case-title" id="case-title">Godot Farming</h1>
+      <p class="case-lead">A small farming-game prototype used to build the foundations of a tile-based world, player movement and repeatable interactions.</p>
+      <div class="case-actions">
+        <a class="case-action" href="#project-story">Read the story <span>↓</span></a>
+      </div>
+      <dl class="case-facts">
+        <div class="case-fact"><dt>Role</dt><dd>Game design + programming</dd></div>
+        <div class="case-fact"><dt>Stack</dt><dd>Godot 4 · GDScript · TileMaps</dd></div>
+        <div class="case-fact"><dt>Status</dt><dd>Prototype</dd></div>
+        <div class="case-fact"><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </section>
+
+    <figure class="case-hero-media">
+      <img src="/assets/images/projects/EclipxseCovers/godot-farming-real.webp" alt="Godot editor showing the farming game prototype"
+        width="1600" height="900" fetchpriority="high" decoding="async" data-parallax>
+    </figure>
+
+    <div class="case-content" id="project-story">
+      <section class="case-section reveal">
+        <p class="section-index"><span>01</span> / Overview</p>
+        <div class="section-copy">
+          <h2>Building the loop from the ground up</h2>
+          <p>The prototype focuses on the parts that make a farming game feel coherent: a readable world grid, responsive movement, scene ownership and interactions that can be repeated without creating one-off logic for every object.</p>
+        </div>
+      </section>
+
+      <div class="focus-grid">
+      <article class="focus-card reveal">
+        <span>01</span>
+        <h3>Scene structure</h3>
+        <p>Player, world and interaction responsibilities are separated so new mechanics can be added without rewriting the map.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>02</span>
+        <h3>Tile-based world</h3>
+        <p>Layered TileMaps organize terrain, water, decoration and collision while keeping iteration fast inside the editor.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>03</span>
+        <h3>Interaction loop</h3>
+        <p>The input and state flow is designed around repeatable actions that can later support tools, crops and progression.</p>
+      </article>
+      </div>
+
+      <section class="light-section">
+        <div class="light-inner reveal">
+          <p class="section-index"><span>02</span> / Build decisions</p>
+          <div class="light-copy">
+            <h2>Prototype the system, not only the scene</h2>
+            <p>The goal was not to draw a finished map and stop there. The project tests whether the world can accept more content without its logic becoming brittle, using reusable scenes and clear ownership for each piece of game state.</p>
+            <dl class="build-list">
+              <div><dt>Engine</dt><dd>Godot 4</dd></div>
+              <div><dt>World model</dt><dd>Layered TileMaps</dd></div>
+              <div><dt>Code</dt><dd>GDScript scene logic</dd></div>
+              <div><dt>Scope</dt><dd>Playable systems prototype</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="gallery-head reveal">
+          <p class="section-index"><span>03</span> / Selected views</p>
+          <h2>Inside the project</h2>
+        </div>
+        <div class="gallery-list">
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/godot-farming/godot-editor.webp" alt="Editor overview — World and scene workflow"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>01 / Editor overview</span><span>World and scene workflow</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/godot-farming/farm-map.webp" alt="Farm map — Tile-based playable space"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>02 / Farm map</span><span>Tile-based playable space</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/godot-farming/scene-structure.webp" alt="Scene structure — Reusable nodes and responsibilities"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>03 / Scene structure</span><span>Reusable nodes and responsibilities</span></figcaption>
+        </figure>
+        </div>
+      </section>
+
+      <section class="case-end">
+        <div class="case-end-copy reveal">
+          <p class="section-index"><span>04</span> / Current state</p>
+          <h2>Where it stands now</h2>
+          <p>This remains a working prototype rather than a released game. The next useful milestone is expanding the interaction layer into tools, crop state and a complete day-to-day loop.</p>
+        </div>
+        <a class="next-project reveal" href="/works/blunt38/">
+          <span>
+            <small>Next case study</small>
+            <strong>blunt38</strong>
+          </span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="case-footer">
+    <span>© 2026 Eclipxse</span>
+    <a href="/contact/">Start a conversation ↗</a>
+  </footer>
+  <script src="/js/case-study.js?v=20260723-r1" defer></script>
+</body>
+</html>

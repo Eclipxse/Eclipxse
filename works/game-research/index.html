@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game RE Study — Case study · Eclipxse</title>
+  <meta name="description" content="A documented runtime-analysis study using observation, memory scanning and controlled value testing to understand a game&#x27;s internal state.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://eclipxse.in/works/game-research/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Eclipxse">
+  <meta property="og:title" content="Game RE Study — Case study">
+  <meta property="og:description" content="A documented runtime-analysis study using observation, memory scanning and controlled value testing to understand a game&#x27;s internal state.">
+  <meta property="og:url" content="https://eclipxse.in/works/game-research/">
+  <meta property="og:image" content="https://eclipxse.in/assets/images/social/game-research.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Game RE Study project preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Game RE Study — Case study">
+  <meta name="twitter:description" content="A documented runtime-analysis study using observation, memory scanning and controlled value testing to understand a game&#x27;s internal state.">
+  <meta name="twitter:image" content="https://eclipxse.in/assets/images/social/game-research.jpg">
+  <meta name="twitter:image:alt" content="Game RE Study project preview">
+  <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/case-study.css?v=20260723-r3">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Game RE Study","url":"https://eclipxse.in/works/game-research/","image":"https://eclipxse.in/assets/images/social/game-research.jpg","description":"A documented runtime-analysis study using observation, memory scanning and controlled value testing to understand a game's internal state.","creator":{"@type":"Person","name":"Eclipxse","url":"https://eclipxse.in/"},"dateCreated":"2026"}</script>
+</head>
+<body class="project-game-research">
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="case-header" id="case-header">
+    <a class="case-brand" href="/" aria-label="Eclipxse home">Eclipxse</a>
+    <nav class="case-nav" aria-label="Case study navigation">
+      <a href="/works/">All work</a>
+      <span>Case study</span>
+      <span class="case-count">06 / 08</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero" aria-labelledby="case-title">
+      <p class="case-kicker"><i aria-hidden="true"></i>Technical research · 2026</p>
+      <h1 class="case-title" id="case-title">Game RE Study</h1>
+      <p class="case-lead">A documented runtime-analysis study using observation, memory scanning and controlled value testing to understand a game&#x27;s internal state.</p>
+      <div class="case-actions">
+        <a class="case-action" href="#project-story">Read the story <span>↓</span></a>
+      </div>
+      <dl class="case-facts">
+        <div class="case-fact"><dt>Role</dt><dd>Runtime analysis + documentation</dd></div>
+        <div class="case-fact"><dt>Stack</dt><dd>Cheat Engine · Memory scanning · Debugging</dd></div>
+        <div class="case-fact"><dt>Status</dt><dd>Research study</dd></div>
+        <div class="case-fact"><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </section>
+
+    <figure class="case-hero-media">
+      <img src="/assets/images/projects/EclipxseCovers/game-re-it-takes-two.webp" alt="Game reverse-engineering research presentation"
+        width="1600" height="900" fetchpriority="high" decoding="async" data-parallax>
+    </figure>
+
+    <div class="case-content" id="project-story">
+      <section class="case-section reveal">
+        <p class="section-index"><span>01</span> / Overview</p>
+        <div class="section-copy">
+          <h2>Turning visible behaviour into testable state</h2>
+          <p>The study starts with a visible change in the game, narrows possible addresses through repeated scans and then validates each candidate under controlled conditions. The point is the method: observe, form a hypothesis, test it and document what the runtime actually does.</p>
+        </div>
+      </section>
+
+      <div class="focus-grid">
+      <article class="focus-card reveal">
+        <span>01</span>
+        <h3>Runtime observation</h3>
+        <p>A repeatable in-game behaviour creates a reliable before-and-after signal for the investigation.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>02</span>
+        <h3>Address narrowing</h3>
+        <p>Successive value scans reduce a large memory space into candidates that can be validated individually.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>03</span>
+        <h3>Responsible documentation</h3>
+        <p>The work records the analysis process and its limits without shipping a distributable cheat or automated exploit.</p>
+      </article>
+      </div>
+
+      <section class="light-section">
+        <div class="light-inner reveal">
+          <p class="section-index"><span>02</span> / Build decisions</p>
+          <div class="light-copy">
+            <h2>Evidence before assumptions</h2>
+            <p>Memory analysis becomes noise when each test changes several variables. This workflow keeps one observable condition at a time, records the scan state and retests candidates after scene or value changes before drawing a conclusion.</p>
+            <dl class="build-list">
+              <div><dt>Method</dt><dd>Observe, scan, narrow, validate</dd></div>
+              <div><dt>Tooling</dt><dd>Cheat Engine</dd></div>
+              <div><dt>Output</dt><dd>Process documentation</dd></div>
+              <div><dt>Boundary</dt><dd>No distributable cheat or automation</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="gallery-head reveal">
+          <p class="section-index"><span>03</span> / Selected views</p>
+          <h2>Inside the project</h2>
+        </div>
+        <div class="gallery-list">
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/game-research/research-thumbnail.webp" alt="Research overview — The documented study"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>01 / Research overview</span><span>The documented study</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/game-research/memory-scan.webp" alt="Memory scan — Candidate address narrowing"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>02 / Memory scan</span><span>Candidate address narrowing</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/game-research/raven-focus.webp" alt="Presentation detail — Communicating the method clearly"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>03 / Presentation detail</span><span>Communicating the method clearly</span></figcaption>
+        </figure>
+        </div>
+      </section>
+
+      <section class="case-end">
+        <div class="case-end-copy reveal">
+          <p class="section-index"><span>04</span> / Current state</p>
+          <h2>Where it stands now</h2>
+          <p>The case study is presented as a technical learning record. It documents the reasoning and debugging workflow rather than distributing a tool that modifies the game.</p>
+        </div>
+        <a class="next-project reveal" href="/works/marishoku-os/">
+          <span>
+            <small>Next case study</small>
+            <strong>MARISHOKU/OS</strong>
+          </span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="case-footer">
+    <span>© 2026 Eclipxse</span>
+    <a href="/contact/">Start a conversation ↗</a>
+  </footer>
+  <script src="/js/case-study.js?v=20260723-r1" defer></script>
+</body>
+</html>

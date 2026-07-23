@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>blunt38 — Case study · Eclipxse</title>
+  <meta name="description" content="A UI-first Discord platform combining moderation, music, community systems, AI tools and a real-time web dashboard.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://eclipxse.in/works/blunt38/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Eclipxse">
+  <meta property="og:title" content="blunt38 — Case study">
+  <meta property="og:description" content="A UI-first Discord platform combining moderation, music, community systems, AI tools and a real-time web dashboard.">
+  <meta property="og:url" content="https://eclipxse.in/works/blunt38/">
+  <meta property="og:image" content="https://eclipxse.in/assets/images/social/blunt38.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="blunt38 project preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="blunt38 — Case study">
+  <meta name="twitter:description" content="A UI-first Discord platform combining moderation, music, community systems, AI tools and a real-time web dashboard.">
+  <meta name="twitter:image" content="https://eclipxse.in/assets/images/social/blunt38.jpg">
+  <meta name="twitter:image:alt" content="blunt38 project preview">
+  <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/case-study.css?v=20260723-r3">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"blunt38","url":"https://eclipxse.in/works/blunt38/","image":"https://eclipxse.in/assets/images/social/blunt38.jpg","description":"A UI-first Discord platform combining moderation, music, community systems, AI tools and a real-time web dashboard.","creator":{"@type":"Person","name":"Eclipxse","url":"https://eclipxse.in/"},"dateCreated":"2026"}</script>
+</head>
+<body class="project-blunt38">
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="case-header" id="case-header">
+    <a class="case-brand" href="/" aria-label="Eclipxse home">Eclipxse</a>
+    <nav class="case-nav" aria-label="Case study navigation">
+      <a href="/works/">All work</a>
+      <span>Case study</span>
+      <span class="case-count">05 / 08</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero" aria-labelledby="case-title">
+      <p class="case-kicker"><i aria-hidden="true"></i>Discord platform · 2026</p>
+      <h1 class="case-title" id="case-title">blunt38</h1>
+      <p class="case-lead">A UI-first Discord platform combining moderation, music, community systems, AI tools and a real-time web dashboard.</p>
+      <div class="case-actions">
+        <a class="case-action" href="https://github.com/Eclipxse/Blunt38" target="_blank" rel="noopener noreferrer">View source <span>↗</span></a>
+          <a class="case-action" href="/privacy/">Privacy policy <span>→</span></a>
+      </div>
+      <dl class="case-facts">
+        <div class="case-fact"><dt>Role</dt><dd>System design + full-stack development</dd></div>
+        <div class="case-fact"><dt>Stack</dt><dd>TypeScript · discord.js · Supabase · Next.js · Lavalink</dd></div>
+        <div class="case-fact"><dt>Status</dt><dd>Open source</dd></div>
+        <div class="case-fact"><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </section>
+
+    <figure class="case-hero-media">
+      <img src="/assets/images/projects/EclipxseCovers/blunt38.webp" alt="Blunt38 Discord platform identity"
+        width="1600" height="900" fetchpriority="high" decoding="async" data-parallax>
+    </figure>
+
+    <div class="case-content" id="project-story">
+      <section class="case-section reveal">
+        <p class="section-index"><span>01</span> / Overview</p>
+        <div class="section-copy">
+          <h2>A Discord product, not a command pile</h2>
+          <p>Blunt38 is organized as a platform with 26 command groups spanning moderation, tickets, roles, leveling, temporary voice channels, music, AI providers and server setup. A Next.js dashboard extends those systems beyond Discord, including real-time experiences such as Draw Party.</p>
+        </div>
+      </section>
+
+      <div class="focus-grid">
+      <article class="focus-card reveal">
+        <span>01</span>
+        <h3>Modular command system</h3>
+        <p>Features are divided into clear domains so a large command surface can grow without turning every handler into shared state.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>02</span>
+        <h3>Persistent platform data</h3>
+        <p>Supabase and Postgres support configuration, progression and community state across the bot and dashboard.</p>
+      </article>
+      <article class="focus-card reveal">
+        <span>03</span>
+        <h3>Bot + web experience</h3>
+        <p>The Discord client, Lavalink audio layer and Next.js dashboard are treated as connected surfaces of one product.</p>
+      </article>
+      </div>
+
+      <section class="light-section">
+        <div class="light-inner reveal">
+          <p class="section-index"><span>02</span> / Build decisions</p>
+          <div class="light-copy">
+            <h2>Complex underneath, clear at the surface</h2>
+            <p>The product is intentionally UI-first. Commands, dashboard controls and automated flows are written around understandable outcomes, while the service boundaries underneath keep music, moderation, AI and community features independently maintainable.</p>
+            <dl class="build-list">
+              <div><dt>Command surface</dt><dd>26 feature groups</dd></div>
+              <div><dt>Data layer</dt><dd>Supabase and Postgres</dd></div>
+              <div><dt>Audio</dt><dd>Lavalink-backed music</dd></div>
+              <div><dt>Web layer</dt><dd>Next.js dashboard + Draw Party</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="gallery-head reveal">
+          <p class="section-index"><span>03</span> / Selected views</p>
+          <h2>Inside the project</h2>
+        </div>
+        <div class="gallery-list">
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/blunt38/brand-banner.webp" alt="Platform banner — Blunt38 product identity"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>01 / Platform banner</span><span>Blunt38 product identity</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-frame">
+            <img src="/assets/images/projects/galleries/blunt38/brand-mark.webp" alt="Brand mark — Compact community-facing asset"
+              loading="lazy" decoding="async" data-parallax>
+          </div>
+          <figcaption><span>02 / Brand mark</span><span>Compact community-facing asset</span></figcaption>
+        </figure>
+        </div>
+      </section>
+
+      <section class="case-end">
+        <div class="case-end-copy reveal">
+          <p class="section-index"><span>04</span> / Current state</p>
+          <h2>Where it stands now</h2>
+          <p>The source is public and the privacy policy is available as a stable route for Discord platform review. The project remains an active base for new community and dashboard features.</p>
+        </div>
+        <a class="next-project reveal" href="/works/game-research/">
+          <span>
+            <small>Next case study</small>
+            <strong>Game RE Study</strong>
+          </span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="case-footer">
+    <span>© 2026 Eclipxse</span>
+    <a href="/contact/">Start a conversation ↗</a>
+  </footer>
+  <script src="/js/case-study.js?v=20260723-r1" defer></script>
+</body>
+</html>
