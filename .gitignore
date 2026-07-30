@@ -4,3 +4,5 @@ assets/images/projects/EclipxseCovers/cover-sheet.png
 assets/images/profile/Mario-styled.png
 .DS_Store
 Thumbs.db
+__pycache__/
+*.pyc

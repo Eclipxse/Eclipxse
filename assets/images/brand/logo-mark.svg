@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Eclipxse monogram</title>
+  <desc id="desc">A minimal editorial e and x monogram with restrained red corner details.</desc>
+  <rect width="512" height="512" fill="#0a0a0a"/>
+  <path d="M74 144V90h54M384 422h54v-54" fill="none" stroke="#ff3426" stroke-width="13"/>
+  <text x="86" y="352" fill="#f5f3ee" font-family="'Times New Roman', Times, serif" font-size="322" letter-spacing="-28">e</text>
+  <text x="297" y="329" fill="#ff3426" font-family="'Times New Roman', Times, serif" font-size="210" font-style="italic">x</text>
+</svg>

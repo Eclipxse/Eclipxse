@@ -15,6 +15,8 @@ RED = "#ff3514"
 
 FONT_REGULAR = Path("C:/Windows/Fonts/arial.ttf")
 FONT_BOLD = Path("C:/Windows/Fonts/arialbd.ttf")
+FONT_SERIF = Path("C:/Windows/Fonts/times.ttf")
+FONT_SERIF_ITALIC = Path("C:/Windows/Fonts/timesi.ttf")
 FONT_MACHINE = ASSETS / "fonts" / "Machine.otf"
 
 
@@ -179,62 +181,82 @@ def draw_project_card(project: dict, index: int) -> None:
 
 
 def draw_generic_social() -> None:
-    image = Image.new("RGBA", (1200, 630), BLACK)
-    add_grid(image, color=(255, 255, 255, 12), spacing=84)
+    master = BRAND_DIR / "logo-social-master.png"
+    if not master.exists():
+        raise FileNotFoundError(
+            "Missing assets/images/brand/logo-social-master.png. "
+            "This is the approved editorial portrait composition."
+        )
+
+    image = ImageOps.fit(
+        Image.open(master).convert("RGB"),
+        (1200, 630),
+        method=Image.Resampling.LANCZOS,
+    )
+    for filename in ("logo-social.jpg", "logo-social-editorial.jpg"):
+        image.save(
+            BRAND_DIR / filename,
+            "JPEG",
+            quality=92,
+            optimize=True,
+            progressive=True,
+        )
+
+
+def draw_brand_mark(size: int) -> Image.Image:
+    image = Image.new("RGBA", (size, size), BLACK)
     draw = ImageDraw.Draw(image)
 
-    draw.polygon([(835, -40), (1040, -40), (910, 670), (705, 670)], fill=(255, 53, 20, 24))
-    draw.rectangle((0, 0, 14, 630), fill=RED)
-    draw.text((55, 45), "PORTFOLIO / 2026", font=font(FONT_BOLD, 20), fill=MUTED)
-    draw.text((1044, 45), "V3.0", font=font(FONT_BOLD, 20), fill=PAPER)
+    bracket = round(size * 0.105)
+    inset = round(size * 0.145)
+    stroke = max(4, round(size * 0.025))
+    draw.line(
+        ((inset, inset + bracket), (inset, inset), (inset + bracket, inset)),
+        fill=RED,
+        width=stroke,
+        joint="curve",
+    )
+    draw.line(
+        (
+            (size - inset - bracket, size - inset),
+            (size - inset, size - inset),
+            (size - inset, size - inset - bracket),
+        ),
+        fill=RED,
+        width=stroke,
+        joint="curve",
+    )
 
-    title = fitted_font("ECLIPXSE", FONT_BOLD, 160, 92, 1060)
-    draw.text((52, 194), "ECLIPXSE", font=title, fill=PAPER)
-    draw.rectangle((57, 376, 314, 386), fill=RED)
-
-    draw.text((58, 422), "CREATIVE DEVELOPER / FULL-STACK BUILDER", font=font(FONT_BOLD, 29), fill=PAPER)
-    draw.text((58, 468), "WEB  ·  TOOLS  ·  DISCORD SYSTEMS  ·  NATIVE APPS  ·  GAMES", font=font(FONT_BOLD, 17), fill=MUTED)
-
-    draw.text((58, 572), "ECLIPXSE.IN", font=font(FONT_BOLD, 18), fill=PAPER)
-    draw.text((1019, 572), "08 PROJECTS", font=font(FONT_BOLD, 18), fill=MUTED)
-
-    image.convert("RGB").save(BRAND_DIR / "logo-social.jpg", "JPEG", quality=93, optimize=True, progressive=True)
-
-
-def draw_square_brand() -> None:
-    image = Image.new("RGBA", (1024, 1024), BLACK)
-    add_grid(image, color=(255, 255, 255, 11), spacing=96)
-    draw = ImageDraw.Draw(image)
-    draw.polygon([(760, -60), (990, -60), (760, 1084), (530, 1084)], fill=(255, 53, 20, 30))
-    draw.rectangle((0, 0, 20, 1024), fill=RED)
-
-    e_font = font(FONT_BOLD, 600)
-    e_bbox = draw.textbbox((0, 0), "E", font=e_font)
-    e_w = e_bbox[2] - e_bbox[0]
-    e_h = e_bbox[3] - e_bbox[1]
-    draw.text(((1024 - e_w) / 2 - 16, (1024 - e_h) / 2 - e_bbox[1] - 58), "E", font=e_font, fill=PAPER)
-
-    draw.rectangle((76, 872, 948, 874), fill=(255, 255, 255, 70))
-    draw.text((76, 902), "ECLIPXSE", font=font(FONT_BOLD, 55), fill=PAPER)
-    draw.text((757, 921), "2026", font=font(FONT_BOLD, 25), fill=MUTED)
-    image.convert("RGB").save(BRAND_DIR / "logo-square.jpg", "JPEG", quality=94, optimize=True, progressive=True)
-
-
-def draw_favicon_base() -> Image.Image:
-    image = Image.new("RGBA", (512, 512), BLACK)
-    draw = ImageDraw.Draw(image)
-    draw.rectangle((0, 0, 36, 512), fill=RED)
-    draw.polygon([(388, -30), (490, -30), (430, 542), (328, 542)], fill=(255, 53, 20, 36))
-    e_font = font(FONT_BOLD, 350)
-    bbox = draw.textbbox((0, 0), "E", font=e_font)
-    width = bbox[2] - bbox[0]
-    height = bbox[3] - bbox[1]
-    draw.text(((512 - width) / 2 + 12, (512 - height) / 2 - bbox[1] - 4), "E", font=e_font, fill=PAPER)
+    draw.text(
+        (round(size * 0.165), round(size * 0.51)),
+        "e",
+        font=font(FONT_SERIF, round(size * 0.63)),
+        fill=PAPER,
+        anchor="lm",
+    )
+    draw.text(
+        (round(size * 0.57), round(size * 0.525)),
+        "x",
+        font=font(FONT_SERIF_ITALIC, round(size * 0.41)),
+        fill=RED,
+        anchor="lm",
+    )
     return image
 
 
+def draw_square_brand() -> None:
+    image = draw_brand_mark(1024)
+    image.convert("RGB").save(
+        BRAND_DIR / "logo-square.jpg",
+        "JPEG",
+        quality=95,
+        optimize=True,
+        progressive=True,
+    )
+
+
 def draw_favicons() -> None:
-    base = draw_favicon_base()
+    base = draw_brand_mark(512)
     sizes = {
         "site-icon-512.png": 512,
         "site-icon-192.png": 192,
@@ -262,7 +284,7 @@ def main() -> None:
     draw_favicons()
     for index, project in enumerate(PROJECTS, 1):
         draw_project_card(project, index)
-    print(f"Generated 2 brand images, 6 PNG favicons, 1 ICO, and {len(PROJECTS)} project social cards.")
+    print(f"Generated 3 brand images, 6 PNG favicons, 1 ICO, and {len(PROJECTS)} project social cards.")
 
 
 if __name__ == "__main__":
