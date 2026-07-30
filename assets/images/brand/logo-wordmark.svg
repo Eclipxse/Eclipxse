@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc">
+  <title id="title">Eclipxse wordmark</title>
+  <desc id="desc">A high-contrast serif Eclipxse wordmark with a restrained red italic x.</desc>
+  <rect width="1000" height="280" fill="#0a0a0a"/>
+  <text x="62" y="190" fill="#f5f3ee" font-family="'Times New Roman', Times, serif" font-size="174" letter-spacing="-10">
+    Eclip<tspan fill="#ff3426" font-style="italic">x</tspan>se
+  </text>
+  <rect x="70" y="220" width="150" height="5" fill="#ff3426"/>
+</svg>
