@@ -3,7 +3,7 @@
  * Build: node scripts/build-profile.mjs [--out /absolute/directory]
  * The visuals are illustrations made with code; they do not simulate live data.
  */
-import {mkdir, writeFile} from 'node:fs/promises';
+import {mkdir, readFile, writeFile} from 'node:fs/promises';
 import {dirname, join, resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const here = dirname(fileURLToPath(import.meta.url));
@@ -15,7 +15,28 @@ await mkdir(assetRoot, {recursive: true});
 
 const C = {bg:'#0b0d0e', line:'#303638', text:'#f0f2e9', muted:'#a0a9a2', accent:'#c3f86b'};
 const esc = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-const txt = (value,x,y,size=16,color=C.muted,extra='') => `<text x="${x}" y="${y}" font-size="${size}" fill="${color}" ${extra}>${esc(value)}</text>`;
+const fonts = JSON.parse(await readFile(join(here,'profile-fonts/outlines.json'),'utf8'));
+function textWidth(value,size,face='mono',tracking=0) {
+  const font=fonts[face],chars=[...value];
+  return chars.reduce((width,char,i) => {
+    if (!font.glyphs[char]) throw new Error(`Missing ${font.name} glyph: ${char}`);
+    return width+(font.glyphs[char].advance+(font.kern[char+(chars[i+1]??'')]??0))*size/font.units+(i<chars.length-1?tracking:0);
+  },0);
+}
+// Outline text at build time. GitHub never has to load or substitute a font.
+function txt(value,x,y,size=16,color=C.muted,face='mono',tracking=0,maxWidth=Infinity) {
+  const font=fonts[face],width=textWidth(value,size,face,tracking);
+  if (width>maxWidth) throw new Error(`${font.name}: "${value}" needs ${width.toFixed(1)}px, has ${maxWidth}px`);
+  let offset=0;
+  const chars=[...value],scale=size/font.units;
+  const paths=chars.map((char,i) => {
+    const glyph=font.glyphs[char];
+    const path=glyph.d ? `<path transform="translate(${offset.toFixed(2)} 0)" d="${glyph.d}"/>` : '';
+    offset+=glyph.advance+(font.kern[char+(chars[i+1]??'')]??0)+tracking/scale;
+    return path;
+  }).join('');
+  return `<g aria-label="${esc(value)}" data-font="${font.name}" fill="${color}" transform="translate(${x} ${y}) scale(${scale} ${-scale})">${paths}</g>`;
+}
 const line = (x1,y1,x2,y2) => `<path d="M${x1} ${y1}L${x2} ${y2}" stroke="${C.line}"/>`;
 const rect = (x,y,w,h,fill,extra='') => `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${fill}" ${extra}/>`;
 const canvas = (w,h) => rect(1,1,w-2,h-2,C.bg,`rx="8" stroke="${C.line}"`);
@@ -92,7 +113,8 @@ for (const mobile of [false,true]) {
   body+=txt('eclipxse / README.md',mobile?36:48,39,mobile?18:15)+line(24,59,w-24,59);
   body+=wordmark('ECLIPXSE',mobile?64:48,mobile?93:107,mobile?10:12);
   const x=mobile?36:48,y=mobile?211:259,sz=mobile?21:18;
-  body+=`<text x="${x}" y="${y}" font-size="${sz}"><tspan fill="${C.muted}">const developer = </tspan><tspan fill="${C.accent}">"Mario";</tspan></text>`;
+  const declaration='const developer = ';
+  body+=txt(declaration,x,y,sz)+txt('"Mario";',x+textWidth(declaration,sz),y,sz,C.accent);
   body+=txt('// full-stack developer & toolmaker',x,y+36,mobile?20:17);
   body+=`<g transform="translate(${mobile?120:713} ${mobile?289:96})">${asciiFrames}</g>`;
   if (!mobile) body+=line(678,87,678,340);
@@ -112,9 +134,9 @@ const audioCSS = '.frequency{transform-origin:0 0;animation:frequency 2s ease-in
 for (const mobile of [false,true]) {
   const w=mobile?600:1100,h=mobile?372:280;
   let body=canvas(w,h);
-  body+=txt('ECLIPXSE',36,52,mobile?21:17,C.muted,'letter-spacing="2"');
-  body+=txt('MUSIC',32,mobile?115:120,mobile?58:62,C.text,'font-weight="700" letter-spacing="-3"');
-  if (!mobile) body+=txt('Your music. Your desktop.',36,171,17)+txt('Flutter / Dart',36,216,15,C.accent);
+  body+=txt('ECLIPXSE',36,52,mobile?21:17,C.muted,'mono',2);
+  body+=txt('MUSIC',32,mobile?127:132,mobile?86:65,C.text,'display',-1,mobile?532:370);
+  if (!mobile) body+=txt('Your music. Your desktop.',36,177,32,C.muted,'editorial',0,360)+txt('Flutter / Dart',36,216,15,C.accent);
   body+=frequencyBars(mobile?42:433,mobile?224:126,mobile?520:618,mobile?66:88,mobile?62:76);
   body+=line(24,h-56,w-24,h-56)+txt('source → MediaKit → libmpv → output',36,h-23,mobile?19:15);
   await asset(`music${mobile?'-mobile':''}`,w,h,'Eclipxse Music | Windows audio','Procedural frequency bars illustrate the music project. Audio flows through MediaKit and libmpv.',body,audioCSS);
@@ -141,9 +163,9 @@ const wireFrames=Array.from({length:wireCount},(_,i) => `<g class="wire-frame fr
 for (const mobile of [false,true]) {
   const w=mobile?600:1100,h=mobile?408:280;
   let body=canvas(w,h);
-  body+=txt('ECLIPXSE.IN',32,mobile?81:109,mobile?52:57,C.text,'font-weight="700" letter-spacing="-3"');
-  body+=txt('Design × interaction × code.',36,mobile?126:154,mobile?21:18,C.accent);
-  if (!mobile) body+=txt('My home on the web.',36,197,17);
+  body+=txt('ECLIPXSE.IN',32,mobile?81:109,52,C.text,'display',-1,mobile?536:610);
+  body+=txt('Design × interaction × code.',36,mobile?131:159,mobile?34:32,C.accent,'editorial',0,mobile?528:570);
+  if (!mobile) body+=txt('My home on the web.',36,203,17);
   body+=`<g transform="translate(${mobile?302:843} ${mobile?262:145})${mobile?' scale(1.2)':''}">${wireFrames}</g>`;
   await asset(`portfolio${mobile?'-mobile':''}`,w,h,'Eclipxse.in | Design, interaction and code','A continuous rotating wireframe, built entirely from projected SVG paths.',body,frameCSS('.wire-frame',wireCount,5));
 }
@@ -151,7 +173,7 @@ for (const mobile of [false,true]) {
   const w=mobile?600:1100,h=mobile?110:92;
   let body=canvas(w,h);
   body+=txt('$',24,mobile?62:55,mobile?24:19,C.accent)+txt('make something worth opening',mobile?54:51,mobile?62:55,mobile?24:19,C.text);
-  body+=rect(mobile?466:377,mobile?43:39,mobile?12:10,mobile?24:20,C.accent,'class="move cursor"');
+  body+=rect((mobile?54:51)+textWidth('make something worth opening',mobile?24:19)+10,mobile?43:39,mobile?12:10,mobile?24:20,C.accent,'class="move cursor"');
   await asset(`signoff${mobile?'-mobile':''}`,w,h,'Make something worth opening','A terminal prompt with a blinking cursor.',body,cursorCSS);
 }
 
