@@ -163,7 +163,7 @@ function readme(still=false) { return `${picture('boot','Eclipxse. Mario, full-s
 
 **I'm Mario.** I build desktop tools and web experiences, with a thing for interfaces that have a personality.
 
-[Music ↓](#eclipxse-music) &nbsp;·&nbsp; [Portfolio ↓](#eclipxsein) &nbsp;·&nbsp; [Contact](mailto:lawliet@eclipxse.in)
+[Music ↓](#user-content-eclipxse-music) &nbsp;·&nbsp; [Portfolio ↓](#user-content-eclipxsein) &nbsp;·&nbsp; [Contact](mailto:lawliet@eclipxse.in)
 
 ---
 
