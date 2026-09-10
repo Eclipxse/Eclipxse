@@ -1,7 +1,6 @@
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/after-hours/01-eclipse-still.svg">
-  <img src="./assets/readme/after-hours/01-eclipse.svg" width="100%" alt="Eclipxse — After Hours. A slow silver eclipse. Mario, developer and toolmaker." />
+    <img src="./assets/readme/after-hours/01-eclipse-still.svg" width="100%" alt="Eclipxse — After Hours. A slow silver eclipse. Mario, developer and toolmaker." />
   </picture>
 </p>
 
@@ -15,7 +14,7 @@
   <a href="#eclipxsein">Portfolio</a> &nbsp; / &nbsp;
   <a href="mailto:lawliet@eclipxse.in">Say hello</a>
   <br><br>
-  <sub><a href="./README-static.md">Prefer a still version?</a></sub>
+  <sub><a href="./README.md">View the animated version</a></sub>
 </p>
 
 <br>
@@ -25,8 +24,7 @@
 
 <a href="https://github.com/Eclipxse/Eclipxse_music_exe">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/after-hours/02-music-still.svg">
-  <img src="./assets/readme/after-hours/02-music.svg" width="100%" alt="Eclipxse Music: the original emblem beside an illustrated audio deck with turning tape reels and blue signal meters." />
+    <img src="./assets/readme/after-hours/02-music-still.svg" width="100%" alt="Eclipxse Music: the original emblem beside an illustrated audio deck with turning tape reels and blue signal meters." />
   </picture>
 </a>
 
@@ -41,8 +39,7 @@
 
 <a href="https://eclipxse.in/">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/after-hours/03-portfolio-still.svg">
-  <img src="./assets/readme/after-hours/03-portfolio.svg" width="100%" alt="Eclipxse.in displayed on a dark monitor, alternating between actual captures of the portfolio hero and sculptural scroll sequence." />
+    <img src="./assets/readme/after-hours/03-portfolio-still.svg" width="100%" alt="Eclipxse.in displayed on a dark monitor, alternating between actual captures of the portfolio hero and sculptural scroll sequence." />
   </picture>
 </a>
 
@@ -60,8 +57,7 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/after-hours/04-moth-still.svg">
-  <img src="./assets/readme/after-hours/04-moth.svg" width="100%" alt="A small silver pixel moth above a blue light. Still making things. Mario / Eclipxse." />
+    <img src="./assets/readme/after-hours/04-moth-still.svg" width="100%" alt="A small silver pixel moth above a blue light. Still making things. Mario / Eclipxse." />
   </picture>
 </p>
 
