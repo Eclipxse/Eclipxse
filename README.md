@@ -1,68 +1,81 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/after-hours/01-eclipse-still.svg">
-  <img src="./assets/readme/after-hours/01-eclipse.svg" width="100%" alt="Eclipxse — After Hours. A slow silver eclipse. Mario, developer and toolmaker." />
-  </picture>
-</p>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/readme/code/boot-mobile-still.svg">
+  <source media="(max-width: 600px)" srcset="./assets/readme/code/boot-mobile.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/code/boot-still.svg">
+  <img src="./assets/readme/code/boot.svg" width="100%" alt="Eclipxse. Mario, full-stack developer and toolmaker. Vector lettering and an ASCII torus.">
+</picture>
 
-<p align="center">
-  <strong>I make software I want to keep open.</strong><br>
-  Desktop audio, considered interfaces, and a personal corner of the web.
-</p>
+**I'm Mario.** I build desktop tools and web experiences, with a thing for interfaces that have a personality.
 
-<p align="center">
-  <a href="#eclipxse-music">Music</a> &nbsp; / &nbsp;
-  <a href="#eclipxsein">Portfolio</a> &nbsp; / &nbsp;
-  <a href="mailto:lawliet@eclipxse.in">Say hello</a>
-  <br><br>
-  <sub><a href="./README-static.md">Prefer a still version?</a></sub>
-</p>
+[Music ↓](#eclipxse-music) &nbsp;·&nbsp; [Portfolio ↓](#eclipxsein) &nbsp;·&nbsp; [Contact](mailto:lawliet@eclipxse.in)
 
-<br>
+---
 
 <h2 id="eclipxse-music">Eclipxse Music</h2>
-<p><sub>01 &nbsp; / &nbsp; DESKTOP AUDIO &nbsp; / &nbsp; WINDOWS</sub></p>
 
 <a href="https://github.com/Eclipxse/Eclipxse_music_exe">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/after-hours/02-music-still.svg">
-  <img src="./assets/readme/after-hours/02-music.svg" width="100%" alt="Eclipxse Music: the original emblem beside an illustrated audio deck with turning tape reels and blue signal meters." />
-  </picture>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/readme/code/music-mobile-still.svg">
+  <source media="(max-width: 600px)" srcset="./assets/readme/code/music-mobile.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/code/music-still.svg">
+  <img src="./assets/readme/code/music.svg" width="100%" alt="Eclipxse Music. An animated audio signal for the Windows music project.">
+</picture>
 </a>
 
-<p>A personal Windows build of <a href="https://github.com/gokadzev/Musify">Musify</a>, shaped around a focused desktop listening experience. Local audio, a compact player, native media controls, and an eight-band equalizer.</p>
-<p><code>Flutter</code> &nbsp; <code>Dart</code> &nbsp; <code>MediaKit</code> &nbsp; <code>libmpv</code></p>
-<p><a href="https://github.com/Eclipxse/Eclipxse_music_exe/releases/latest"><strong>Download for Windows ↗</strong></a> &nbsp; / &nbsp; <a href="https://github.com/Eclipxse/Eclipxse_music_exe">Explore the project</a></p>
+A personal Windows build of [Musify](https://github.com/gokadzev/Musify), tuned for desktop listening. Local audio, a compact player, native media controls, and an eight-band equalizer.
+
+**[Download for Windows ↗](https://github.com/Eclipxse/Eclipxse_music_exe/releases/latest)** &nbsp;·&nbsp; [Repository](https://github.com/Eclipxse/Eclipxse_music_exe)
+
+<details>
+<summary><code>inspect music</code>: stack &amp; controls</summary>
+
+`Flutter` · `Dart` · `MediaKit` · `libmpv`
+
+| Shortcut | Action |
+| :--- | :--- |
+| `Ctrl + O` | Open local audio |
+| `Ctrl + Shift + M` | Toggle compact player |
+| `Ctrl + Space` | Play / pause |
+
+Customized from the open-source Musify project. Corresponding source archives are included with the [Windows releases](https://github.com/Eclipxse/Eclipxse_music_exe/releases).
+
+</details>
 
 <br>
 
 <h2 id="eclipxsein">Eclipxse.in</h2>
-<p><sub>02 &nbsp; / &nbsp; PERSONAL PORTFOLIO &nbsp; / &nbsp; WEB</sub></p>
 
 <a href="https://eclipxse.in/">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/after-hours/03-portfolio-still.svg">
-  <img src="./assets/readme/after-hours/03-portfolio.svg" width="100%" alt="Eclipxse.in displayed on a dark monitor, alternating between actual captures of the portfolio hero and sculptural scroll sequence." />
-  </picture>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/readme/code/portfolio-mobile-still.svg">
+  <source media="(max-width: 600px)" srcset="./assets/readme/code/portfolio-mobile.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/code/portfolio-still.svg">
+  <img src="./assets/readme/code/portfolio.svg" width="100%" alt="Eclipxse.in. A rotating wireframe made from mathematical paths.">
+</picture>
 </a>
 
-<p>My home on the web. Selected work, sculptural scroll sequences, deliberate typography, and the details that make an interface feel personal.</p>
-<p><code>JavaScript</code> &nbsp; <code>GSAP</code> &nbsp; <code>Lenis</code> &nbsp; <code>HTML / CSS</code></p>
-<p><a href="https://eclipxse.in/"><strong>Enter the portfolio ↗</strong></a> &nbsp; / &nbsp; <a href="https://github.com/Eclipxse/Eclipxse">View source</a></p>
+My corner of the web: selected work, sculptural scroll sequences, deliberate typography, and the details that make a website feel personal.
 
-<br>
+**[Open the portfolio ↗](https://eclipxse.in/)** &nbsp;·&nbsp; [Source](https://github.com/Eclipxse/Eclipxse)
 
-<p align="center">
-  <strong>Have something interesting in mind?</strong><br><br>
-  <a href="mailto:lawliet@eclipxse.in">Email</a> &nbsp; / &nbsp;
-  <a href="https://www.linkedin.com/in/eclipxse/">LinkedIn</a>
-</p>
+<details>
+<summary><code>inspect portfolio</code>: under the hood</summary>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/after-hours/04-moth-still.svg">
-  <img src="./assets/readme/after-hours/04-moth.svg" width="100%" alt="A small silver pixel moth above a blue light. Still making things. Mario / Eclipxse." />
-  </picture>
-</p>
+`JavaScript` · `GSAP` · `Lenis` · `HTML / CSS`
 
-<!-- After Hours: original self-contained SVG motion; reduced-motion support and a static edition. -->
+A custom static site with scroll-driven animation, project previews, and dedicated work pages.
+
+</details>
+
+---
+
+**Something interesting to build?** [Email me](mailto:lawliet@eclipxse.in) or find me on [LinkedIn](https://www.linkedin.com/in/eclipxse/).
+
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/readme/code/signoff-mobile-still.svg">
+  <source media="(max-width: 600px)" srcset="./assets/readme/code/signoff-mobile.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/code/signoff-still.svg">
+  <img src="./assets/readme/code/signoff.svg" width="100%" alt="Terminal prompt: make something worth opening.">
+</picture>
+
+<sub>[Profile code](./scripts/build-profile.mjs) &nbsp;·&nbsp; [Still edition](./README-static.md)</sub>

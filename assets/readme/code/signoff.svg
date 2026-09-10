@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="92" viewBox="0 0 1100 92" role="img" aria-labelledby="title desc">
+<title id="title">Make something worth opening</title><desc id="desc">A terminal prompt with a blinking cursor.</desc>
+<style>text{font-family:Consolas,"Liberation Mono",Menlo,monospace}path{stroke-linecap:round}
+.cursor{animation:cursor 1.2s steps(2,end) infinite}@keyframes cursor{0%,45%{opacity:1}50%,100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.move,.move *,.ascii-frame,.wire-frame{animation:none!important}.ascii-frame,.wire-frame{opacity:0!important}.frame-0{opacity:1!important}}</style>
+<rect x="1" y="1" width="1098" height="90" fill="#0b0d0e" rx="8" stroke="#303638"/><text x="24" y="55" font-size="19" fill="#c3f86b" >$</text><text x="51" y="55" font-size="19" fill="#f0f2e9" >make something worth opening</text><rect x="377" y="39" width="10" height="20" fill="#c3f86b" class="move cursor"/>
+</svg>
